@@ -162,9 +162,13 @@ EMBEDDING_DEVICE     = "cpu"    # "cpu" | "cuda" | "mps"
 BGE_QUERY_PREFIX = "Represent this sentence for searching relevant passages: "
 
 # ---------------------------------------------------------------------------
-# ChromaDB  (vectordb.py)
+# ChromaDB Cloud  — hosted vector store  (vector_store.py)
+# Get these from: https://trychroma.com → your database dashboard
 # ---------------------------------------------------------------------------
-CHROMA_PERSIST_DIR      = BASE_DIR / "chromadb"
-CHROMA_COLLECTION_NAME  = "lufthansa_intel"
-CHROMA_DISTANCE_METRIC  = "cosine"   # "cosine" | "l2" | "ip"
-CHROMA_TOP_K            = 5          # default number of results returned per query
+CHROMA_API_KEY         = os.getenv("CHROMA_API_KEY",  "ck-7sDAfNnynzaFSF29onskcSJUTqbJF6mRJEe4ZaiKm72c")
+CHROMA_TENANT          = os.getenv("CHROMA_TENANT",   "3cd57535-7db4-499f-a4c4-91022866ca80")
+CHROMA_DATABASE        = os.getenv("CHROMA_DATABASE", "ragsystem")
+CHROMA_COLLECTION_NAME = "Knowledge_Database"
+CHROMA_DISTANCE_METRIC = "cosine"   # "cosine" | "l2" | "ip"
+CHROMA_TOP_K           = 5          # default results per query
+CHROMA_PERSIST_DIR = BASE_DIR / "chromadb"
