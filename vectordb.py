@@ -138,10 +138,8 @@ class VectorStore:
         Returns:
             Total chunks upserted.
         """
-        print("Started add_in_batches")
         total = 0
         for start in range(0, len(chunks), batch_size):
-            print(f"Trying to push the batch: {start}")
             end         = start + batch_size
             batch_c     = chunks[start:end]
             batch_e     = embeddings[start:end]
@@ -326,7 +324,6 @@ def get_store() -> VectorStore:
     Return the shared VectorStore instance (lazy init, cached).
     Use this when you want a single store across the whole pipeline.
     """
-    print("Trying to return the VectorStore instance")
     global _store_instance
     if _store_instance is None:
         _store_instance = VectorStore()
