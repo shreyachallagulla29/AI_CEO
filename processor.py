@@ -36,95 +36,13 @@ import hashlib
 import logging
 
 import config
+from text_utils import TextCleaner  # single source of truth — replaces local TextCleaner
 
 logger = logging.getLogger("processor")
 
-
-# ===========================================================================
-# Stage 1 — Text Cleaning
-# ===========================================================================
-
-class TextCleaner:
-    """
-    Cleans raw document text for downstream embedding and analysis.
-    Removes HTML, boilerplate phrases, non-printable characters,
-    and collapses whitespace.
-    """
-
-    _BOILERPLATE = [
-        r"all rights reserved\.?",
-        r"click here to read more",
-        r"subscribe to our newsletter",
-        r"read more:.*",
-        r"advertisement",
-        r"cookie(s)? (policy|settings|preferences)",
-        r"privacy policy",
-        r"terms (and conditions|of use|of service)",
-        r"follow us on (twitter|x|facebook|instagram|linkedin)",
-        r"share this article",
-        r"sign up for.*newsletter",
-        r"javascript (must be|is) enabled",
-        r"loading\.\.\.",
-        r"this site uses cookies",
-        r"by continuing.*agree",
-    ]
-    _BOILERPLATE_RE = re.compile("|".join(_BOILERPLATE), re.IGNORECASE)
-
-    _HTML_ENTITIES = {
-        "&amp;": "&", "&lt;": "<", "&gt;": ">", "&quot;": '"',
-        "&#39;": "'", "&nbsp;": " ", "&mdash;": "—", "&ndash;": "–",
-        "&hellip;": "…", "&copy;": "©", "&reg;": "®",
-    }
-
-    def clean(self, text: str) -> str:
-        if not text:
-            return ""
-
-        # 1. Strip HTML tags
-        text = re.sub(r"<[^>]+>", " ", text)
-
-        # 2. Decode HTML entities
-        for entity, char in self._HTML_ENTITIES.items():
-            text = text.replace(entity, char)
-
-        # 3. Remove bare URLs (not useful for semantic content)
-        text = re.sub(r"https?://\S+", "", text)
-
-        # 4. Remove boilerplate phrases
-        text = self._BOILERPLATE_RE.sub(" ", text)
-
-        # 5. Remove non-printable / control characters (keep newlines + tabs)
-        text = re.sub(r"[^\x20-\x7E\n\t]", " ", text)
-
-        # 6. Collapse excessive whitespace
-        text = re.sub(r"[ \t]{2,}", " ", text)
-        text = re.sub(r"\n{3,}", "\n\n", text)
-        text = text.strip()
-
-        # 7. Truncate to hard limit
-        if len(text) > config.MAX_CONTENT_LENGTH:
-            text = text[: config.MAX_CONTENT_LENGTH] + "…"
-
-        return text
-
-    def clean_document(self, doc: dict) -> dict:
-        """Return a copy of doc with cleaned content and title fields."""
-        cleaned = dict(doc)
-        cleaned["content"] = self.clean(doc.get("content", ""))
-        cleaned["title"]   = re.sub(r"\s+", " ", doc.get("title", "")).strip()
-        return cleaned
-
-    def clean_all(self, documents: list[dict]) -> list[dict]:
-        """Clean every document; drop those that become too short."""
-        cleaned = [self.clean_document(d) for d in documents]
-        before  = len(cleaned)
-        cleaned = [d for d in cleaned
-                   if len(d.get("content", "")) >= config.MIN_CONTENT_LENGTH]
-        dropped = before - len(cleaned)
-        if dropped:
-            logger.info(f"Cleaning: dropped {dropped} docs below min length ({config.MIN_CONTENT_LENGTH} chars)")
-        logger.info(f"Cleaning complete → {len(cleaned)} documents remain")
-        return cleaned
+# TextCleaner is imported from text_utils.py.
+# It combines the BeautifulSoup HTML parsing, NFKC normalization, merged boilerplate
+# patterns, and non-printable char removal from both original files.
 
 
 # ===========================================================================

@@ -199,4 +199,4 @@ if __name__ == "__main__":
     print(f"  chunk_id:        {s['chunk_id']}")
     print(f"  embedding_model: {s['embedding_model']}")
     print(f"  embedding dim:   {len(s['embedding'])}")
-    # pri': 'nt(f"  first 5 values:  {[round(v,4) for v in s['embedding'][:5]]}")
+    print(f"  first 5 values:  {[round(v,4) for v in s['embedding'][:5]]}")
