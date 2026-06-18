@@ -1,31 +1,36 @@
 # =============================================================================
-# vector_store.py — Cloud Database Layer
+# vector_store.py — ChromaDB Cloud vector store (single source of truth)
 #
-# Two cloud backends, both configured in config.py:
+# Consolidated from vector_store.py + vectordb.py.
 #
-#   SupabaseDocumentStore  — stores raw Document dicts in Supabase (PostgreSQL)
-#                            Sign up free at https://supabase.com
-#                            Run setup_supabase_table() once to create the table.
+# Responsibilities:
+#   Push  — upsert_embeddings(), add(), add_in_batches()
+#   Query — search(), search_by_text()
+#   Fetch — get_documents(), get_stats(), count()
+#   Manage — delete_collection(), reset()
 #
-#   ChromaVectorStore      — stores embeddings in ChromaDB Cloud
-#                            Sign up free at https://trychroma.com
-#                            Supports upsert, semantic search, metadata filtering.
+# Config (config.py):
+#   CHROMA_API_KEY         — cloud API key
+#   CHROMA_TENANT          — tenant UUID
+#   CHROMA_DATABASE        — database name
+#   CHROMA_COLLECTION_NAME — collection name
+#   CHROMA_DISTANCE_METRIC — "cosine" | "l2" | "ip"
+#   CHROMA_TOP_K           — default results per query
 #
 # Typical usage:
-#   from vector_store import SupabaseDocumentStore, ChromaVectorStore
+#   from vector_store import ChromaVectorStore
 #
-#   # Save raw documents
-#   supa = SupabaseDocumentStore()
-#   supa.upsert_documents(documents)
+#   store = ChromaVectorStore()
 #
-#   # Save embeddings
-#   chroma = ChromaVectorStore()
-#   chroma.upsert_embeddings(embedded_chunks)
+#   # Push — after running embedder.generate_embeddings()
+#   store.upsert_embeddings(embedded_chunks)
 #
-#   # Retrieve at query time
-#   gen    = EmbeddingGenerator()
-#   q_vec  = gen.embed_query("Lufthansa fleet expansion plans")
-#   results = chroma.query(q_vec, top_k=5)
+#   # Query — semantic search
+#   results = store.search_by_text("Lufthansa fleet expansion", embedder)
+#
+#   # Fetch — inspect stored records
+#   docs  = store.get_documents(limit=10)
+#   stats = store.get_stats()
 # =============================================================================
 
 import logging
@@ -34,59 +39,72 @@ import config
 
 logger = logging.getLogger("vector_store")
 
-# ===========================================================================
-# ChromaDB Cloud — Vector Embedding Store
-# ===========================================================================
 
 class ChromaVectorStore:
     """
-    Stores chunk embeddings in ChromaDB Cloud and supports semantic retrieval.
+    Full-featured ChromaDB Cloud client for the Lufthansa RAG pipeline.
 
-    ChromaDB Cloud (trychroma.com) — free tier available.
-    Uses chromadb.HttpClient pointing to the cloud API.
-
-    Collection: config.CHROMA_COLLECTION_NAME  (default: "lufthansa_embeddings")
-    Distance:   config.CHROMA_DISTANCE_METRIC  (default: "cosine")
-
-    Setup:
-        1. Sign up at https://trychroma.com
-        2. Create a database called "lufthansa_intel"
-        3. Copy your API key, tenant ID, and database name into config.py
-           (or set CHROMA_API_KEY / CHROMA_TENANT / CHROMA_DATABASE env vars)
+    Handles push, query, fetch, and management in one place.
     """
 
-    def __init__(self):
+    def __init__(
+        self,
+        collection_name: str = None,
+        distance_metric: str = None,
+    ):
+        self.collection_name = collection_name or config.CHROMA_COLLECTION_NAME
+        self.distance_metric = distance_metric or config.CHROMA_DISTANCE_METRIC
+        self.database        = config.CHROMA_DATABASE
+        self.tenant          = config.CHROMA_TENANT
+
         import chromadb
         from chromadb.config import Settings
 
-        self.client = chromadb.HttpClient(
-            host="api.trychroma.com",
-            ssl=True,
-            headers={
-                "x-chroma-token": config.CHROMA_API_KEY,
-                "X-Chroma-Tenant": config.CHROMA_TENANT,
-                "X-Chroma-Database": config.CHROMA_DATABASE,
-            },
-            settings=Settings(anonymized_telemetry=False),
+        logger.info(
+            f"Connecting to ChromaDB Cloud "
+            f"(tenant={self.tenant}, db={self.database})"
         )
+        # self._client = chromadb.HttpClient(
+        #     host="api.trychroma.com",
+        #     ssl=True,
+        #     headers={
+        #         "x-chroma-token":    config.CHROMA_API_KEY,
+        #         "X-Chroma-Tenant":   self.tenant,
+        #         "X-Chroma-Database": self.database,
+        #     },
+        #     settings=Settings(anonymized_telemetry=False),
+        # )
 
-        # Get or create the collection
-        self.collection = self.client.get_or_create_collection(
-            name=config.CHROMA_COLLECTION_NAME,
-            metadata={"hnsw:space": config.CHROMA_DISTANCE_METRIC},
+        self._client = chromadb.CloudClient(
+  cloud_port=443,
+  cloud_host='europe-west1.gcp.trychroma.com',
+  api_key= "ck-7sDAfNnynzaFSF29onskcSJUTqbJF6mRJEe4ZaiKm72c",
+  tenant='3cd57535-7db4-499f-a4c4-91022866ca80',
+  database='ragsystem'
+)
+        self._collection = self._client.get_or_create_collection(
+            name=self.collection_name,
+            metadata={"hnsw:space": self.distance_metric},
         )
         logger.info(
-            f"ChromaDB Cloud connected — collection: '{config.CHROMA_COLLECTION_NAME}' "
-            f"({self.collection.count()} existing vectors)"
+            f"Collection '{self.collection_name}' ready "
+            f"({self._collection.count()} vectors already indexed)"
         )
+
+    # =========================================================================
+    # PUSH — store embeddings in ChromaDB
+    # =========================================================================
 
     def upsert_embeddings(self, embedded_chunks: list[dict]) -> int:
         """
-        Upsert embedded chunks into ChromaDB.
-        Existing chunk_ids are updated; new ones are inserted.
+        Primary pipeline method: upsert EmbeddedChunk dicts directly from
+        embedder.generate_embeddings().
+
+        Each dict must contain "chunk_id", "chunk_text", and "embedding".
+        Splits into chunks + embeddings lists then delegates to add_in_batches().
 
         Args:
-            embedded_chunks: EmbeddedChunk dicts from embedder.generate_embeddings()
+            embedded_chunks: Output of embedder.generate_embeddings()
 
         Returns:
             Number of chunks upserted.
@@ -95,132 +113,321 @@ class ChromaVectorStore:
             logger.warning("upsert_embeddings called with empty list")
             return 0
 
-        # ChromaDB upsert in batches of 500
-        batch_size = 500
-        total = 0
+        chunks     = embedded_chunks                                 # full dicts
+        embeddings = [c["embedding"] for c in embedded_chunks]       # extract vectors
 
-        for i in range(0, len(embedded_chunks), batch_size):
-            batch = embedded_chunks[i : i + batch_size]
+        return self.add_in_batches(chunks, embeddings)
 
-            ids        = [c["chunk_id"]   for c in batch]
-            embeddings = [c["embedding"]  for c in batch]
-            documents  = [c["chunk_text"] for c in batch]
-            metadatas  = [
-                {
-                    "doc_id":      c.get("doc_id",      ""),
-                    "source":      c.get("source",      ""),
-                    "url":         c.get("url",         ""),
-                    "title":       c.get("title",       ""),
-                    "date":        c.get("date",        ""),
-                    "company":     c.get("company",     config.COMPANY),
-                    "type":        c.get("type",        ""),
-                    "publisher":   c.get("publisher",   ""),
-                    "chunk_index": str(c.get("chunk_index", 0)),
-                    "model":       c.get("embedding_model", ""),
-                }
-                for c in batch
-            ]
+    def add(
+        self,
+        chunks: list[dict],
+        embeddings: list[list[float]],
+    ) -> int:
+        """
+        Low-level upsert: separate chunk dicts and embedding vectors.
+        Safe to call multiple times — existing IDs are overwritten, not duplicated.
 
-            self.collection.upsert(
-                ids=ids,
-                embeddings=embeddings,
-                documents=documents,
-                metadatas=metadatas,
+        Args:
+            chunks:     Chunk dicts (must have chunk_id, chunk_text)
+            embeddings: Corresponding embedding vectors (same length as chunks)
+
+        Returns:
+            Number of chunks upserted.
+        """
+        if not chunks:
+            logger.warning("add() called with empty chunk list — nothing to index")
+            return 0
+
+        if len(chunks) != len(embeddings):
+            raise ValueError(
+                f"chunks ({len(chunks)}) and embeddings ({len(embeddings)}) "
+                f"must be the same length"
             )
-            total += len(batch)
-            logger.info(f"ChromaDB: upserted {total}/{len(embedded_chunks)} chunks")
 
-        logger.info(f"ChromaDB upsert complete — {total} chunks in '{config.CHROMA_COLLECTION_NAME}'")
+        self._collection.upsert(
+            ids        = [c["chunk_id"]   for c in chunks],
+            embeddings = embeddings,
+            documents  = [c["chunk_text"] for c in chunks],
+            metadatas  = [_build_metadata(c) for c in chunks],
+        )
+
+        total_now = self._collection.count()
+        logger.info(f"Upserted {len(chunks)} chunks. Collection total: {total_now}")
+        return len(chunks)
+
+    def add_in_batches(
+        self,
+        chunks: list[dict],
+        embeddings: list[list[float]],
+        batch_size: int = 500,
+    ) -> int:
+        """
+        Same as add() but splits work into batches — safe for large datasets.
+
+        Args:
+            chunks:     Chunk dicts
+            embeddings: Corresponding vectors
+            batch_size: Max items per ChromaDB upsert call (default 500)
+
+        Returns:
+            Total chunks upserted.
+        """
+        total = 0
+        for start in range(0, len(chunks), batch_size):
+            end      = start + batch_size
+            total   += self.add(chunks[start:end], embeddings[start:end])
+            logger.info(f"  Batch {start}–{end}: indexed {min(end, len(chunks)) - start} chunks")
         return total
 
-    def query(
+    # =========================================================================
+    # QUERY — semantic search
+    # =========================================================================
+
+    def search(
         self,
-        query_embedding: list[float],
+        query_vector: list[float],
         top_k: int = None,
         filters: dict = None,
     ) -> list[dict]:
         """
-        Semantic search — returns the top-k most similar chunks.
+        Semantic search by embedding vector.
 
         Args:
-            query_embedding: Embedded query vector from EmbeddingGenerator.embed_query()
-            top_k:           Number of results (defaults to config.CHROMA_TOP_K)
-            filters:         Optional ChromaDB where-filter, e.g.
-                             {"source": {"$eq": "reddit"}}
-                             {"date": {"$gte": "2026-01-01"}}
+            query_vector: Embedding from embedder.embed_query()
+            top_k:        Number of results (default config.CHROMA_TOP_K)
+            filters:      ChromaDB metadata filter, e.g.
+                          {"source": {"$eq": "reddit"}}
+                          {"date":   {"$gte": "2026-01-01"}}
 
         Returns:
             List of result dicts:
             {
-              "chunk_id":  "doc_abc_c0",
-              "text":      "chunk content...",
-              "score":     0.91,          # cosine similarity (higher = more similar)
-              "metadata":  {...},
+              chunk_id, doc_id, chunk_text, title, url,
+              source, type, date, company, publisher,
+              score   # cosine similarity 0–1 (higher = more similar)
             }
         """
         top_k = top_k or config.CHROMA_TOP_K
+        n     = min(top_k, self._collection.count() or 1)
 
-        query_kwargs = {
-            "query_embeddings": [query_embedding],
-            "n_results":        top_k,
+        kwargs = {
+            "query_embeddings": [query_vector],
+            "n_results":        n,
             "include":          ["documents", "metadatas", "distances"],
         }
         if filters:
-            query_kwargs["where"] = filters
+            kwargs["where"] = filters
 
-        raw = self.collection.query(**query_kwargs)
+        raw       = self._collection.query(**kwargs)
+        ids       = raw["ids"][0]
+        documents = raw["documents"][0]
+        metadatas = raw["metadatas"][0]
+        distances = raw["distances"][0]
 
         results = []
-        ids        = raw.get("ids",        [[]])[0]
-        documents  = raw.get("documents",  [[]])[0]
-        metadatas  = raw.get("metadatas",  [[]])[0]
-        distances  = raw.get("distances",  [[]])[0]
-
         for chunk_id, text, meta, dist in zip(ids, documents, metadatas, distances):
-            # ChromaDB cosine distance ∈ [0, 2]; convert to similarity ∈ [-1, 1]
-            similarity = round(1 - dist, 4)
             results.append({
-                "chunk_id": chunk_id,
-                "text":     text,
-                "score":    similarity,
-                "metadata": meta,
+                "chunk_id":   chunk_id,
+                "doc_id":     meta.get("doc_id",    ""),
+                "chunk_text": text,
+                "title":      meta.get("title",     ""),
+                "url":        meta.get("url",        ""),
+                "source":     meta.get("source",     ""),
+                "type":       meta.get("type",       ""),
+                "date":       meta.get("date",       ""),
+                "company":    meta.get("company",    ""),
+                "publisher":  meta.get("publisher",  ""),
+                "score":      round(1 - dist, 4),    # cosine distance → similarity
             })
+        return results
 
+    def search_by_text(
+        self,
+        query_text: str,
+        embedder,
+        top_k: int = None,
+        filters: dict = None,
+    ) -> list[dict]:
+        """
+        Convenience wrapper: embed the query text then call search().
+
+        Args:
+            query_text: Raw query string
+            embedder:   EmbeddingGenerator instance (from embedder.py)
+            top_k:      Number of results
+            filters:    Metadata filter dict
+
+        Returns:
+            List of result dicts (same as search())
+        """
+        query_vector = embedder.embed_query(query_text)
+        return self.search(query_vector, top_k=top_k, filters=filters)
+
+    # =========================================================================
+    # FETCH — read stored records from ChromaDB
+    # =========================================================================
+
+    def get_documents(
+        self,
+        limit: int = 100,
+        filters: dict = None,
+    ) -> list[dict]:
+        """
+        Fetch stored chunk records from ChromaDB (no vector search — direct get).
+
+        Useful for inspecting what's in the DB, auditing, or building a
+        re-ranking layer on top of a pre-filtered set.
+
+        Args:
+            limit:   Max records to return (default 100)
+            filters: ChromaDB metadata filter dict (same syntax as search())
+
+        Returns:
+            List of dicts: {chunk_id, chunk_text, <all metadata fields>}
+        """
+        kwargs = {
+            "limit":   limit,
+            "include": ["documents", "metadatas"],
+        }
+        if filters:
+            kwargs["where"] = filters
+
+        raw       = self._collection.get(**kwargs)
+        ids       = raw.get("ids",       [])
+        documents = raw.get("documents", [])
+        metadatas = raw.get("metadatas", [])
+
+        results = []
+        for chunk_id, text, meta in zip(ids, documents, metadatas):
+            results.append({
+                "chunk_id":   chunk_id,
+                "chunk_text": text,
+                **meta,
+            })
         return results
 
     def count(self) -> int:
         """Return total number of vectors in the collection."""
-        return self.collection.count()
+        return self._collection.count()
+
+    def get_stats(self) -> dict:
+        """
+        Return a summary of the collection: total vectors + breakdown by
+        source and document type. Samples up to 1000 records.
+        """
+        total = self._collection.count()
+        if total == 0:
+            return {
+                "collection":    self.collection_name,
+                "total_vectors": 0,
+            }
+
+        sample    = self._collection.get(
+            limit=min(total, 1000),
+            include=["metadatas"],
+        )
+        metadatas = sample.get("metadatas", [])
+        by_source = {}
+        by_type   = {}
+
+        for m in metadatas:
+            src = m.get("source", "unknown")
+            typ = m.get("type",   "unknown")
+            by_source[src] = by_source.get(src, 0) + 1
+            by_type[typ]   = by_type.get(typ, 0) + 1
+
+        return {
+            "collection":    self.collection_name,
+            "database":      self.database,
+            "distance":      self.distance_metric,
+            "total_vectors": total,
+            "by_source":     by_source,
+            "by_type":       by_type,
+        }
+
+    # =========================================================================
+    # MANAGEMENT — collection lifecycle
+    # =========================================================================
 
     def delete_collection(self) -> None:
-        """Delete and recreate the collection (wipes all data). Use with caution."""
-        self.client.delete_collection(config.CHROMA_COLLECTION_NAME)
-        logger.warning(f"ChromaDB collection '{config.CHROMA_COLLECTION_NAME}' deleted")
+        """
+        Permanently delete the entire collection and all its vectors.
+        Use when you want to re-index from scratch.
+        """
+        self._client.delete_collection(self.collection_name)
+        logger.warning(f"Collection '{self.collection_name}' deleted")
+
+    def reset(self) -> None:
+        """
+        Delete and immediately recreate the collection (clean slate).
+        All existing vectors are wiped; the collection is ready for fresh inserts.
+        """
+        self.delete_collection()
+        self._collection = self._client.get_or_create_collection(
+            name=self.collection_name,
+            metadata={"hnsw:space": self.distance_metric},
+        )
+        logger.info(f"Collection '{self.collection_name}' reset (empty)")
 
 
 # ===========================================================================
-# Full Store Pipeline
+# Internal helpers
 # ===========================================================================
 
-def store_all(
-    documents: list[dict],
-    embedded_chunks: list[dict],
-) -> dict:
+def _build_metadata(chunk: dict) -> dict:
     """
-    Save everything to both cloud backends in one call.
+    Build the metadata dict for a ChromaDB upsert.
+    ChromaDB requires metadata values to be str | int | float | bool — no None.
+    """
+    return {
+        "doc_id":       str(chunk.get("doc_id",       "")),
+        "source":       str(chunk.get("source",       "")),
+        "url":          str(chunk.get("url",           "")),
+        "title":        str(chunk.get("title",         ""))[:500],  # cap long titles
+        "chunk_index":  int(chunk.get("chunk_index",   0)),
+        "total_chunks": int(chunk.get("total_chunks",  1)),
+        "date":         str(chunk.get("date",          "")),
+        "company":      str(chunk.get("company",       "")),
+        "type":         str(chunk.get("type",          "")),
+        "publisher":    str(chunk.get("publisher",     "")),
+        "model":        str(chunk.get("embedding_model", "")),
+    }
+
+
+# ===========================================================================
+# Singleton (optional convenience for pipeline scripts)
+# ===========================================================================
+
+_store_instance: ChromaVectorStore | None = None
+
+
+def get_store() -> ChromaVectorStore:
+    """Return the shared ChromaVectorStore instance (lazy init, cached)."""
+    global _store_instance
+    if _store_instance is None:
+        _store_instance = ChromaVectorStore()
+    return _store_instance
+
+
+# ===========================================================================
+# Pipeline helper
+# ===========================================================================
+
+def store_all(embedded_chunks: list[dict]) -> dict:
+    """
+    One-call store: connect → upsert → return stats.
 
     Args:
-        documents:       Raw Document dicts (from storage.build_documents())
-        embedded_chunks: EmbeddedChunk dicts (from embedder.generate_embeddings())
+        embedded_chunks: Output of embedder.generate_embeddings()
 
     Returns:
-        {"supabase_docs": N, "chroma_chunks": M}
+        {"chroma_chunks": N, "total_in_db": M}
     """
-    chroma_store = ChromaVectorStore()
-    chunks_saved = chroma_store.upsert_embeddings(embedded_chunks)
-
-    logger.info(f"store_all  {chunks_saved} chunks in ChromaDB")
-    return {"chroma_chunks": chunks_saved}
+    store  = ChromaVectorStore()
+    saved  = store.upsert_embeddings(embedded_chunks)
+    total  = store.count()
+    logger.info(f"store_all: {saved} chunks upserted | {total} total in DB")
+    return {"chroma_chunks": saved, "total_in_db": total}
 
 
 # ===========================================================================
@@ -228,23 +435,38 @@ def store_all(
 # ===========================================================================
 
 if __name__ == "__main__":
+    import json
     from clean_storage import load_dataset
-    from processor import run_processing_pipeline
-    from embedder import generate_embeddings, EmbeddingGenerator
+    from processor     import run_processing_pipeline
+    from embedder      import EmbeddingGenerator
 
-    docs           = load_dataset()
-    chunks         = run_processing_pipeline(docs)
-    embedded       = generate_embeddings(chunks[:20])   # small test batch
+    docs     = load_dataset()
+    chunks   = run_processing_pipeline(docs)
 
-    print("\n--- Storing to ChromaDB Cloud ---")
-    chroma = ChromaVectorStore()
-    chroma.upsert_embeddings(embedded)
-    print(f"Total vectors in ChromaDB: {chroma.count()}")
+    if not chunks:
+        print("No chunks found. Run the scraping pipeline first.")
+    else:
+        embedder = EmbeddingGenerator()
+        embedded = generate_embeddings = embedder.embed_chunks(chunks[:20])  # small test batch
 
-    print("\n--- Semantic Search Test ---")
-    gen = EmbeddingGenerator()
-    q_vec = gen.embed_query("Lufthansa fleet expansion and sustainability")
-    results = chroma.query(q_vec, top_k=3)
-    for r in results:
-        print(f"  [{r['score']:.4f}] {r['metadata'].get('title','')[:60]}")
-        print(f"           {r['text'][:120]}...")
+        store = ChromaVectorStore()
+
+        print("\n── Push ─────────────────────────────────────────────────")
+        store.upsert_embeddings(embedded)
+
+        print("\n── Stats ────────────────────────────────────────────────")
+        print(json.dumps(store.get_stats(), indent=2))
+
+        print("\n── Fetch (first 3 records) ──────────────────────────────")
+        docs_in_db = store.get_documents(limit=3)
+        for d in docs_in_db:
+            print(f"  [{d['chunk_id']}] {d.get('title','')[:60]}")
+
+        print("\n── Query ────────────────────────────────────────────────")
+        query   = "Lufthansa fleet expansion and sustainability strategy"
+        results = store.search_by_text(query, embedder, top_k=3)
+        print(f"Top {len(results)} results for: '{query}'\n")
+        for i, r in enumerate(results, 1):
+            print(f"[{i}] score={r['score']:.4f}  {r['title'][:60]}")
+            print(f"     {r['chunk_text'][:150]}...")
+            print()
