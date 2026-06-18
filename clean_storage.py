@@ -11,125 +11,19 @@
 
 import re
 import json
-import uuid
 import hashlib
 import logging
 from datetime import datetime
 from pathlib import Path
-import unicodedata
-from bs4 import BeautifulSoup, Comment
 
 import config
+from text_utils import clean_text, clean_title  # consolidated cleaner
 
 logger = logging.getLogger("storage")
 
 
-# ===========================================================================
-# Text Cleaning
-# ===========================================================================
-
-
-def clean_text(html_content: str, max_length: int = 4000) -> str:
-    """Advanced cleaning optimized for RAG embedding and generation.
-
-    - Strips non-content boilerplate (scripts, styles, navs, footers).
-    - Preserves structural formatting (lists, tables, paragraphs) using custom separators.
-    - Normalizes Unicode and fixes broken layout artifacts.
-    - Strips noisy web artifacts (cookie notices, social sharing).
-    """
-    if not html_content or not html_content.strip():
-        return ""
-
-    # 1. Parse HTML with BeautifulSoup
-    soup = BeautifulSoup(html_content, "html.parser")
-
-    # 2. Aggressively remove non-content elements
-    # These contain text, but it's "noise" that ruins vector search relevance
-    noise_selectors = [
-        "script",
-        "style",
-        "nav",
-        "footer",
-        "header",
-        "aside",
-        "form",
-        "button",
-        ".cookie-banner",
-        ".sidebar",
-        ".social-share",
-        "#comments",
-    ]
-    for selector in noise_selectors:
-        for element in soup.select(selector) if selector.startswith(
-            (".") or selector.startswith("#")
-        ) else soup(selector):
-            element.decompose()
-
-    # Remove HTML comments
-    for comment in soup.find_all(text=lambda text: isinstance(text, Comment)):
-        comment.extract()
-
-    # 3. Structural Block Management
-    # RAG models benefit from knowing where headers and lists end.
-    # We add structural spacing so text doesn't run together visually.
-    for tag in soup.find_all(["p", "div", "h1", "h2", "h3", "h4", "h5", "h6", "li", "tr"]):
-        tag.insert_before("\n")
-        tag.insert_after("\n")
-
-    # 4. Extract Text with custom separator to avoid mashed words
-    text = soup.get_text(separator=" ")
-
-    # 5. Unicode Normalization
-    # Fixes ligatures, curly quotes, and maps weird whitespace characters (like \xa0) to standard spaces
-    text = unicodedata.normalize("NFKC", text)
-
-    # 6. Advanced Text Formatting & Cleaning
-    # Remove inline URLs (Keep the text anchors, delete the long raw URLs)
-    text = re.sub(r"https?://\S+", "", text)
-
-    # Remove email addresses
-    text = re.sub(r"\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b", "", text)
-
-    # Replace multiple horizontal spaces/tabs with a single space
-    text = re.sub(r"[ \t]+", " ", text)
-
-    # RAG specific: Allow double newlines (paragraphs are good for chunking frameworks),
-    # but collapse 3 or more chaotic newlines down to a clean paragraph break.
-    text = re.sub(r"\n{3,}", "\n\n", text)
-
-    # Clean up any trailing space per line
-    text = "\n".join([line.strip() for line in text.splitlines()])
-    text = text.strip()
-
-    # 7. RAG Specific Boilerplate Phrases (Add common scraped patterns you encounter)
-    boilerplate_patterns = [
-        r"(?i)click here to read more",
-        r"(?i)all rights reserved",
-        r"(?i)terms of service",
-        r"(?i)privacy policy",
-        r"(?i)subscribe to our newsletter",
-    ]
-    for pattern in boilerplate_patterns:
-        text = re.sub(pattern, "", text)
-
-    # Final sweep of whitespace after removing boilerplate phrases
-    text = re.sub(r"\n{3,}", "\n\n", text)
-    text = re.sub(r" +", " ", text).strip()
-
-    # 8. Truncation / Safety net
-    if len(text) > max_length:
-        text = text[:max_length] + "…"
-
-    return text
-
-
-def clean_title(title: str) -> str:
-    """Minimal cleaning for titles — just strip HTML and extra whitespace."""
-    if not title:
-        return ""
-    title = re.sub(r"<[^>]+>", " ", title)
-    title = re.sub(r"\s+", " ", title).strip()
-    return title
+# clean_text() and clean_title() now live in text_utils.py
+# They are imported at the top of this file and used in create_document() below.
 
 
 # ===========================================================================
