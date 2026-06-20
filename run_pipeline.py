@@ -9,7 +9,8 @@
 #   3. Process  — clean text → deduplicate → chunk
 #   4. Embed    — generate vectors (BGE or MiniLM, set in config.py)
 #   5. Store    — group chunks by company → upsert each group to its own
-#                 ChromaDB collection (see COMPANY_COLLECTION_MAP in config.py)
+#                 ChromaDB collection (see COLLECTION_MAP in config.py)
+#   6. Reviews  — (optional, --reviews flag) Apify Skytrax scrape → Reviews_Knowledge
 #
 # Collections:
 #   Lufthansa        → Lufthansa_Knowledge
@@ -86,7 +87,7 @@ def _load_links(links_file: Path) -> dict[str, list[dict]]:
 # Pipeline
 # ---------------------------------------------------------------------------
 
-def run(skip_scrape: bool = False, links_file: Path = None):
+def run(skip_scrape: bool = False, links_file: Path = None, include_reviews: bool = False):
 
     links_file = links_file or config.LINKS_JSON_FILE
 
@@ -166,12 +167,12 @@ def run(skip_scrape: bool = False, links_file: Path = None):
     summary      = {}
 
     for company_name, company_chunks in by_company_chunks.items():
-        collection_name = config.COMPANY_COLLECTION_MAP.get(
+        collection_name = config.COLLECTION_MAP.get(
             company_name, config.CHROMA_COLLECTION_NAME
         )
-        if company_name not in config.COMPANY_COLLECTION_MAP:
+        if company_name not in config.COLLECTION_MAP:
             logger.warning(
-                f"'{company_name}' not in COMPANY_COLLECTION_MAP — "
+                f"'{company_name}' not in COLLECTION_MAP — "
                 f"falling back to '{collection_name}'"
             )
 
@@ -190,6 +191,14 @@ def run(skip_scrape: bool = False, links_file: Path = None):
         }
         logger.info(f"    → {saved} stored  |  {total} total in '{collection_name}'")
 
+    # ── Stage 5: Reviews (optional) ─────────────────────────────────────────
+    review_result = {}
+    if include_reviews:
+        logger.info("─── Stage 5: Scraping & storing reviews ─────────────────")
+        from review_scraper import run_review_pipeline
+        review_result = run_review_pipeline()
+        logger.info(f"Reviews: {review_result}")
+
     logger.info("─── Pipeline complete ✓ ─────────────────────────────────")
     logger.info(f"Summary:\n{json.dumps(summary, indent=2)}")
 
@@ -197,6 +206,7 @@ def run(skip_scrape: bool = False, links_file: Path = None):
         "chunks_embedded": len(embedded),
         "chunks_stored":   total_stored,
         "per_company":     summary,
+        **({ "reviews": review_result } if review_result else {}),
     }
 
 
@@ -217,8 +227,13 @@ if __name__ == "__main__":
         default=None,
         help=f"Path to links.json (default: {config.LINKS_JSON_FILE})",
     )
+    parser.add_argument(
+        "--reviews",
+        action="store_true",
+        help="Also scrape Skytrax reviews and push to Reviews_Knowledge collection",
+    )
     args = parser.parse_args()
 
     links_path = Path(args.links) if args.links else None
-    result     = run(skip_scrape=args.skip_scrape, links_file=links_path)
+    result     = run(skip_scrape=args.skip_scrape, links_file=links_path, include_reviews=args.reviews)
     print(f"\nDone:\n{json.dumps(result, indent=2)}")

@@ -11,8 +11,7 @@ import json
 # ---------------------------------------------------------------------------
 BASE_DIR      = Path(__file__).parent
 DATA_DIR      = BASE_DIR / "data"
-RAW_JSON_FILE = DATA_DIR / "raw_dataset.json"
-REVIEWS_JSON_FILE = DATA_DIR / "reviews_raw_dataset.json"
+RAW_JSON_FILE = DATA_DIR / "lufthansa_raw_dataset.json"
 LOG_FILE      = BASE_DIR / "logs" / "scraper.log"
 
 # Create dirs if missing
@@ -31,7 +30,8 @@ DOC_TYPES = {
     "reddit":        "community_post",
     "ir_page":       "press_release",
     "newsroom":      "press_release",
-    "hyperbrowser":  "web_page",       # scraper_1.py JS-rendered pages
+    "hyperbrowser":  "web_page",        # scraper_1.py JS-rendered pages
+    "reviews":       "customer_review", # review_scraper.py Skytrax reviews
 }
 
 # ---------------------------------------------------------------------------
@@ -128,8 +128,4 @@ REVIEWS_MAX_PER_COMPANY = 500
 # Slug format: https://www.airlinequality.com/airline-reviews/<slug>
 COMPANY_SKYTRAX_URLS: dict[str, str] = {
     "Lufthansa":         "https://www.airlinequality.com/airline-reviews/lufthansa",
-    "Air India":         "https://www.airlinequality.com/airline-reviews/air-india",
-    "United Airlines":   "https://www.airlinequality.com/airline-reviews/united-airlines",
-    "Delta Air Lines":   "https://www.airlinequality.com/airline-reviews/delta-air-lines",
-    "American Airlines": "https://www.airlinequality.com/airline-reviews/american-airlines",
 }
