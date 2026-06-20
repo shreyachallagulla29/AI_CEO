@@ -177,7 +177,7 @@ class TextChunker:
                 "url":       doc.get("url",       ""),
                 "title":     doc.get("title",     ""),
                 "date":      doc.get("date",      ""),
-                "company":   doc.get("company",   config.COMPANY),
+                "company":   doc.get("company"),
                 "type":      doc.get("type",      ""),
                 "publisher": doc.get("publisher", ""),
             }

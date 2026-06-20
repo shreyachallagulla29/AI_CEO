@@ -95,7 +95,7 @@ def create_document(raw: dict, source_type: str, index: int) -> dict | None:
         "title":     title,
         "content":   content,
         "date":      date_str,
-        "company":   config.DEFAULT_COMPANY,
+        "company":   raw.get("company"),  # competitor scrapers set this field
         "type":      doc_type,
         "sentiment": None,          # filled later by the sentiment analysis module
         # --- Extra metadata (useful for analysis, not in minimal schema) ---
@@ -263,7 +263,7 @@ def dataset_stats(documents: list[dict]) -> dict:
         "by_source":  by_source,
         "by_type":    by_type,
         "by_month":   dict(sorted(by_date.items())),
-        "company":    config.COMPANY,
+        "companies":   set([d.get("Company_Name") for d in documents]) ,
         "saved_to":   str(config.RAW_JSON_FILE),
     }
 

@@ -76,9 +76,7 @@ class ChromaVectorStore:
         # )
 
         self._client = chromadb.CloudClient(
-  cloud_port=443,
-  cloud_host='europe-west1.gcp.trychroma.com',
-  api_key= "ck-7sDAfNnynzaFSF29onskcSJUTqbJF6mRJEe4ZaiKm72c",
+  api_key= "ck-42Hn2rzqUrXu5k3GtwmDaJtDmfNh6xa8MUs39d9EanM4",
   tenant='3cd57535-7db4-499f-a4c4-91022866ca80',
   database='ragsystem'
 )
@@ -159,7 +157,7 @@ class ChromaVectorStore:
         self,
         chunks: list[dict],
         embeddings: list[list[float]],
-        batch_size: int = 500,
+        batch_size: int = 250,
     ) -> int:
         """
         Same as add() but splits work into batches — safe for large datasets.

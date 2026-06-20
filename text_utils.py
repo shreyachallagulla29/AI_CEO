@@ -37,30 +37,46 @@ class TextCleaner:
     Stages (in order):
       1. HTML parsing    — BeautifulSoup removes tags/noise; falls back to regex for plain text
       2. Unicode         — NFKC normalization (fixes ligatures, curly quotes, \xa0 spaces)
-      3. URL/email       — strip bare URLs and email addresses
-      4. Boilerplate     — remove cookie notices, social prompts, legal boilerplate
-      5. Non-printable   — strip control characters (keeps \n, \t)
-      6. Whitespace      — collapse excessive spaces and newlines
-      7. Truncation      — cap at config.MAX_CONTENT_LENGTH
+      3. Markdown        — strip link/image/bold/heading syntax before URLs are removed
+      4. URL/email       — strip bare URLs and email addresses
+      5. Boilerplate     — remove cookie notices, social prompts, legal boilerplate
+      6. Non-printable   — strip control characters (keeps \n, \t)
+      7. Whitespace      — collapse excessive spaces and newlines
+      8. Truncation      — cap at config.MAX_CONTENT_LENGTH
     """
 
-    # ── Boilerplate patterns (merged from both original files) ────────────────
+    # ── Boilerplate patterns ───────────────────────────────────────────────────
+    # NOTE: every entry here is a proper regex — square brackets must be escaped
+    # when matching literal characters (e.g. \[Learn more\], not [Learn more]).
     _BOILERPLATE = [
         r"all rights reserved\.?",
         r"click here to read more",
         r"subscribe to our newsletter",
-        r"sign up for.*newsletter",
+        r"sign up for.*?newsletter",
         r"read more:.*",
+        # Markdown link remnants ([text]() and bare [text])
+        r"\[learn more\]\s*\(",           # markdown [Learn more]( after URL strip
+        r"\[close\]\s*\(",                # markdown [Close](
+        r"\[accept cookies?\]\s*\(",
+        r"\[decline cookies?\]\s*\(",
+        r"\blearn more\b",               # plain text after markdown is stripped
         r"advertisement",
         r"cookie(s)? (policy|settings|preferences)",
         r"this site uses cookies",
-        r"by continuing.*agree",
+        r"some modules? (?:are|is) disabled because cookies are declined[^.]*\.",
+        r"accept cookies? to experience the full functionality[^.]*\.",
+        r"we use cookies? to optimize[^.]*\.",
+        r"no personal information is stored[^.]*\.",
+        r"\baccept cookies?\b",
+        r"\bdecline cookies?\b",
+        r"by continuing.*?agree",
         r"privacy policy",
         r"terms (and conditions|of use|of service)",
         r"follow us on (twitter|x|facebook|instagram|linkedin)",
         r"share this article",
         r"javascript (must be|is) enabled",
         r"loading\.\.\.",
+        r"\bprevious\s*next\b",          # pagination arrow labels
     ]
     _BOILERPLATE_RE = re.compile("|".join(_BOILERPLATE), re.IGNORECASE)
 
@@ -121,17 +137,42 @@ class TextCleaner:
         # ── 2. Unicode normalization ──────────────────────────────────────────
         text = unicodedata.normalize("NFKC", text)
 
-        # ── 3. URL and email removal ──────────────────────────────────────────
+        # ── 3. Markdown syntax stripping ─────────────────────────────────────
+        # Must run BEFORE URL removal so [text](url) doesn't become [text](
+        # Images: ![alt](url) → remove entirely (no useful text)
+        text = re.sub(r"!\[([^\]]{0,200})\]\([^)]{0,1000}\)", "", text)
+        # Known UI-only button labels: remove the whole link including display text
+        # e.g. [Close]( [Accept Cookies]( [Decline Cookies]( [Learn more](
+        _UI_LABELS = r"(?:Close|Accept Cookies?|Decline Cookies?|Learn [Mm]ore|Previous\s*Next|Previous|Next)"
+        text = re.sub(rf"\[{_UI_LABELS}\]\s*\(", " ", text, flags=re.IGNORECASE)
+        text = re.sub(rf"\[{_UI_LABELS}\]", " ", text, flags=re.IGNORECASE)
+        # Links: [display text](url) → keep the display text
+        text = re.sub(r"\[([^\]]{0,300})\]\([^)]{0,1000}\)", r"\1", text)
+        # Leftover dangling [text]( (URL was whitespace-broken, paren still open)
+        text = re.sub(r"\[([^\]]{0,300})\]\(", r"\1 ", text)
+        # Bare brackets with no link: [text] that remained after above passes
+        text = re.sub(r"\[([^\]\[]{0,300})\]", r"\1", text)
+        # Markdown bold/italic: **text** → text, *text* → text, __text__ → text
+        text = re.sub(r"\*\*([^*]+)\*\*", r"\1", text)
+        text = re.sub(r"__([^_]+)__", r"\1", text)
+        text = re.sub(r"\*([^*\n]+)\*", r"\1", text)
+        text = re.sub(r"_([^_\n]+)_", r"\1", text)
+        # Markdown headings: ## Heading → Heading
+        text = re.sub(r"^#{1,6}\s+", "", text, flags=re.MULTILINE)
+        # Markdown horizontal rules: --- or *** or ___
+        text = re.sub(r"^[-*_]{3,}\s*$", "", text, flags=re.MULTILINE)
+
+        # ── 4. URL and email removal ──────────────────────────────────────────
         text = re.sub(r"https?://\S+", "", text)
         text = re.sub(r"\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b", "", text)
 
-        # ── 4. Boilerplate removal ────────────────────────────────────────────
+        # ── 5. Boilerplate removal ────────────────────────────────────────────
         text = self._BOILERPLATE_RE.sub(" ", text)
 
-        # ── 5. Non-printable character removal (keep \n and \t) ───────────────
+        # ── 6. Non-printable character removal (keep \n and \t) ───────────────
         text = re.sub(r"[^\x20-\x7E\n\t]", " ", text)
 
-        # ── 6. Whitespace normalization ───────────────────────────────────────
+        # ── 7. Whitespace normalization ───────────────────────────────────────
         text = re.sub(r"[ \t]+", " ", text)           # collapse spaces/tabs
         text = re.sub(r"\n{3,}", "\n\n", text)         # max two consecutive newlines
         text = "\n".join(line.strip() for line in text.splitlines())
