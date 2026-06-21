@@ -1,0 +1,92 @@
+{
+  "Q01": {
+    "section": "Market Intelligence",
+    "purpose": "Recent Company News",
+    "query": "What are the most important recent developments, announcements, product launches, investments, partnerships, and business events related to the company?",
+    "prompt": "Analyze retrieved documents and extract key company developments. Return JSON with: title, summary, category (announcement/product/partnership/investment), importance_level (High/Medium/Low), and supporting_evidence."
+  },
+
+  "Q02": {
+    "section": "Market Intelligence",
+    "purpose": "Competitor Activities",
+    "query": "What are competitors doing recently that could affect the company's market position, strategy, or revenue?",
+    "prompt": "Analyze competitor-related information. Identify key competitor actions, product launches, pricing changes, expansions, or innovations. Return JSON with: competitor_name, action, impact_on_company, severity_level, supporting_evidence."
+  },
+
+  "Q03": {
+    "section": "Market Intelligence",
+    "purpose": "Emerging Technologies",
+    "query": "What new technologies, innovations, or technical breakthroughs are emerging that could impact the company's industry?",
+    "prompt": "Extract emerging technologies and innovations. Return JSON with: technology_name, description, relevance_to_company, opportunity_or_threat, maturity_level, supporting_evidence."
+  },
+
+  "Q04": {
+    "section": "Market Intelligence",
+    "purpose": "Company Announcements",
+    "query": "What official announcements, press releases, or investor communications has the company made recently?",
+    "prompt": "Summarize official company announcements. Return JSON with: announcement_title, summary, strategic_importance, business_area, supporting_evidence."
+  },
+
+  "Q05": {
+    "section": "Opportunity Monitor",
+    "purpose": "Market Opportunities",
+    "query": "What are the biggest opportunities for the company in terms of new markets, products, partnerships, customer segments, or technologies?",
+    "prompt": "Identify strategic opportunities from retrieved data. Return JSON with: opportunity_title, description, opportunity_type (market/product/tech/partnership), expected_impact, confidence_score, supporting_evidence."
+  },
+
+  "Q06": {
+    "section": "Opportunity Monitor",
+    "purpose": "Expansion & Growth Areas",
+    "query": "Where can the company expand geographically, technologically, or in terms of product offerings?",
+    "prompt": "Analyze expansion possibilities. Return JSON with: expansion_area, rationale, feasibility, expected_revenue_impact, risk_level, supporting_evidence."
+  },
+
+  "Q07": {
+    "section": "Risk Monitor",
+    "purpose": "Competitive Risks",
+    "query": "What competitive threats or risks are emerging that could harm the company's position?",
+    "prompt": "Identify competitive risks. Return JSON with: risk_title, competitor, description, severity_level, likelihood, supporting_evidence."
+  },
+
+  "Q08": {
+    "section": "Risk Monitor",
+    "purpose": "Regulatory & External Risks",
+    "query": "What regulatory, legal, or macroeconomic risks could affect the company?",
+    "prompt": "Extract regulatory and external risks. Return JSON with: risk_type, description, impact_area, severity_level, likelihood, supporting_evidence."
+  },
+
+  "Q09": {
+    "section": "Risk Monitor",
+    "purpose": "Operational Risks",
+    "query": "What internal or operational risks such as supply chain issues, production delays, or technical failures are mentioned?",
+    "prompt": "Identify operational risks. Return JSON with: risk_title, description, affected_area, severity_level, mitigation_suggestions, supporting_evidence."
+  },
+
+  "Q10": {
+    "section": "Sentiment Analysis",
+    "purpose": "Public & Market Sentiment",
+    "query": "What is the overall public sentiment, customer sentiment, and media sentiment toward the company?",
+    "prompt": "Analyze sentiment from retrieved data. Return JSON with: sentiment_type (positive/negative/neutral), sentiment_score, key_drivers, notable_quotes, supporting_evidence."
+  },
+
+  "Q11": {
+    "section": "Sentiment Analysis",
+    "purpose": "Sentiment Trends",
+    "query": "How has public sentiment toward the company changed over time?",
+    "prompt": "Analyze sentiment evolution over time. Return JSON with: time_period, sentiment_shift, causes_of_change, key_events, supporting_evidence."
+  },
+
+  "Q12": {
+    "section": "Strategic Recommendations",
+    "purpose": "CEO Strategic Actions",
+    "query": "If you were the CEO today, what strategic actions should be prioritized based on all available information?",
+    "prompt": "Generate executive-level recommendations. Return JSON with: recommendation_title, priority_level (High/Medium/Low), reasoning, expected_business_impact, risks, supporting_evidence."
+  },
+
+  "Q13": {
+    "section": "CEO Briefing",
+    "purpose": "Executive Summary",
+    "query": "Summarize what is happening in the company, why it matters, and what leadership should do next.",
+    "prompt": "Create an executive briefing. Return JSON with: what_happened, why_it_matters, recommended_actions, risks, opportunities, supporting_evidence."
+  }
+}
