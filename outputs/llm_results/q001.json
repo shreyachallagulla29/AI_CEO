@@ -1,0 +1,103 @@
+{
+  "query_id": "q001",
+  "query": "What are the most important recent developments, announcements, product launches, investments, partnerships, and business events related to the company?",
+  "prompt": "Analyze the retrieved documents and identify the most important company developments. Focus on announcements, product launches, investments, partnerships, acquisitions, and strategic business events. Return JSON with: title, summary, category, importance_level, supporting_evidence.",
+  "collection": "Lufthansa_Knowledge",
+  "model": "Qwen/Qwen3.6-35B-A3B",
+  "temperature": 0.2,
+  "generated_at": "2026-06-21T10:17:04.710092+00:00",
+  "num_context_docs": 10,
+  "retrieved_context": [
+    {
+      "rank": 1,
+      "chunk_text": "vacyExclusiv... Read more 10 12 2025 | 14:34 Europe/Amsterdam Tags Finance Innovation & Technology Product Lufthansa Group launches new brand identity A visual identity with new logo, color palette and typeface strengthen the Lufthansa Group's brand i... Read more 03 12 2025 | 10:01 Europe/Amsterdam Tags Responsibility Product Making invisible disabilities visible: Lufthansa joins the Hidden Disabilities Sunflower Program Lufthansa joined the global Hidden Disabilities Sunflower Program on December 1 - More than one bill... Read more 28 11 2025 | 10:00 Europe/Amsterdam Tags Product Innovation & Technology Lufthansa Opens New Exclusive Check-in Area at Frankfurt Airport Reopening of the Premium Check-in Area in Terminal 1, Hall A, and the Lufthansa Business Lounge at G... Read more Load more items",
+      "title": "Articles tagged with 'product' | Deutsche Lufthansa AG",
+      "url": "https://newsroom.lufthansagroup.com/en?h=1&t=product",
+      "score": 0.1225,
+      "date": "2026-06-20",
+      "company": "Lufthansa"
+    },
+    {
+      "rank": 2,
+      "chunk_text": "/Amsterdam Tags Product Innovation & Technology New Lufthansa Group collaboration with Starlink: High-speed internet on all fleets across all airlines Fastest internet access for guests in all classesNew high-speed internet free of charge for status c... Read more 07 01 2026 | 09:59 Europe/Amsterdam Tags Product Innovation & Technology Airlines Lufthansa Group enters partnership with Amadeus Travel booking processes to be bundled and simplified through introduction of an order IDConsolidati... Read more 2025 15 12 2025 | 10:38 Europe/Amsterdam Tags Airlines Destinations Innovation & Technology Product Reopening of the Lufthansa Lounge at Stuttgart Airport Extensive complete renovation with versatile seating areas for work, relaxation, and privacyExclusiv... Read more 10 12 2025 | 14:34 Europe/Amsterdam Tags Finance Innovation & Technology Product Lufthansa Group launches new brand identity",
+      "title": "Articles tagged with 'product' | Deutsche Lufthansa AG",
+      "url": "https://newsroom.lufthansagroup.com/en?h=1&t=product",
+      "score": 0.1126,
+      "date": "2026-06-20",
+      "company": "Lufthansa"
+    },
+    {
+      "rank": 3,
+      "chunk_text": "ncial reports & publications\nFinancial calendar\nFinancial news on newsroom.lufthansagroup.com\nCurrent Investor Presentation (June 2026) Sustainability Corporate responsibility, that is to say sustainable and responsible entrepreneurial practice, is an integral part of our corporate strategy. Key Data on Sustainability\nSustainability reports Management & Corporate Governance Executive Board\nSupervisory Board\nCorporate Governance\nCorporate Governance Presentation Creditor Relations Debt capital\nBonds\nRatings\nFinancial strategy & value-based management * Share price: LHA.XE 05:39 PM CEST 06/19/2026 9.06 -0.11 (-1.16%) EUR Created with Highstock 6.2.0EURDeutsche Lufthansa AG (Xetra)08:00 AM10:00 AM12:00 PM02:00 PM04:00 PM06:00 PM8.919.079.23 - Today Today\n- 1 mo 1M\n- 1 yr 1Y\n- Custom Custom Details about share price Dividend Basic data Issued capitalSpecial featuresADR-Progam Shareholder structure Capital measures Equity analysts",
+      "title": "Investor Relations - Lufthansa Group Investor Relations",
+      "url": "https://investor-relations.lufthansagroup.com/en/investor-relations.html",
+      "score": 0.1063,
+      "date": "2026-06-20",
+      "company": "Lufthansa"
+    },
+    {
+      "rank": 4,
+      "chunk_text": "us country with the fastest-growing aviation demand... Read more 2025 10 12 2025 | 14:34 Europe/Amsterdam Tags Finance Innovation & Technology Product Lufthansa Group launches new brand identity A visual identity with new logo, color palette and typeface strengthen the Lufthansa Group's brand i... Read more 27 11 2025 | 13:56 Europe/Amsterdam Tags Airlines Finance Innovation & Technology Product Lufthansa Group Partners with Klarna and Adyen to Offer Flexible Payment Options for Travelers New collaboration brings Pay Later and Financing options to Lufthansa customers, starting mid-Novemb... Read more 20 11 2025 | 11:59 Europe/Amsterdam Tags Finance Lufthansa Group intends to play an active role in the privatization of TAP Air Portugal The Lufthansa Group today formally expressed its interest in participating as a bidder in the privat... Read more 30 10 2025 | 07:00 Europe/Amsterdam Tags Finance",
+      "title": "Articles tagged with 'finance' | Deutsche Lufthansa AG",
+      "url": "https://newsroom.lufthansagroup.com/en?h=1&t=finance",
+      "score": 0.1032,
+      "date": "2026-06-20",
+      "company": "Lufthansa"
+    },
+    {
+      "rank": 5,
+      "chunk_text": "er star on Airbus A321Planned arrival of the aircraft today at a... Read more 13 01 2026 | 14:00 Europe/Amsterdam Tags Product Innovation & Technology New Lufthansa Group collaboration with Starlink: High-speed internet on all fleets across all airlines Fastest internet access for guests in all classesNew high-speed internet free of charge for status c... Read more 07 01 2026 | 09:59 Europe/Amsterdam Tags Product Innovation & Technology Airlines Lufthansa Group enters partnership with Amadeus Travel booking processes to be bundled and simplified through introduction of an order IDConsolidati... Read more 2025 23 12 2025 | 12:36 Europe/Amsterdam Tags Airlines Fleet Innovation & Technology Lufthansa's first anniversary aircraft lands in Frankfurt Numerous plane spotters, travelers, and spectators welcome brand-new Boeing 787-9 with XXL crane on Read more 17 12 2025 | 11:14 Europe/Amsterdam Tags Innovation & Technology Responsibility Sustainability",
+      "title": "Articles tagged with 'innovation & technology' | Deutsche Lufthansa AG",
+      "url": "https://newsroom.lufthansagroup.com/en?h=1&t=innovation%20%26%20technology",
+      "score": 0.0873,
+      "date": "2026-06-20",
+      "company": "Lufthansa"
+    },
+    {
+      "rank": 6,
+      "chunk_text": "ned for summer 2026 from the hubsFocus on destinations with stro... Read more 27 03 2026 | 10:39 Europe/Amsterdam Tags Airlines Finance Responsibility Lufthansa Group reaches Collective Bargaining Agreement for more than 20,000 employees A total pay increase of 4.6 percent in two stages26-month term / retroactive starting January 1, 202... Read more 06 03 2026 | 07:00 Europe/Amsterdam Tags Finance Lufthansa Group increases operating profit by 20 percent and achieves highest revenue in company history 2025: Nearly 40 billion euros in revenue and 2 billion euros in operating profitPassenger numbers gr... Read more 17 02 2026 | 12:30 Europe/Amsterdam Tags Airlines Destinations Product Finance Lufthansa Group Expands Strategic Partnership with Air India Enhanced market access to the world's most populous country with the fastest-growing aviation demand... Read more 2025 10 12 2025 | 14:34 Europe/Amsterdam Tags Finance Innovation & Technology Product",
+      "title": "Articles tagged with 'finance' | Deutsche Lufthansa AG",
+      "url": "https://newsroom.lufthansagroup.com/en?h=1&t=finance",
+      "score": 0.0833,
+      "date": "2026-06-20",
+      "company": "Lufthansa"
+    },
+    {
+      "rank": 7,
+      "chunk_text": "2026 | 11:02 Europe/Amsterdam Tags Innovation & Technology Product Responsibility Sustainability Lufthansa Group expands climate protection portfolio Newly compiled portfolio of 14 climate protection projects certified to the highest standardsCommitm... Read more 19 05 2026 | 03:42 Europe/Amsterdam Tags Asia Pacific Product Lufthansa Allegris announced for the Lion City Deployment of the Allegris A350 from October 2026Lufthansa First Class returns to SingaporeDirect ac... Read more 04 05 2026 | 14:03 Europe/Amsterdam Tags Product Lufthansa launches new Premium Onboard Experience in all classes on all long-haul flights New long-haul service launches on May 6To mark the 100th anniversary of its founding: One of the lar... Read more 28 04 2026 | 13:30 Europe/Amsterdam Tags Airlines Product Lufthansa Launches Stopover Program Munich stopover now available for booking on Singapore and U.S. routesFlexible stays from 24 hours t... Read more 23 04 2026 | 11:23 Europe/Amsterdam Tags Product",
+      "title": "Articles tagged with 'product' | Deutsche Lufthansa AG",
+      "url": "https://newsroom.lufthansagroup.com/en?h=1&t=product",
+      "score": 0.0814,
+      "date": "2026-06-20",
+      "company": "Lufthansa"
+    },
+    {
+      "rank": 8,
+      "chunk_text": "2026 | 11:02 Europe/Amsterdam Tags Innovation & Technology Product Responsibility Sustainability Lufthansa Group expands climate protection portfolio Newly compiled portfolio of 14 climate protection projects certified to the highest standardsCommitm... Read more 11 05 2026 | 19:00 Europe/Amsterdam Tags Fleet Innovation & Technology Finance Lufthansa Group orders ten Airbus and ten Boeing long-haul aircraft Order for ten Airbus A350-900s and ten Boeing 787-9s at a list price of 7.7 billion U.S. dollarsDeli... Read more 23 04 2026 | 11:23 Europe/Amsterdam Tags Product Airlines Innovation & Technology First A380 with new Business Class takes off Modernization of the first of eight Airbus A380s completed Mike-Charly features new Business Class Read more 08 04 2026 | 15:46 Europe/Amsterdam Tags Airlines Innovation & Technology Product ITA Airways delivers more customer value by switching app and website to Lufthansa Group platform",
+      "title": "Articles tagged with 'innovation & technology' | Deutsche Lufthansa AG",
+      "url": "https://newsroom.lufthansagroup.com/en?h=1&t=innovation%20%26%20technology",
+      "score": 0.0736,
+      "date": "2026-06-20",
+      "company": "Lufthansa"
+    },
+    {
+      "rank": 9,
+      "chunk_text": "or palette and typeface strengthen the Lufthansa Group's brand i... Read more 28 11 2025 | 10:00 Europe/Amsterdam Tags Product Innovation & Technology Lufthansa Opens New Exclusive Check-in Area at Frankfurt Airport Reopening of the Premium Check-in Area in Terminal 1, Hall A, and the Lufthansa Business Lounge at G... Read more 27 11 2025 | 13:56 Europe/Amsterdam Tags Airlines Finance Innovation & Technology Product Lufthansa Group Partners with Klarna and Adyen to Offer Flexible Payment Options for Travelers New collaboration brings Pay Later and Financing options to Lufthansa customers, starting mid-Novemb... Read more 21 11 2025 | 09:58 Europe/Amsterdam Tags Airlines Fleet Innovation & Technology Tail section of the legendary Lockheed Super Star successfully assembled Historic aircraft in Hangar One now almost completely builtExhibition in the Lufthansa Group's new... Read more 27 10 2025 | 15:29 Europe/Amsterdam Tags Product Innovation & Technology",
+      "title": "Articles tagged with 'innovation & technology' | Deutsche Lufthansa AG",
+      "url": "https://newsroom.lufthansagroup.com/en?h=1&t=innovation%20%26%20technology",
+      "score": 0.0716,
+      "date": "2026-06-20",
+      "company": "Lufthansa"
+    },
+    {
+      "rank": 10,
+      "chunk_text": "come brand-new Boeing 787-9 with XXL crane on Read more 17 12 2025 | 11:14 Europe/Amsterdam Tags Innovation & Technology Responsibility Sustainability Real-time flight path data supports more efficient use of airspace: Lufthansa Group upgrades Airbus A320 fleet Upgrade of more than 130 A320 aircraft with state-of-the-art, automated flight profile transfer tech... Read more 15 12 2025 | 10:38 Europe/Amsterdam Tags Airlines Destinations Innovation & Technology Product Reopening of the Lufthansa Lounge at Stuttgart Airport Extensive complete renovation with versatile seating areas for work, relaxation, and privacyExclusiv... Read more 10 12 2025 | 14:34 Europe/Amsterdam Tags Finance Innovation & Technology Product Lufthansa Group launches new brand identity A visual identity with new logo, color palette and typeface strengthen the Lufthansa Group's brand i... Read more 28 11 2025 | 10:00 Europe/Amsterdam Tags Product Innovation & Technology",
+      "title": "Articles tagged with 'innovation & technology' | Deutsche Lufthansa AG",
+      "url": "https://newsroom.lufthansagroup.com/en?h=1&t=innovation%20%26%20technology",
+      "score": 0.0642,
+      "date": "2026-06-20",
+      "company": "Lufthansa"
+    }
+  ],
+  "llm_output": "Here's a thinking process:\n\n1.  **Understand User Goal:** The user wants an analysis of the retrieved documents to identify the most important company developments for Deutsche Lufthansa AG. The focus should be on announcements, product launches, investments, partnerships, acquisitions, and strategic business events. The output must be in JSON format with specific fields: `title`, `summary`, `category`, `importance_level`, `supporting_evidence`.\n\n2.  **Analyze Retrieved Context:** I'll go through each document snippet to extract key developments.\n   - [1] Brand identity launch (Dec 2025), Hidden Disabilities Sunflower Program (Dec 2025), New Exclusive Check-in Area at Frankfurt (Nov 2025).\n   - [2] Starlink collaboration for high-speed internet on all fleets (Jan 2026), Partnership with Amadeus for bundled booking/order ID (Dec 2025), Reopening of Stuttgart Lounge (Dec 2025).\n   - [3] Investor Relations page (stock info, sustainability, governance) - not a specific development.\n   - [4] Brand identity launch (Dec 2025), Partnership with Klarna & Adyen for flexible payments (Nov 2025), Interest in privatization of TAP Air Portugal (Nov 2025).\n   - [5] Starlink collaboration (Jan 2026), Amadeus partnership (Dec 2025), First anniversary Boeing 787-9 lands (Dec 2025).\n   - [6] Collective Bargaining Agreement for 20,000 employees (Mar 2026), Operating profit up 20%, highest revenue in company history in 2025 (~€40B revenue, €2B operating profit) (Mar 2026), Strategic partnership with Air India expanded (Feb 2026).\n   - [7] Climate protection portfolio expanded (14 projects) (May 2026), Allegris A350 deployment to Singapore (Oct 2026), New Premium Onboard Experience on long-haul flights (May 2026), Stopover Program in Munich for Singapore/US routes (Apr 2026).\n   - [8] Order for 10 Airbus A350-900s and 10 Boeing 787-9s ($7.7B list price) (May 2026), First A380 with new Business Class takes off (Apr 2026), ITA Airways switches app/website to Lufthansa Group platform (Apr 2026).\n   - [9] Frankfurt Check-in area (Nov 2025), Klarna/Adyen partnership (Nov 2025), Lockheed Super Star assembly (Nov 2025).\n   - [10] A320 fleet upgrade for real-time flight path data (Dec 2025), Stuttgart Lounge (Dec 2025), Brand identity (Dec 2025).\n\n3.  **Identify & Categorize Key Developments:** I need to select the most important ones based on strategic impact, financial scale, or operational significance. I'll group them logically and assign categories.\n   - *Financial Performance & Strategy:* Record revenue/profit 2025, CBA for 20k employees, TAP Air Portugal privatization interest.\n   - *Fleet & Technology Investments:* $7.7B order (10 A350, 10 B787), A320 fleet upgrade, Starlink high-speed internet rollout, ITA Airways platform migration.\n   - *Product & Service Launches:* New Premium Onboard Experience (long-haul), Allegris A350 to Singapore, Munich Stopover Program, New Brand Identity, Klarna/Adyen payment partnership, Amadeus booking partnership.\n   - *Sustainability & CSR:* Hidden Disabilities Sunflower Program, Climate protection portfolio expansion.\n\n   I'll select the top ~6-8 most significant developments to fit a concise JSON output, ensuring each has the required fields.\n\n   Let's draft them:\n   1. **Record Financial Performance & Collective Bargaining Agreement** (Finance/Strategy)\n   2. **Major Fleet Expansion & Modernization ($7.7B Order & A320 Upgrades)** (Investment/Technology)\n   3. **Strategic Partnerships: Starlink, Amadeus, Klarna & Adyen** (Partnerships)\n   4. **New Premium Onboard Experience & Allegris A350 Deployment** (Product Launch)\n   5. **Interest in T"
+}
