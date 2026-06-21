@@ -113,6 +113,27 @@ HYPERBROWSER_MAX_LINKS_PER_PAGE = 20    # cap links followed per page (prevents 
 HYPERBROWSER_REQUEST_DELAY      = 1.5   # seconds between requests (be polite)
 
 # ---------------------------------------------------------------------------
+# HuggingFace / Together AI — LLM inference  (rag_query.py)
+# Get a HuggingFace token at: https://huggingface.co/settings/tokens
+# ---------------------------------------------------------------------------
+HF_API_KEY     = os.getenv("HF_API_KEY",     "YOUR_HUGGINGFACE_API_KEY")
+HF_MODEL_NAME  = os.getenv("HF_MODEL_NAME",  "Qwen/Qwen3.6-35B-A3B")
+
+LLM_TEMPERATURE    = 0.2    # deterministic outputs for strategic analysis
+LLM_MAX_NEW_TOKENS = 1024   # max tokens in LLM response
+LLM_TOP_P          = 0.9
+LLM_RETRIES        = 3      # retry attempts on API failure
+LLM_RETRY_DELAY    = 2      # base seconds for exponential backoff
+
+# RAG output paths
+OUTPUTS_DIR        = BASE_DIR / "outputs"
+RETRIEVED_DOCS_DIR = OUTPUTS_DIR / "retrieved_docs"
+LLM_RESULTS_DIR    = OUTPUTS_DIR / "llm_results"
+
+# Input query file (list of query objects — see queries.json for schema)
+QUERIES_JSON_FILE  = DATA_DIR / "task_queries_and_prompts.json"
+
+# ---------------------------------------------------------------------------
 # Apify — Skytrax airline reviews  (reviews_scraper.py)
 # Get an API token at: https://console.apify.com/account/integrations
 # ---------------------------------------------------------------------------
