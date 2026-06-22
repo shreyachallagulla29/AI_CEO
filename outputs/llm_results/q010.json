@@ -1,0 +1,148 @@
+{
+  "query_id": "q010",
+  "query": "What is the overall sentiment of customers, media, analysts, investors, and the public toward the company?",
+  "prompt": "Analyze sentiment across all retrieved information. Return JSON with: sentiment_category, sentiment_score, key_drivers, stakeholder_groups, supporting_evidence.",
+  "collection": "Lufthansa_Knowledge",
+  "model": "Qwen/Qwen3.6-35B-A3B",
+  "temperature": 0.2,
+  "generated_at": "2026-06-22T20:45:52.759861+00:00",
+  "num_context_docs": 15,
+  "retrieved_context": [
+    {
+      "rank": 1,
+      "chunk_text": "one Close Modal Dialog End of dialog window. 39.6 Revenue\nin EUR bn +5% 1,960 Adjusted EBIT\nin EUR mn +19% 4.9 Adjusted EBIT margin\nin % +0.5%pts 10.3 Adjusted ROCE\nin % +0.7%pts Corporate Facts Financial dates & roadshows Annual Report 2025 Financial reports 1st Interim Report 2026 Financial reports Annual General Meeting 2026 In-person event at Messe Frankfurt 2nd Interim Report 2026 Financial reports 3rd Interim Report 2026 Financial reports Further dates can be found in the financial calendar Financial calendar Previous - 1\n- 2 Next Financial calendar - 12.05.2026 Lufthansa shareholders approve all items on the agenda at the annual general meeting\n- 12.05.2026 Lufthansa exercises option to acquire a majority stake in ITA Airways\n- 12.05.2026 Deutsche Lufthansa AG welcomes shareholders to the Annual General Meeting\n- 11.05.2026 Lufthansa Group orders ten Airbus and ten Boeing long-haul aircraft\n- 06.05.2026",
+      "title": "Investor Relations - Lufthansa Group Investor Relations",
+      "url": "https://investor-relations.lufthansagroup.com/en/investor-relations.html",
+      "score": 0.0531,
+      "date": "2026-06-20",
+      "company": "Lufthansa"
+    },
+    {
+      "rank": 2,
+      "chunk_text": "m Custom Details about share price Dividend Basic data Issued capitalSpecial featuresADR-Progam Shareholder structure Capital measures Equity analysts Online Annual Report 2025\nPDF - Annual Report 2025\n1st Interim Report 2026 Further reports To view this video please enable JavaScript, and consider upgrading to a web browser that supports HTML5 video Video Player is loading. Play Video PlaySkip BackwardSkip Forward Mute Current Time 0:00 / Duration -:- Loaded: 0.00% 0:00 Stream Type LIVE Seek to live, currently behind liveLIVE Remaining Time --:- 1x Playback Rate - 2x\n- 1.5x\n- 1x, selected\n- 0.5x Chapters - Chapters Descriptions - descriptions off, selected Captions - captions settings, opens captions settings dialog\n- captions off, selected Audio Track Picture-in-PictureFullscreen This is a modal window. The media could not be loaded, either because the server or network failed or because the format is not supported. Beginning of dialog window. Escape will cancel and close the window.",
+      "title": "Investor Relations - Lufthansa Group Investor Relations",
+      "url": "https://investor-relations.lufthansagroup.com/en/investor-relations.html",
+      "score": 0.038,
+      "date": "2026-06-20",
+      "company": "Lufthansa"
+    },
+    {
+      "rank": 3,
+      "chunk_text": "a AG welcomes shareholders to the Annual General Meeting\n- 11.05.2026 Lufthansa Group orders ten Airbus and ten Boeing long-haul aircraft\n- 06.05.2026 Lufthansa Group significantly improves operating result in first quarter and maintains positive full-year outlook\n- 31.03.2026 Summer 2026: Lufthansa Group Airlines Expand Flight Offerings to Numerous Holiday Destinations\n- 27.03.2026 Lufthansa Group reaches Collective Bargaining Agreement for more than 20,000 employees\n- 06.03.2026 Lufthansa Group increases operating profit by 20 percent and achieves highest revenue in company history Further news Your contact persons Do you have questions about Lufthansa shares, financial reports, the Annual General Meeting or similar topics? Investor Relations Deutsche Lufthansa AG investor.relations(at)dlh.de\n+49 69 696 - 28008 Lufthansa Aviation Center\nAirportring\n60546 Frankfurt Contact Person to top The Lufthansa Group is a global aviation group with aroud 240 subsidiaries. Overview",
+      "title": "Investor Relations - Lufthansa Group Investor Relations",
+      "url": "https://investor-relations.lufthansagroup.com/en/investor-relations.html",
+      "score": 0.0268,
+      "date": "2026-06-20",
+      "company": "Lufthansa"
+    },
+    {
+      "rank": 4,
+      "chunk_text": "ther because the server or network failed or because the format is not supported. Beginning of dialog window. Escape will cancel and close the window. TextColorWhiteBlackRedGreenBlueYellowMagentaCyanOpacityOpaqueSemi-Transparent Text BackgroundColorBlackWhiteRedGreenBlueYellowMagentaCyanOpacityOpaqueSemi-TransparentTransparent Caption Area BackgroundColorBlackWhiteRedGreenBlueYellowMagentaCyanOpacityTransparentSemi-TransparentOpaque Font Size50%75%100%125%150%175%200%300%400% Text Edge StyleNoneRaisedDepressedUniformDrop shadow Font FamilyProportional Sans-SerifMonospace Sans-SerifProportional SerifMonospace SerifCasualScriptSmall Caps ResetDone Close Modal Dialog End of dialog window. To view this video please enable JavaScript, and consider upgrading to a web browser that supports HTML5 video Video Player is loading. Play Video PlaySkip BackwardSkip Forward Mute Current Time 0:00 / Duration -:- Loaded: 0% 0:00 Stream Type LIVE Seek to live, currently behind liveLIVE",
+      "title": "Investor Relations - Lufthansa Group Investor Relations",
+      "url": "https://investor-relations.lufthansagroup.com/en/investor-relations.html",
+      "score": 0.0243,
+      "date": "2026-06-20",
+      "company": "Lufthansa"
+    },
+    {
+      "rank": 5,
+      "chunk_text": "ncial reports & publications\nFinancial calendar\nFinancial news on newsroom.lufthansagroup.com\nCurrent Investor Presentation (June 2026) Sustainability Corporate responsibility, that is to say sustainable and responsible entrepreneurial practice, is an integral part of our corporate strategy. Key Data on Sustainability\nSustainability reports Management & Corporate Governance Executive Board\nSupervisory Board\nCorporate Governance\nCorporate Governance Presentation Creditor Relations Debt capital\nBonds\nRatings\nFinancial strategy & value-based management * Share price: LHA.XE 05:39 PM CEST 06/19/2026 9.06 -0.11 (-1.16%) EUR Created with Highstock 6.2.0EURDeutsche Lufthansa AG (Xetra)08:00 AM10:00 AM12:00 PM02:00 PM04:00 PM06:00 PM8.919.079.23 - Today Today\n- 1 mo 1M\n- 1 yr 1Y\n- Custom Custom Details about share price Dividend Basic data Issued capitalSpecial featuresADR-Progam Shareholder structure Capital measures Equity analysts",
+      "title": "Investor Relations - Lufthansa Group Investor Relations",
+      "url": "https://investor-relations.lufthansagroup.com/en/investor-relations.html",
+      "score": 0.018,
+      "date": "2026-06-20",
+      "company": "Lufthansa"
+    },
+    {
+      "rank": 6,
+      "chunk_text": "aption Area BackgroundColorBlackWhiteRedGreenBlueYellowMagentaCyanOpacityTransparentSemi-TransparentOpaque Font Size50%75%100%125%150%175%200%300%400% Text Edge StyleNoneRaisedDepressedUniformDrop shadow Font FamilyProportional Sans-SerifMonospace Sans-SerifProportional SerifMonospace SerifCasualScriptSmall Caps ResetDone Close Modal Dialog End of dialog window. To view this video please enable JavaScript, and consider upgrading to a web browser that supports HTML5 video Video Player is loading. Play Video PlaySkip BackwardSkip Forward Mute Current Time 0:00 / Duration -:- Loaded: 0% 0:00 Stream Type LIVE Seek to live, currently behind liveLIVE Remaining Time --:- 1x Playback Rate - 2x\n- 1.5x\n- 1x, selected\n- 0.5x Chapters - Chapters Descriptions - descriptions off, selected Captions - captions settings, opens captions settings dialog\n- captions off, selected Audio Track Picture-in-PictureFullscreen This is a modal window.",
+      "title": "Investor Relations - Lufthansa Group Investor Relations",
+      "url": "https://investor-relations.lufthansagroup.com/en/investor-relations.html",
+      "score": 0.0125,
+      "date": "2026-06-20",
+      "company": "Lufthansa"
+    },
+    {
+      "rank": 7,
+      "chunk_text": "cookies on our Data Protection Declaration and regarding us on the Imprint . Mandatory These cookies are needed for a smooth operation of our website. | Name | Purpose | Lifetime | Type | Provider |\n|----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|------|------------------------------------|\n| CookieConsent | Saves your consent to using cookies. | 1 year | HTML | Lufthansa Group Investor Relations |\n| fe\\typo\\user | Assigns your browser to a session on the server. | session | HTTP | Lufthansa Group Investor Relations |\n| \\\\cf\\_bm | This cookie is used by Cloudflare to distinguish between humans and bots.",
+      "title": "Investor Relations - Lufthansa Group Investor Relations",
+      "url": "https://investor-relations.lufthansagroup.com/en/investor-relations.html",
+      "score": -0.0004,
+      "date": "2026-06-20",
+      "company": "Lufthansa"
+    },
+    {
+      "rank": 8,
+      "chunk_text": "Captions - captions settings, opens captions settings dialog\n- captions off, selected Audio Track Picture-in-PictureFullscreen This is a modal window. The media could not be loaded, either because the server or network failed or because the format is not supported. Beginning of dialog window. Escape will cancel and close the window. TextColorWhiteBlackRedGreenBlueYellowMagentaCyanOpacityOpaqueSemi-Transparent Text BackgroundColorBlackWhiteRedGreenBlueYellowMagentaCyanOpacityOpaqueSemi-TransparentTransparent Caption Area BackgroundColorBlackWhiteRedGreenBlueYellowMagentaCyanOpacityTransparentSemi-TransparentOpaque Font Size50%75%100%125%150%175%200%300%400% Text Edge StyleNoneRaisedDepressedUniformDrop shadow Font FamilyProportional Sans-SerifMonospace Sans-SerifProportional SerifMonospace SerifCasualScriptSmall Caps ResetDone Close Modal Dialog End of dialog window. 39.6 Revenue\nin EUR bn +5% 1,960 Adjusted EBIT\nin EUR mn +19% 4.9 Adjusted EBIT margin\nin % +0.5%pts 10.3",
+      "title": "Investor Relations - Lufthansa Group Investor Relations",
+      "url": "https://investor-relations.lufthansagroup.com/en/investor-relations.html",
+      "score": -0.0036,
+      "date": "2026-06-20",
+      "company": "Lufthansa"
+    },
+    {
+      "rank": 9,
+      "chunk_text": "lay Video PlaySkip BackwardSkip Forward Mute Current Time 0:00 / Duration -:- Loaded: 0% 0:00 Stream Type LIVE Seek to live, currently behind liveLIVE Remaining Time --:- 1x Playback Rate - 2x\n- 1.5x\n- 1x, selected\n- 0.5x Chapters - Chapters Descriptions - descriptions off, selected Captions - captions settings, opens captions settings dialog\n- captions off, selected Audio Track Picture-in-PictureFullscreen This is a modal window. The media could not be loaded, either because the server or network failed or because the format is not supported. Beginning of dialog window. Escape will cancel and close the window. TextColorWhiteBlackRedGreenBlueYellowMagentaCyanOpacityOpaqueSemi-Transparent Text BackgroundColorBlackWhiteRedGreenBlueYellowMagentaCyanOpacityOpaqueSemi-TransparentTransparent Caption Area BackgroundColorBlackWhiteRedGreenBlueYellowMagentaCyanOpacityTransparentSemi-TransparentOpaque Font Size50%75%100%125%150%175%200%300%400%",
+      "title": "Investor Relations - Lufthansa Group Investor Relations",
+      "url": "https://investor-relations.lufthansagroup.com/en/investor-relations.html",
+      "score": -0.0088,
+      "date": "2026-06-20",
+      "company": "Lufthansa"
+    },
+    {
+      "rank": 10,
+      "chunk_text": "Aviation Center\nAirportring\n60546 Frankfurt Contact Person to top The Lufthansa Group is a global aviation group with aroud 240 subsidiaries. Overview Detailed financial information Overview About Cookies This website uses cookies. Those have two functions: On the one hand they are providing basic functionality for this website. On the other hand they allow us to improve our content for you. Find more information regarding cookies on our Data Protection Declaration and regarding us on the Imprint . Mandatory These cookies are needed for a smooth operation of our website.",
+      "title": "Investor Relations - Lufthansa Group Investor Relations",
+      "url": "https://investor-relations.lufthansagroup.com/en/investor-relations.html",
+      "score": -0.0381,
+      "date": "2026-06-20",
+      "company": "Lufthansa"
+    },
+    {
+      "rank": 11,
+      "chunk_text": "server. | session | HTTP | Lufthansa Group Investor Relations |\n| \\\\cf\\_bm | This cookie is used by Cloudflare to distinguish between humans and bots. This is beneficial for the website in order to make valid reports on the use of the website. | 30 minutes | HTTP | Cloudflare |\n| \\\\cflb | This cookie is used by Cloudflare for load balancing to ensure the website performs optimally and reliably by distributing traffic across multiple servers. | 1 day | HTTP | Cloudflare |\n| cf\\_clearance | This cookie is used by Cloudflare to verify that you have passed a security challenge, ensuring legitimate access to the website and protection against malicious traffic. | 30 minutes | HTTP | Cloudflare | Close menu",
+      "title": "Investor Relations - Lufthansa Group Investor Relations",
+      "url": "https://investor-relations.lufthansagroup.com/en/investor-relations.html",
+      "score": -0.0392,
+      "date": "2026-06-20",
+      "company": "Lufthansa"
+    },
+    {
+      "rank": 12,
+      "chunk_text": "Skip to main content Close menu 12 05 2026 | 18:01 Europe/Amsterdam Lufthansa shareholders approve all items on the agenda at the annual general meeting Subline as Bullets - 51.33 percent of the share capital represented\n- A broad majority on all agenda items\n- Dr. Johannes Teyssen becomes the new Chairman of the Supervisory Board; Dr. Karl-Ludwig Kley is given a standing ovation as he steps down Tags #Finance 260512\\HV\\LH\\_166 Download Media Kit Preparing your download... Download An error occurred while preparing your download Approximately 1,600 shareholders participated in today's 73rd Annual General Meeting of Deutsche Lufthansa AG. A total of 51.33 percent of the share capital was represented. Nine items were on the agenda for the Annual General Meeting. The shareholders approved all items by a large majority. By a large majority, they thereby granted discharge to the members of the Executive Board and the Supervisory Board for the fiscal year 2025.",
+      "title": "Lufthansa shareholders approve all items on the agenda at the annual general meeting",
+      "url": "https://newsroom.lufthansagroup.com/en/lufthansa-shareholders-approve-all-items-on-the-agenda-at-the-annual-general-meeting",
+      "score": -0.0456,
+      "date": "2026-06-20",
+      "company": "Lufthansa"
+    },
+    {
+      "rank": 13,
+      "chunk_text": "The Lufthansa Group is an aviation group with operations worldwide. It plays a leading role in its European home market. With 101,709 employees, the Lufthansa Group generated revenue of EUR 37,581m in the financial year 2024. The Lufthansa Group consists of the business segments Passenger Airlines, Logistics, MRO and Additional Businesses. The Passenger Airlines business segment includes, on the one hand, the network airlines Lufthansa Airlines, SWISS, Austrian Airlines, Brussels Airlines and ITA Airways. As part of a multi-hub strategy, they offer their passengers a broad range of flights from their hubs in Frankfurt, Munich, Zurich, Vienna, Brussels and Rome. Lufthansa Airlines also has close relationships with the regional airlines Lufthansa CityLine, Lufthansa City Airlines and Air Dolomiti as well as Discover Airlines, the Lufthansa Group s holiday airline. Edelweiss, the leading Swiss holiday airline, has a close relationship with SWISS.",
+      "title": "Company - Lufthansa Group",
+      "url": "https://www.lufthansagroup.com/en/company.html",
+      "score": -0.0468,
+      "date": "2026-06-20",
+      "company": "Lufthansa"
+    },
+    {
+      "rank": 14,
+      "chunk_text": "initiatives mentioned pursue a clear common goal: to position the company for the future and achieve sustainably attractive returns for shareholders. To this end, the company aims to achieve the following financial targets in the period 2028-2030: Adjusted EBIT margin of 8 to 10 percent Adjusted ROCE (Return on Capital Employed) before taxes of 15 to 20 percent Adjusted Free Cash Flow of over 2.5 billion euros per year Financial strength will continue to be the basis for achieving the financial targets. As is currently the case, the Lufthansa Group will continue to strive for an investment grade rating from leading rating agencies in the future. To hedge against potential crises, the Lufthansa Group will continue to maintain a conservative minimum liquidity of 8 to 10 billion euros. In addition, the company will adhere to its existing dividend policy, which provides for a distribution of 20 to 40 percent of consolidated net income to shareholders.",
+      "title": "Lufthansa Group is consistently pursuing its strategy and aims to significantly increase profitability",
+      "url": "https://newsroom.lufthansagroup.com/en/lufthansa-group-is-consistently-pursuing-its-strategy-and-aims-to-significantly-increase-profitability",
+      "score": -0.0633,
+      "date": "2026-06-20",
+      "company": "Lufthansa"
+    },
+    {
+      "rank": 15,
+      "chunk_text": "operated aircraft. The company is also increasingly targeting military and sovereign operators and focusing on this field as a strategic growth area. Lufthansa Technik is divided up into five different areas, three of which are traditional MRO areas (Engine Services, Aircraft Component Services, Aircraft Maintenance Services) and two of which represent fields of the future (Digital Fleet Services and Original Equipment & Special Aircraft Services). The Lufthansa Technik group comprises 34 facilities worldwide (previous year: 33 plants) offering technical aviation services. The company also holds direct and indirect stakes in 56 companies (previous year: 57 companies). Lufthansa Technik serves more than 800 customers worldwide, including OEMs, aircraft leasing companies, VIP jet operators, governments and armed forces as well as airlines. Around one quarter of its business comes from entities in the Lufthansa Group and three quarters from customers outside of the Lufthansa Group.",
+      "title": "Business Segments - Lufthansa Group",
+      "url": "https://www.lufthansagroup.com/en/company/business-segments.html",
+      "score": -0.0686,
+      "date": "2026-06-20",
+      "company": "Lufthansa"
+    }
+  ],
+  "llm_output": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Task:** Analyze sentiment across all retrieved information.\n   - **Output Format:** JSON with specific keys: `sentiment_category`, `sentiment_score`, `key_drivers`, `stakeholder_groups`, `supporting_evidence`.\n   - **Constraints:** \n     - Only use provided context.\n     - If insufficient info, say so explicitly (but format as JSON array if empty, per rules: \"If evidence is unavailable, return an empty array.\" Wait, the prompt says \"Return JSON with: sentiment_category, sentiment_score, key_drivers, stakeholder_groups, supporting_evidence.\" and also \"If evidence is unavailable, return an empty array.\" I will follow the explicit JSON structure requested, but if evidence is truly unavailable, I might need to adapt. However, there is plenty of evidence here.)\n     - Do NOT explain reasoning, thinking steps, markdown, or text before/after JSON.\n     - Return valid JSON only.\n     - Confidence score between 0 and 100.\n     - Every finding must be supported by evidence.\n\n2.  **Scan Context for Sentiment Indicators:**\n   - [1] Financials: Revenue +5% (39.6 EUR bn), Adjusted EBIT +19% (1,960 EUR mn), Adjusted EBIT margin +0.5%pts (10.3%), Adjusted ROCE +0.7%pts. Shareholders approve agenda. Exercises option to acquire majority stake in ITA Airways. Orders 10 Airbus & 10 Boeing long-haul aircraft.\n   - [3] Q1 operating result significantly improved, maintains positive full-year outlook. Summer 2026 expands flight offerings. Reaches Collective Bargaining Agreement for 20,000 employees. Increases operating profit by 20%, achieves highest revenue in company history.\n   - [12] Shareholders approve all items by large majority. Dr. Johannes Teyssen becomes new Chairman. Dr. Karl-Ludwig Kley steps down with standing ovation.\n   - [14] Consistently pursuing strategy, aims to significantly increase profitability. Targets: Adjusted EBIT margin 8-10%, ROCE 15-20%, Free Cash Flow >2.5B. Strives for investment grade rating. Conservative liquidity 8-10B. Dividend policy 20-40% of net income.\n   - [13] Global aviation group, leading role in European home market. 101,709 employees. Revenue EUR 37,581m in 2024. Multi-hub strategy.\n   - [15] Lufthansa Technik targets military/sovereign operators as strategic growth area. Serves 800+ customers worldwide.\n\n   Overall Sentiment: Strongly Positive. Financial performance is up, strategic initiatives are advancing, shareholder approval is high, employee agreements reached, future outlook is positive.\n\n3.  **Map to Required JSON Fields:**\n   - `sentiment_category`: Positive\n   - `sentiment_score`: Needs to be a number between 0 and 100. Given the strong positive indicators (record revenue, profit growth, shareholder approval, strategic expansion, positive outlook), I'll assign a high score, e.g., 85.\n   - `key_drivers`: List the main factors driving the sentiment.\n     - Strong financial performance (revenue up 5%, EBIT up 19%, record revenue in 2024)\n     - Strategic expansion and fleet renewal (ordering 20 long-haul aircraft, acquiring majority stake in ITA Airways)\n     - Positive operational and labor relations (Q1 operating result improved, collective bargaining agreement reached for 20,000 employees)\n     - Clear profitability targets and shareholder returns (dividend policy, investment grade rating goal, 2028-2030 financial targets)\n   - `stakeholder_groups`: Identify groups mentioned.\n     - Shareholders/Investors\n     - Employees/Unions\n     - Executive Board & Supervisory Board\n     - Customers/Passengers\n     - Rating Agencies\n   - `supporting_evidence`: Direct quotes or paraphrased facts from the text that back up the analysis.\n     - Financials: \"Revenue in EUR bn +5%\", \"Adjusted EBIT in EUR mn +19%\", \"highest revenue in company history\"\n     - Strategy/Operations: \"Lufthansa Group orders ten Airbus and ten Boeing long-haul aircraft\", \"exercises option to acquire a majority stake in ITA Airways\", \"Summer 2026: Lufthansa Group Airlines Expand Flight Offerings\"\n    "
+}
