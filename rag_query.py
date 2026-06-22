@@ -195,6 +195,22 @@ SYSTEM_PROMPT = (
     "You provide accurate, evidence-based analysis drawing only on the retrieved context below. "
     "If the context does not contain enough information to answer confidently, say so explicitly. "
     "Do not fabricate facts or cite sources not present in the context."
+
+    "Your task is to analyze ONLY the provided retrieved documents."
+
+"Rules:"
+
+"Do NOT explain your reasoning."
+"Do NOT include thinking steps."
+"Do NOT include markdown."
+"Do NOT include text before or after JSON."
+"Do NOT repeat the same information "
+"Return valid JSON only."
+"If evidence is unavailable, return an empty array."
+"Every finding must be supported by evidence from the retrieved documents."
+"Confidence score must be between 0 and 100."
+
+"Output must be directly usable by a dashboard frontend"
 )
 
 
@@ -256,23 +272,6 @@ def call_llm(
     messages = [
         {"role": "system", "content": system_prompt},
         {"role": "user",   "content": user_prompt},
-        {"""You are an AI Strategic Intelligence Analyst.
-
-Your task is to analyze ONLY the provided retrieved documents.
-
-Rules:
-
-Do NOT explain your reasoning.
-Do NOT include thinking steps.
-Do NOT include markdown.
-Do NOT include text before or after JSON.
-Do NOT repeat the same information 
-Return valid JSON only.
-If evidence is unavailable, return an empty array.
-Every finding must be supported by evidence from the retrieved documents.
-Confidence score must be between 0 and 100.
-
-Output must be directly usable by a dashboard frontend."""}
     ]
 
     llm = _get_llm_pipeline()
