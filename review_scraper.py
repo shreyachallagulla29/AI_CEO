@@ -10,7 +10,7 @@ logger = logging.getLogger("review_scraper")
 
 def scrape_and_save(max_reviews: int = None, cutoff_date: str = "") -> list[dict]:
     """
-    Scrape Skytrax reviews for every airline in COMPANY_SKYTRAX_URLS,
+    Scrape Skytrax reviews for airline in COMPANY_SKYTRAX_URLS,
     clean the 'comment' field with TextCleaner, and save to REVIEWS_JSON_FILE.
 
     Returns the list of raw dicts in standard pipeline format.

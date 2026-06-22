@@ -253,7 +253,6 @@ class HyperbrowserDeepScraper:
         Returns:
             List of raw dicts in standard format.
         """
-        company  = company or config.DEFAULT_COMPANY
         visited  = set()
         results  = []
         # queue entries: (url, current_depth)
@@ -341,7 +340,6 @@ def run_hyperbrowser_scrapers(
         final = merge_and_save(docs)
     """
     targets = targets or config.HYPERBROWSER_TARGETS
-    company = company or config.DEFAULT_COMPANY
 
     if not targets:
         logger.warning("No HYPERBROWSER_TARGETS configured — nothing to scrape")

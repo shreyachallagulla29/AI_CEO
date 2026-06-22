@@ -49,7 +49,7 @@ def load_embedding_model(model_key: str = None):
 
     logger.info(f"Loading embedding model: {model_name}  (device={config.EMBEDDING_DEVICE})")
     model = SentenceTransformer(model_name, device=config.EMBEDDING_DEVICE)
-    logger.info(f"Model ready — output dim: {model.get_sentence_embedding_dimension()}")
+    logger.info(f"Model ready — output dim: {model.get_embedding_dimension()}")
     return model, model_name
 
 

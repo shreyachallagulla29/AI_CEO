@@ -266,6 +266,7 @@ Do NOT explain your reasoning.
 Do NOT include thinking steps.
 Do NOT include markdown.
 Do NOT include text before or after JSON.
+Do NOT repeat the same information 
 Return valid JSON only.
 If evidence is unavailable, return an empty array.
 Every finding must be supported by evidence from the retrieved documents.
@@ -416,7 +417,6 @@ def run_rag_pipeline(
         except Exception as exc:
             logger.error(f"Query {query_id} failed: {exc}", exc_info=True)
             summaries.append({"query_id": query_id, "status": "error", "error": str(exc)})
-        break
 
     ok  = sum(1 for s in summaries if s["status"] == "ok")
     err = len(summaries) - ok
