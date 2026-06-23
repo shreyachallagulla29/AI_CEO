@@ -205,12 +205,10 @@ SYSTEM_PROMPT = (
 "Do NOT include markdown."
 "Do NOT include text before or after JSON."
 "Do NOT repeat the same information "
-"Return valid JSON only."
 "If evidence is unavailable, return an empty array."
 "Every finding must be supported by evidence from the retrieved documents."
 "Confidence score must be between 0 and 100."
 
-"Output must be directly usable by a dashboard frontend"
 )
 
 
