@@ -1,138 +1,103 @@
 {
   "query_id": "q004",
   "query": "What official company announcements, press releases, investor updates, or executive communications have been made recently?",
-  "retrieved_at": "2026-06-23T04:23:03.827423+00:00",
-  "num_results": 10,
-  "results": [
+  "prompt": "Summarize official company communications. Return JSON with: announcement_title, summary, business_area, strategic_importance, supporting_evidence.",
+  "collection": "Lufthansa_Knowledge",
+  "model": "Qwen/Qwen3-0.6B",
+  "temperature": 0.2,
+  "generated_at": "2026-06-23T04:31:51.333102+00:00",
+  "num_context_docs": 10,
+  "retrieved_context": [
     {
       "rank": 1,
-      "score": 0.1152,
-      "chunk_id": "doc_7c2ba0_c1",
       "chunk_text": "ncial reports & publications\nFinancial calendar\nFinancial news on newsroom.lufthansagroup.com\nCurrent Investor Presentation (June 2026) Sustainability Corporate responsibility, that is to say sustainable and responsible entrepreneurial practice, is an integral part of our corporate strategy. Key Data on Sustainability\nSustainability reports Management & Corporate Governance Executive Board\nSupervisory Board\nCorporate Governance\nCorporate Governance Presentation Creditor Relations Debt capital\nBonds\nRatings\nFinancial strategy & value-based management * Share price: LHA.XE 05:39 PM CEST 06/19/2026 9.06 -0.11 (-1.16%) EUR Created with Highstock 6.2.0EURDeutsche Lufthansa AG (Xetra)08:00 AM10:00 AM12:00 PM02:00 PM04:00 PM06:00 PM8.919.079.23 - Today Today\n- 1 mo 1M\n- 1 yr 1Y\n- Custom Custom Details about share price Dividend Basic data Issued capitalSpecial featuresADR-Progam Shareholder structure Capital measures Equity analysts",
       "title": "Investor Relations - Lufthansa Group Investor Relations",
       "url": "https://investor-relations.lufthansagroup.com/en/investor-relations.html",
-      "source": "hyperbrowser",
-      "type": "web_page",
+      "score": 0.1152,
       "date": "2026-06-20",
-      "company": "Lufthansa",
-      "publisher": "investor-relations.lufthansagroup.com"
+      "company": "Lufthansa"
     },
     {
       "rank": 2,
-      "score": 0.0822,
-      "chunk_id": "doc_465ec0_c42",
       "chunk_text": ". Christoph Muhle, Nikolas Pfaff, Philipp Struve, Nicolas Vad, Menno van der Kamp, Jim W rz Press date\n20 May 2026 Agency partner\nK ster Kommunikation Lufthansa Group\nCompany\nResponsibility\nInvestor Relations\nCareers\nSupply Chain Management Current\nNewsroom\nMedia Lounge\nPolicy Hub Service\nImprint\nPrivacy Social Media Received the policy letter via forwarding? Subscribe here for free.",
       "title": "Policy Brief May 2026",
       "url": "https://politik.lufthansagroup.com/en/policy-brief-may-2026",
-      "source": "hyperbrowser",
-      "type": "web_page",
+      "score": 0.0822,
       "date": "2026-06-20",
-      "company": "Lufthansa",
-      "publisher": "politik.lufthansagroup.com"
+      "company": "Lufthansa"
     },
     {
       "rank": 3,
-      "score": 0.0656,
-      "chunk_id": "doc_7c2ba0_c0",
       "chunk_text": "29.09.2025 - Munich Airport Capital Markets Day Lufthansa Group 2025 Further information Annual General Meeting 2026 12 May 2026 Annual General Meeting 1st Interim Report 2026 6 May 2026 Financial reports Newsroom 29.09.2025 - Munich Airport Capital Markets Day Lufthansa Group 2025 Further information Annual General Meeting 2026 12 May 2026 Annual General Meeting 1st Interim Report 2026 6 May 2026 Financial reports Newsroom 29.09.2025 - Munich Airport Capital Markets Day Lufthansa Group 2025 Further information Previous - 1\n- 2\n- 3\n- 4 Next Financial reports & publications Get a quick overview of our latest developments and financial results. We offer comprehensive reports, presentations and current announcements that provide you with important information about the Lufthansa Group. Financial reports & publications\nFinancial calendar\nFinancial news on newsroom.lufthansagroup.com\nCurrent Investor Presentation (June 2026) Sustainability",
       "title": "Investor Relations - Lufthansa Group Investor Relations",
       "url": "https://investor-relations.lufthansagroup.com/en/investor-relations.html",
-      "source": "hyperbrowser",
-      "type": "web_page",
+      "score": 0.0656,
       "date": "2026-06-20",
-      "company": "Lufthansa",
-      "publisher": "investor-relations.lufthansagroup.com"
+      "company": "Lufthansa"
     },
     {
       "rank": 4,
-      "score": 0.0612,
-      "chunk_id": "doc_7c2ba0_c3",
       "chunk_text": "ther because the server or network failed or because the format is not supported. Beginning of dialog window. Escape will cancel and close the window. TextColorWhiteBlackRedGreenBlueYellowMagentaCyanOpacityOpaqueSemi-Transparent Text BackgroundColorBlackWhiteRedGreenBlueYellowMagentaCyanOpacityOpaqueSemi-TransparentTransparent Caption Area BackgroundColorBlackWhiteRedGreenBlueYellowMagentaCyanOpacityTransparentSemi-TransparentOpaque Font Size50%75%100%125%150%175%200%300%400% Text Edge StyleNoneRaisedDepressedUniformDrop shadow Font FamilyProportional Sans-SerifMonospace Sans-SerifProportional SerifMonospace SerifCasualScriptSmall Caps ResetDone Close Modal Dialog End of dialog window. To view this video please enable JavaScript, and consider upgrading to a web browser that supports HTML5 video Video Player is loading. Play Video PlaySkip BackwardSkip Forward Mute Current Time 0:00 / Duration -:- Loaded: 0% 0:00 Stream Type LIVE Seek to live, currently behind liveLIVE",
       "title": "Investor Relations - Lufthansa Group Investor Relations",
       "url": "https://investor-relations.lufthansagroup.com/en/investor-relations.html",
-      "source": "hyperbrowser",
-      "type": "web_page",
+      "score": 0.0612,
       "date": "2026-06-20",
-      "company": "Lufthansa",
-      "publisher": "investor-relations.lufthansagroup.com"
+      "company": "Lufthansa"
     },
     {
       "rank": 5,
-      "score": 0.0593,
-      "chunk_id": "doc_465ec0_c41",
       "chunk_text": "ke\nLufthansa Group &\nLufthansa Airlines\nCommunications +49 69 696-36867 Jan K rner\nHead of Government\nAffairs Germany\nLufthansa Group +49 30 8875-3212 Sandra Courant\nHead of Political Communication\nand Media Relations Berlin\nLufthansa Group +49 30 8875-3300 Ruben Schuster\nHead of EU Liaison Office\nLufthansa Group +32 492 228141 Published by:\nAndreas Bartels\nHead of Corporate Communications\nLufthansa Group Dr. Kay Lindemann\nHead of Corporate International\nRelations and Government Affairs\nLufthansa Group Martin Leutke\nLufthansa Group &\nLufthansa Airlines\nCommunications Deutsche Lufthansa AG\nBER CP, Konzernrepr sentanz\nLenn stra e 3, D-10785 Berlin Editor in chief\nSandra Courant Editorial staff\nHenrietta D rries, Frederik Fink, Anton Heinecke, Maximilian Kiewel, Michael Lagemann, Marie-Charlotte Merscher, Dr. Christoph Muhle, Nikolas Pfaff, Philipp Struve, Nicolas Vad, Menno van der Kamp, Jim W rz Press date\n20 May 2026 Agency partner\nK ster Kommunikation",
       "title": "Policy Brief May 2026",
       "url": "https://politik.lufthansagroup.com/en/policy-brief-may-2026",
-      "source": "hyperbrowser",
-      "type": "web_page",
+      "score": 0.0593,
       "date": "2026-06-20",
-      "company": "Lufthansa",
-      "publisher": "politik.lufthansagroup.com"
+      "company": "Lufthansa"
     },
     {
       "rank": 6,
-      "score": 0.0565,
-      "chunk_id": "doc_7c2ba0_c5",
       "chunk_text": "aption Area BackgroundColorBlackWhiteRedGreenBlueYellowMagentaCyanOpacityTransparentSemi-TransparentOpaque Font Size50%75%100%125%150%175%200%300%400% Text Edge StyleNoneRaisedDepressedUniformDrop shadow Font FamilyProportional Sans-SerifMonospace Sans-SerifProportional SerifMonospace SerifCasualScriptSmall Caps ResetDone Close Modal Dialog End of dialog window. To view this video please enable JavaScript, and consider upgrading to a web browser that supports HTML5 video Video Player is loading. Play Video PlaySkip BackwardSkip Forward Mute Current Time 0:00 / Duration -:- Loaded: 0% 0:00 Stream Type LIVE Seek to live, currently behind liveLIVE Remaining Time --:- 1x Playback Rate - 2x\n- 1.5x\n- 1x, selected\n- 0.5x Chapters - Chapters Descriptions - descriptions off, selected Captions - captions settings, opens captions settings dialog\n- captions off, selected Audio Track Picture-in-PictureFullscreen This is a modal window.",
       "title": "Investor Relations - Lufthansa Group Investor Relations",
       "url": "https://investor-relations.lufthansagroup.com/en/investor-relations.html",
-      "source": "hyperbrowser",
-      "type": "web_page",
+      "score": 0.0565,
       "date": "2026-06-20",
-      "company": "Lufthansa",
-      "publisher": "investor-relations.lufthansagroup.com"
+      "company": "Lufthansa"
     },
     {
       "rank": 7,
-      "score": 0.0488,
-      "chunk_id": "doc_7c2ba0_c7",
       "chunk_text": "one Close Modal Dialog End of dialog window. 39.6 Revenue\nin EUR bn +5% 1,960 Adjusted EBIT\nin EUR mn +19% 4.9 Adjusted EBIT margin\nin % +0.5%pts 10.3 Adjusted ROCE\nin % +0.7%pts Corporate Facts Financial dates & roadshows Annual Report 2025 Financial reports 1st Interim Report 2026 Financial reports Annual General Meeting 2026 In-person event at Messe Frankfurt 2nd Interim Report 2026 Financial reports 3rd Interim Report 2026 Financial reports Further dates can be found in the financial calendar Financial calendar Previous - 1\n- 2 Next Financial calendar - 12.05.2026 Lufthansa shareholders approve all items on the agenda at the annual general meeting\n- 12.05.2026 Lufthansa exercises option to acquire a majority stake in ITA Airways\n- 12.05.2026 Deutsche Lufthansa AG welcomes shareholders to the Annual General Meeting\n- 11.05.2026 Lufthansa Group orders ten Airbus and ten Boeing long-haul aircraft\n- 06.05.2026",
       "title": "Investor Relations - Lufthansa Group Investor Relations",
       "url": "https://investor-relations.lufthansagroup.com/en/investor-relations.html",
-      "source": "hyperbrowser",
-      "type": "web_page",
+      "score": 0.0488,
       "date": "2026-06-20",
-      "company": "Lufthansa",
-      "publisher": "investor-relations.lufthansagroup.com"
+      "company": "Lufthansa"
     },
     {
       "rank": 8,
-      "score": 0.0486,
-      "chunk_id": "doc_7c2ba0_c4",
       "chunk_text": "lay Video PlaySkip BackwardSkip Forward Mute Current Time 0:00 / Duration -:- Loaded: 0% 0:00 Stream Type LIVE Seek to live, currently behind liveLIVE Remaining Time --:- 1x Playback Rate - 2x\n- 1.5x\n- 1x, selected\n- 0.5x Chapters - Chapters Descriptions - descriptions off, selected Captions - captions settings, opens captions settings dialog\n- captions off, selected Audio Track Picture-in-PictureFullscreen This is a modal window. The media could not be loaded, either because the server or network failed or because the format is not supported. Beginning of dialog window. Escape will cancel and close the window. TextColorWhiteBlackRedGreenBlueYellowMagentaCyanOpacityOpaqueSemi-Transparent Text BackgroundColorBlackWhiteRedGreenBlueYellowMagentaCyanOpacityOpaqueSemi-TransparentTransparent Caption Area BackgroundColorBlackWhiteRedGreenBlueYellowMagentaCyanOpacityTransparentSemi-TransparentOpaque Font Size50%75%100%125%150%175%200%300%400%",
       "title": "Investor Relations - Lufthansa Group Investor Relations",
       "url": "https://investor-relations.lufthansagroup.com/en/investor-relations.html",
-      "source": "hyperbrowser",
-      "type": "web_page",
+      "score": 0.0486,
       "date": "2026-06-20",
-      "company": "Lufthansa",
-      "publisher": "investor-relations.lufthansagroup.com"
+      "company": "Lufthansa"
     },
     {
       "rank": 9,
-      "score": 0.0318,
-      "chunk_id": "doc_7c2ba0_c2",
       "chunk_text": "m Custom Details about share price Dividend Basic data Issued capitalSpecial featuresADR-Progam Shareholder structure Capital measures Equity analysts Online Annual Report 2025\nPDF - Annual Report 2025\n1st Interim Report 2026 Further reports To view this video please enable JavaScript, and consider upgrading to a web browser that supports HTML5 video Video Player is loading. Play Video PlaySkip BackwardSkip Forward Mute Current Time 0:00 / Duration -:- Loaded: 0.00% 0:00 Stream Type LIVE Seek to live, currently behind liveLIVE Remaining Time --:- 1x Playback Rate - 2x\n- 1.5x\n- 1x, selected\n- 0.5x Chapters - Chapters Descriptions - descriptions off, selected Captions - captions settings, opens captions settings dialog\n- captions off, selected Audio Track Picture-in-PictureFullscreen This is a modal window. The media could not be loaded, either because the server or network failed or because the format is not supported. Beginning of dialog window. Escape will cancel and close the window.",
       "title": "Investor Relations - Lufthansa Group Investor Relations",
       "url": "https://investor-relations.lufthansagroup.com/en/investor-relations.html",
-      "source": "hyperbrowser",
-      "type": "web_page",
+      "score": 0.0318,
       "date": "2026-06-20",
-      "company": "Lufthansa",
-      "publisher": "investor-relations.lufthansagroup.com"
+      "company": "Lufthansa"
     },
     {
       "rank": 10,
-      "score": 0.0298,
-      "chunk_id": "doc_7c2ba0_c6",
       "chunk_text": "Captions - captions settings, opens captions settings dialog\n- captions off, selected Audio Track Picture-in-PictureFullscreen This is a modal window. The media could not be loaded, either because the server or network failed or because the format is not supported. Beginning of dialog window. Escape will cancel and close the window. TextColorWhiteBlackRedGreenBlueYellowMagentaCyanOpacityOpaqueSemi-Transparent Text BackgroundColorBlackWhiteRedGreenBlueYellowMagentaCyanOpacityOpaqueSemi-TransparentTransparent Caption Area BackgroundColorBlackWhiteRedGreenBlueYellowMagentaCyanOpacityTransparentSemi-TransparentOpaque Font Size50%75%100%125%150%175%200%300%400% Text Edge StyleNoneRaisedDepressedUniformDrop shadow Font FamilyProportional Sans-SerifMonospace Sans-SerifProportional SerifMonospace SerifCasualScriptSmall Caps ResetDone Close Modal Dialog End of dialog window. 39.6 Revenue\nin EUR bn +5% 1,960 Adjusted EBIT\nin EUR mn +19% 4.9 Adjusted EBIT margin\nin % +0.5%pts 10.3",
       "title": "Investor Relations - Lufthansa Group Investor Relations",
       "url": "https://investor-relations.lufthansagroup.com/en/investor-relations.html",
-      "source": "hyperbrowser",
-      "type": "web_page",
+      "score": 0.0298,
       "date": "2026-06-20",
-      "company": "Lufthansa",
-      "publisher": "investor-relations.lufthansagroup.com"
+      "company": "Lufthansa"
     }
-  ]
+  ],
+  "llm_output": "<think>\nOkay, let's start by looking at the user's request. They want a summary of official company communications from the provided context, and they want the output in JSON format with specific fields: announcement_title, summary, business_area, strategic_importance, and supporting_evidence. \n\nFirst, I need to check each retrieved document to see if they contain relevant information. The user mentioned that if the context doesn't have enough info, return an empty array. So I need to make sure each field is covered.\n\nLooking at the first document, [1], it mentions Lufthansa's investor relations, financial reports, and sustainability reports. The summary here is about the company's commitment to sustainability and financial data. The business area is investor relations. Strategic importance is about sustainability and financial strategy. Supporting evidence includes the sustainability report and share price details.\n\nDocument [3] talks about the annual general meeting and financial reports. The announcement title might be the annual meeting. The summary here is about the company's financial performance and upcoming events. Business area is investor relations. Strategic importance is related to financial and sustainability.\n\nDocument [5] has communications from the company's heads and media relations. The summary here could be about the company's communications strategy. Business area is investor relations. Strategic importance is about communication and media.\n\nDocument [7] mentions revenue, EBIT, and other financial metrics. The announcement title might be the annual report. The summary includes financial data and events. Business area is investor relations. Strategic importance is financial and operational.\n\nI need to ensure each field is covered. The user wants confidence scores between 0-100. For each document, check if the information is present and if it's supported by evidence. If any field is missing, return an empty array. \n\nAfter reviewing all documents, I can compile the information into the required JSON structure. Each entry will have the title, summary, business area, strategic importance, and supporting evidence. The confidence scores will be based on the evidence provided. If a document doesn't contribute to a field, the confidence is 0.\n</think>\n\n```json\n[\n  {\n    \"announcement_title\": \"Lufthansa Group Investor Relations - Annual General Meeting 2026\",\n    \"summary\": \"Lufthansa Group announces the upcoming Annual General Meeting on May 12, 2026, with key financial highlights including a 5% revenue increase and a 19% EBIT margin. The meeting will also feature the company's strategic initiatives in sustainability and long-haul aviation.\",\n    \"business_area\": \"Investor Relations\",\n    \"strategic_importance\": \"Lufthansa Group emphasizes its commitment to financial stability and long-term growth through strategic initiatives, including sustainability and aviation expansion.\",\n    \"supporting_evidence\": [\n      \"Document [7] - Revenue increase and EBIT margin highlights\",\n      \"Document [3] - Annual General Meeting details and financial reports\"\n    ]\n  }\n]\n```"
 }

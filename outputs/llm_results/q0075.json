@@ -1,0 +1,148 @@
+{
+  "query_id": "q0075",
+  "query": "What competitive threats and market risks could negatively affect the company's growth, profitability, or strategic position?",
+  "prompt": "Identify competitive threats and strategic risks. Return JSON with: risk_title, risk_description, threat_source, severity_level, likelihood, supporting_evidence.",
+  "collection": "AmericanAirlines_Knowledge",
+  "model": "Qwen/Qwen3-0.6B",
+  "temperature": 0.2,
+  "generated_at": "2026-06-23T06:11:29.502152+00:00",
+  "num_context_docs": 15,
+  "retrieved_context": [
+    {
+      "rank": 1,
+      "chunk_text": "Enable JavaScript Please enable JavaScript to fully experience this site. How to enable JavaScript 1. Home\n2. About us About us Who we are - History of American Airlines\n- American Airlines Group\n- Leadership bios Join our team - Careers Opens another site in a new window that may not meet accessibility guidelines\n- Making culture a competitive advantage\n- Doing business with American Corporate information - Sustainability Report 2024 Opens another site in a new window that may not meet accessibility guidelines\n- Corporate structure\n- Corporate governance\n- Environmental, social and governance resources Opens another site in a new window that may not meet accessibility guidelines\n- Standards of business conduct\n- Modern Slavery Report Customer information - Customer service plan\n- Web accessibility\n- Investor relations Opens another site in a new window that may not meet accessibility guidelines Community involvement",
+      "title": "About us − Customer service − American Airlines",
+      "url": "https://www.aa.com/i18n/customer-service/about-us/about-us.jsp",
+      "score": -0.1511,
+      "date": "2026-06-20",
+      "company": "American Airlines"
+    },
+    {
+      "rank": 2,
+      "chunk_text": "e U.S. commercial airline pilot, launching the first loyalty program of any major carrier and becoming the first airline to introduce airport lounges. In 2016, American Airlines Group Inc. topped Fortune magazine s list of best business turnarounds, and its stock (NASDAQ: AAL) joined the S&P 500 index. History of American Airlines Our team With 130,000 team members around the world, American is focused on creating a world-class customer experience, building the airline to thrive forever and making culture a competitive advantage with an equal workplace for all. - Making culture a competitive advantage\n- Explore jobs at American Opens another site in a new window that may not meet accessibility guidelines Let Good Take Flight Our purpose to care for people on life s journey extends beyond our operation and into the communities we serve.",
+      "title": "American Airlines Group − Customer service − American Airlines",
+      "url": "https://www.aa.com/i18n/customer-service/about-us/american-airlines-group.jsp",
+      "score": -0.1641,
+      "date": "2026-06-20",
+      "company": "American Airlines"
+    },
+    {
+      "rank": 3,
+      "chunk_text": "ntent can be expanded Yes. These are needed for secure browsing and full site functionality. How can I update my browser? This content can be expanded It s a good idea to keep your browser up to date it helps pages load faster, keeps your information more secure and ensures everything on our site works the way it should. Just visit your browser s official website to download the latest version. How is my information used when I visit the site? This content can be expanded We re committed to protecting your privacy. You can find details about how we collect, use and protect your information in our . Back to top Opt-Out Request Honored Privacy and cookies We use cookies on our website. Your interactions and personal data may be collected on our websites by us and our partners in accordance with our . . Allow All Strictly Necessary These cookies and similar technologies are essential to our site operation and services and cannot be rejected.",
+      "title": "Browser compatibility − Customer service − American Airlines",
+      "url": "https://www.aa.com/i18n/customer-service/support/browser-compatibility.jsp",
+      "score": -0.1764,
+      "date": "2026-06-20",
+      "company": "American Airlines"
+    },
+    {
+      "rank": 4,
+      "chunk_text": "i (Mac only) Other browsers may still work, but you might notice slower performance or display issues. Having trouble? Here are a few things to check: - Browser Make sure you're using a supported browser.\n- Settings JavaScript, cookies and SSL must be turned on.\n- Network Firewalls or proxies may block secure connections or cookies. FAQs Why isn't the site working properly? This content can be expanded You might be using an outdated browser or have features like JavaScript or cookies turned off. How do I check which browser I'm using? This content can be expanded Open your browser s menu and look for an option called About you ll usually find it under Help or in the browser s main settings. This will show you the browser name and version. Do I need JavaScript and cookies? This content can be expanded Yes. These are needed for secure browsing and full site functionality. How can I update my browser? This content can be expanded",
+      "title": "Browser compatibility − Customer service − American Airlines",
+      "url": "https://www.aa.com/i18n/customer-service/support/browser-compatibility.jsp",
+      "score": -0.2116,
+      "date": "2026-06-20",
+      "company": "American Airlines"
+    },
+    {
+      "rank": 5,
+      "chunk_text": "row Opens another site in a new window that may not meet accessibility guidelines\n- American s AAdvantage Executive Platinum status is named Best U.S. Airline Elite Status at the 2022 The Points Guy Editors Choice Awards Opens another site in a new window that may not meet accessibility guidelines Stay connected This content can be expanded Visit our newsroom or connect with us on social media to about what s happening at American. - Newsroom Opens another site in a new window that may not meet accessibility guidelines\n- Twitter Opens another site in a new window that may not meet accessibility guidelines\n- Instagram Opens another site in a new window that may not meet accessibility guidelines\n- Facebook Opens another site in a new window that may not meet accessibility guidelines\n- LinkedIn Opens another site in a new window that may not meet accessibility guidelines Back to top Opt-Out Request Honored Privacy and cookies We use cookies on our website.",
+      "title": "American Airlines Group − Customer service − American Airlines",
+      "url": "https://www.aa.com/i18n/customer-service/about-us/american-airlines-group.jsp",
+      "score": -0.2164,
+      "date": "2026-06-20",
+      "company": "American Airlines"
+    },
+    {
+      "rank": 6,
+      "chunk_text": "n has been recognized as a leader in the industry through various awards and honors. Here are some of American s most recent and notable recognitions: - Named 2023 Eco-Airline of the Year by Air Transport World Opens another site in a new window that may not meet accessibility guidelines\n- Named to Dow Jones Sustainability North America Index in 2022 Opens another site in a new window that may not meet accessibility guidelines\n- Received a perfect score on the 2022 Disability Equality Index for the seventh year in a row Opens another site in a new window that may not meet accessibility guidelines\n- American s AAdvantage program recognized as the Best Elite Program in the Americas at the 2022 Freddie Awards for 10 years in a row Opens another site in a new window that may not meet accessibility guidelines\n- American s AAdvantage Executive Platinum status is named Best U.S.",
+      "title": "American Airlines Group − Customer service − American Airlines",
+      "url": "https://www.aa.com/i18n/customer-service/about-us/american-airlines-group.jsp",
+      "score": -0.23,
+      "date": "2026-06-20",
+      "company": "American Airlines"
+    },
+    {
+      "rank": 7,
+      "chunk_text": "ility guidelines Let Good Take Flight Our purpose to care for people on life s journey extends beyond our operation and into the communities we serve. With our efforts focused on 3 areas social good, global health and well-being, and our military heroes our airline and team members have supported countless initiatives to make a difference for those who need it the most. Let Good Take Flight Our path to net zero As the first airline to receive validation from the Science Based Targets initiative (SBTi) for its intermediate carbon emissions reduction goal, American is actively incorporating sustainability at every level of the business. American operates the youngest, simplest, most efficient fleet among U.S. network carriers and is an industry leader in sustainable aviation fuel (SAF) consumption. Environment, Social and Governance Opens another site in a new window that may not meet accessibility guidelines Alliances and partnerships This content can be expanded oneworld Alliance",
+      "title": "American Airlines Group − Customer service − American Airlines",
+      "url": "https://www.aa.com/i18n/customer-service/about-us/american-airlines-group.jsp",
+      "score": -0.2305,
+      "date": "2026-06-20",
+      "company": "American Airlines"
+    },
+    {
+      "rank": 8,
+      "chunk_text": "rtners, whose information comes directly from us or one of our authorized data redistributors. Back to top Opt-Out Request Honored Privacy and cookies We use cookies on our website. Your interactions and personal data may be collected on our websites by us and our partners in accordance with our . . Allow All Strictly Necessary These cookies and similar technologies are essential to our site operation and services and cannot be rejected. For example, these cookies and similar technologies: - Help your browser remember when you're logged in to your account\n- Save the cookie preference you selected\n- Enable you to navigate our site and use its features View Cookies Performance We use performance cookies and similar technologies to: - Analyze site usage.\n- Keep track of the most popular pages on our site.\n- Measure the most effective method of page links.\n- Identify and fix performance issues. View Cookies Functional We use functional cookies and similar technologies to do things like:",
+      "title": "About us − Customer service − American Airlines",
+      "url": "https://www.aa.com/i18n/customer-service/about-us/about-us.jsp",
+      "score": -0.2365,
+      "date": "2026-06-20",
+      "company": "American Airlines"
+    },
+    {
+      "rank": 9,
+      "chunk_text": "s. View Cookies Advertising We use advertising cookies and similar technologies to collect browsing information and provide relevant ads. View Cookies Back Button Cookie List Search Icon Filter Icon Clear checkbox label label Apply Cancel Consent Leg.Interest checkbox label label checkbox label label checkbox label label Close",
+      "title": "Browser compatibility − Customer service − American Airlines",
+      "url": "https://www.aa.com/i18n/customer-service/support/browser-compatibility.jsp",
+      "score": -0.2553,
+      "date": "2026-06-20",
+      "company": "American Airlines"
+    },
+    {
+      "rank": 10,
+      "chunk_text": "site in a new window that may not meet accessibility guidelines Back to top Opt-Out Request Honored Privacy and cookies We use cookies on our website. Your interactions and personal data may be collected on our websites by us and our partners in accordance with our . . Allow All Strictly Necessary These cookies and similar technologies are essential to our site operation and services and cannot be rejected. For example, these cookies and similar technologies: - Help your browser remember when you're logged in to your account\n- Save the cookie preference you selected\n- Enable you to navigate our site and use its features View Cookies Performance We use performance cookies and similar technologies to: - Analyze site usage.\n- Keep track of the most popular pages on our site.\n- Measure the most effective method of page links.\n- Identify and fix performance issues. View Cookies Functional We use functional cookies and similar technologies to do things like:",
+      "title": "American Airlines Group − Customer service − American Airlines",
+      "url": "https://www.aa.com/i18n/customer-service/about-us/american-airlines-group.jsp",
+      "score": -0.2611,
+      "date": "2026-06-20",
+      "company": "American Airlines"
+    },
+    {
+      "rank": 11,
+      "chunk_text": "tern Airlines. 1990s This content can be expanded 1991 American celebrates its 1 billionth customer. 1997 All American flights become nonsmoking. 1999 The oneworld Alliance is launched by founding members American Airlines, British Airways, Canadian Airlines International, Cathay Pacific Airways and Qantas Airways. 2000s This content can be expanded 2001 - American announces plans to acquire Trans World Airlines assets.\n- American tragically loses 23 people, including pilots, flight attendants and family members, in the events surrounding Sept. 11 on Flights 11 and 77. 2005 US Airways merges with America West. 2008 American introduces mobile boarding passes. 2010s This content can be expanded 2013 AMR Corporation and US Airways Group officially form the American Airlines Group. 2015 - American Airlines Group is added to the S&P 500 index.\n- American flies its first Boeing 787 Dreamliner revenue flight.\n- American's Robert W.",
+      "title": "History of American Airlines − Customer service − American Airlines",
+      "url": "https://www.aa.com/i18n/customer-service/about-us/history-of-american-airlines.jsp",
+      "score": -0.2651,
+      "date": "2026-06-20",
+      "company": "American Airlines"
+    },
+    {
+      "rank": 12,
+      "chunk_text": "ton, Canton and Cincinnati, Ohio; Charlotte, North Carolina; Greenville, South Carolina; Norfolk, Virginia; Pensacola, Florida; and Savannah, Georgia. PSA Airlines Opens another site in a new window that may not meet accessibility guidelines Facilities This content can be expanded Robert L. Crandall Campus Named for American s retired Chairman and CEO, the 300-acre Robert L. Crandall Campus in Fort Worth, Texas, is home to the airline s headquarters and is designed to support American s global operations and team members. The campus can support up to 12,000 team members on site each day and connects 8 buildings: - Skyview 1, DFW Reservations\n- Skyview 2, Robert W. Baker Integrated Operations Center\n- Skyview 3, Flight Academy, Flight Administration, Simulators, Classroom\n- Skyview 4, Technical Operations Center\n- Skyview 5, Training and Conference Center\n- Skyview 6, Hospitality Complex\n- Skyview 7, Leadership and Support Staff\n- Skyview 8, Leadership and Support Staff",
+      "title": "American Airlines Group − Customer service − American Airlines",
+      "url": "https://www.aa.com/i18n/customer-service/about-us/american-airlines-group.jsp",
+      "score": -0.2666,
+      "date": "2026-06-20",
+      "company": "American Airlines"
+    },
+    {
+      "rank": 13,
+      "chunk_text": "h our . . Allow All Strictly Necessary These cookies and similar technologies are essential to our site operation and services and cannot be rejected. For example, these cookies and similar technologies: - Help your browser remember when you're logged in to your account\n- Save the cookie preference you selected\n- Enable you to navigate our site and use its features View Cookies Performance We use performance cookies and similar technologies to: - Analyze site usage.\n- Keep track of the most popular pages on our site.\n- Measure the most effective method of page links.\n- Identify and fix performance issues. View Cookies Functional We use functional cookies and similar technologies to do things like: - Remember site preferences (such as your language or region).\n- Recognize the platform you use to access the site.\n- Provide enhanced features. View Cookies Advertising We use advertising cookies and similar technologies to collect browsing information and provide relevant ads. View Cookies",
+      "title": "Browser compatibility − Customer service − American Airlines",
+      "url": "https://www.aa.com/i18n/customer-service/support/browser-compatibility.jsp",
+      "score": -0.2698,
+      "date": "2026-06-20",
+      "company": "American Airlines"
+    },
+    {
+      "rank": 14,
+      "chunk_text": "od of page links.\n- Identify and fix performance issues. View Cookies Functional We use functional cookies and similar technologies to do things like: - Remember site preferences (such as your language or region).\n- Recognize the platform you use to access the site.\n- Provide enhanced features. View Cookies Advertising We use advertising cookies and similar technologies to collect browsing information and provide relevant ads. View Cookies Back Button Cookie List Search Icon Filter Icon Clear checkbox label label Apply Cancel Consent Leg.Interest checkbox label label checkbox label label checkbox label label Close",
+      "title": "About us − Customer service − American Airlines",
+      "url": "https://www.aa.com/i18n/customer-service/about-us/about-us.jsp",
+      "score": -0.2713,
+      "date": "2026-06-20",
+      "company": "American Airlines"
+    },
+    {
+      "rank": 15,
+      "chunk_text": "Enable JavaScript Please enable JavaScript to fully experience this site. How to enable JavaScript 1. Home\n2. Legal, privacy & copyright\n3. Browser compatibility Browser compatibility Help with the site For the best experience on aa.com, we recommend a modern browser that supports current web standards. We test browsers regularly based on W3C standards. If a browser is no longer supported by its developer or doesn t meet these standards, some features may not work as expected. W3C standards Opens another site in a new window that may not meet accessibility guidelines. Support browsers Our site works best with the latest versions of these browsers: - Google Chrome\n- Mozilla Firefox\n- Microsoft Edge\n- Safari (Mac only) Other browsers may still work, but you might notice slower performance or display issues. Having trouble? Here are a few things to check:",
+      "title": "Browser compatibility − Customer service − American Airlines",
+      "url": "https://www.aa.com/i18n/customer-service/support/browser-compatibility.jsp",
+      "score": -0.2754,
+      "date": "2026-06-20",
+      "company": "American Airlines"
+    }
+  ],
+  "llm_output": "<think>\nOkay, let's tackle this query. The user wants me to identify competitive threats and strategic risks based on the provided retrieved context. They also want the answer in JSON format with specific fields: risk_title, risk_description, threat_source, severity_level, likelihood, and supporting_evidence.\n\nFirst, I need to go through each of the 15 documents to find relevant information. The documents cover about the company, customer service, browser compatibility, and other details. \n\nLooking at the context, the main points are about American Airlines' customer service, their achievements, and their commitment to sustainability and other initiatives. The threats and risks here might relate to things like poor user experience, accessibility issues, or external factors affecting their operations.\n\nDocument [3] and [4] talk about browser compatibility. They mention that browsers need to be updated, which could be a strategic risk if users can't access the site. The severity level here is negative, so maybe a low severity. The likelihood is also negative, so 0.25 or something. Supporting evidence would be the browser compatibility issues.\n\nDocument [5] and [6] mention accessibility issues, which could be a competitive threat. The threat source here is the user's browser settings. The severity is negative, likelihood low, and supporting evidence includes the accessibility guidelines.\n\nDocument [7] and [12] talk about their commitment to sustainability and operations. These might be strategic risks if they can't meet sustainability goals. The severity is negative, likelihood low, and supporting evidence includes the awards and initiatives.\n\nI need to make sure each risk is identified and supported by evidence. Let me check again to ensure I didn't miss any relevant points. The key threats here are browser compatibility issues and accessibility problems. Strategic risks could be sustainability initiatives or external factors affecting their operations. \n\nNow, compiling this into the JSON structure as per the instructions. Each risk title, description, source, severity, likelihood, and supporting evidence should be filled in. I need to ensure that each entry is accurate and that the confidence scores are between 0 and 100. Since the context provides negative scores for most, I'll assign those accordingly.\n</think>\n\n```json\n[\n  {\n    \"risk_title\": \"Browser Compatibility Issues\",\n    \"risk_description\": \"The site requires modern browsers for secure functionality, but outdated browsers may cause performance or display issues. This can affect user experience and accessibility.\",\n    \"threat_source\": \"Browser compatibility\",\n    \"severity_level\": 0.25,\n    \"likelihood\": 0.25,\n    \"supporting_evidence\": [\n      \"Document [3] and [4] mention browser compatibility issues and the need for updated browsers.\",\n      \"Document [5] highlights accessibility guidelines and the importance of browser settings.\"\n    ]\n  },\n  {\n    \"risk_title\": \"Accessibility Concerns\",\n    \"risk_description\": \"Users may encounter issues with accessibility, such as slow performance or display problems, due to outdated browser settings.\",\n    \"threat_source\": \"Browser settings\",\n    \"severity_level\": 0.25,\n    \"likelihood\": 0.25,\n    \"supporting_evidence\": [\n      \"Document [4] and [14] discuss browser compatibility and the need to enable necessary settings.\",\n      \"Document [5] mentions accessibility guidelines and the importance of browser settings.\"\n    ]\n  },\n  {\n    \"risk_title\": \"Strategic Sustainability Initiatives\",\n    \"risk_description\": \"The airline's commitment to sustainability and awards may face challenges if these initiatives are not effectively communicated or implemented.\",\n    \"threat_source\": \"Strategic initiatives\",\n    \"severity_level\": 0.25,\n    \"likelihood\": 0.25,\n    \"supporting_evidence\": [\n      \"Document [7] and [6] mention the airline's recognition and sustainability efforts.\",\n      \"Document [12] highlights facilities and operations that support sustainability.\"\n    ]\n  }\n]\n```"
+}

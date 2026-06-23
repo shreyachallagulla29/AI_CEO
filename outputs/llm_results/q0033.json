@@ -1,0 +1,103 @@
+{
+  "query_id": "q0033",
+  "query": "What emerging technologies, innovations, and technological trends could impact the company's industry?",
+  "prompt": "Identify emerging technologies and innovations from the retrieved documents. Return JSON with: technology_name, description, business_relevance, opportunity_or_threat, adoption_stage, supporting_evidence.",
+  "collection": "Lufthansa_Knowledge",
+  "model": "Qwen/Qwen3-0.6B",
+  "temperature": 0.2,
+  "generated_at": "2026-06-23T04:07:41.890082+00:00",
+  "num_context_docs": 10,
+  "retrieved_context": [
+    {
+      "rank": 1,
+      "chunk_text": "come brand-new Boeing 787-9 with XXL crane on Read more 17 12 2025 | 11:14 Europe/Amsterdam Tags Innovation & Technology Responsibility Sustainability Real-time flight path data supports more efficient use of airspace: Lufthansa Group upgrades Airbus A320 fleet Upgrade of more than 130 A320 aircraft with state-of-the-art, automated flight profile transfer tech... Read more 15 12 2025 | 10:38 Europe/Amsterdam Tags Airlines Destinations Innovation & Technology Product Reopening of the Lufthansa Lounge at Stuttgart Airport Extensive complete renovation with versatile seating areas for work, relaxation, and privacyExclusiv... Read more 10 12 2025 | 14:34 Europe/Amsterdam Tags Finance Innovation & Technology Product Lufthansa Group launches new brand identity A visual identity with new logo, color palette and typeface strengthen the Lufthansa Group's brand i... Read more 28 11 2025 | 10:00 Europe/Amsterdam Tags Product Innovation & Technology",
+      "title": "Articles tagged with 'innovation & technology' | Deutsche Lufthansa AG",
+      "url": "https://newsroom.lufthansagroup.com/en?h=1&t=innovation%20%26%20technology",
+      "score": 0.0948,
+      "date": "2026-06-20",
+      "company": "Lufthansa"
+    },
+    {
+      "rank": 2,
+      "chunk_text": "novation & Technology Airlines The success story continues: Lufthansa Group and Munich Airport strengthen partnership and plan expansion of Terminal 2 Bavaria as a gateway to the world: Investing in the future of Munich as an aviation hubExpansion of Read more 16 03 2026 | 12:09 Europe/Amsterdam Tags Airlines Destinations Fleet Innovation & Technology Product Allegris Business Class seats on the Boeing 787-9 have received certification 25 of 28 seats in the new Lufthansa Allegris Business Class on the Dreamliner are now availableThe... Read more 25 02 2026 | 10:42 Europe/Amsterdam Tags Airlines Innovation & Technology Responsibility Lufthansa introduces IATA Turbulence Aware technology Optimization of flight safety, efficiency, and passenger comfort thanks to innovative technologyIn a... Read more 24 02 2026 | 14:38 Europe/Amsterdam Tags Airlines Destinations Fleet Innovation & Technology Product",
+      "title": "Articles tagged with 'innovation & technology' | Deutsche Lufthansa AG",
+      "url": "https://newsroom.lufthansagroup.com/en?h=1&t=innovation%20%26%20technology",
+      "score": 0.0911,
+      "date": "2026-06-20",
+      "company": "Lufthansa"
+    },
+    {
+      "rank": 3,
+      "chunk_text": "or palette and typeface strengthen the Lufthansa Group's brand i... Read more 28 11 2025 | 10:00 Europe/Amsterdam Tags Product Innovation & Technology Lufthansa Opens New Exclusive Check-in Area at Frankfurt Airport Reopening of the Premium Check-in Area in Terminal 1, Hall A, and the Lufthansa Business Lounge at G... Read more 27 11 2025 | 13:56 Europe/Amsterdam Tags Airlines Finance Innovation & Technology Product Lufthansa Group Partners with Klarna and Adyen to Offer Flexible Payment Options for Travelers New collaboration brings Pay Later and Financing options to Lufthansa customers, starting mid-Novemb... Read more 21 11 2025 | 09:58 Europe/Amsterdam Tags Airlines Fleet Innovation & Technology Tail section of the legendary Lockheed Super Star successfully assembled Historic aircraft in Hangar One now almost completely builtExhibition in the Lufthansa Group's new... Read more 27 10 2025 | 15:29 Europe/Amsterdam Tags Product Innovation & Technology",
+      "title": "Articles tagged with 'innovation & technology' | Deutsche Lufthansa AG",
+      "url": "https://newsroom.lufthansagroup.com/en?h=1&t=innovation%20%26%20technology",
+      "score": 0.0892,
+      "date": "2026-06-20",
+      "company": "Lufthansa"
+    },
+    {
+      "rank": 4,
+      "chunk_text": "er star on Airbus A321Planned arrival of the aircraft today at a... Read more 13 01 2026 | 14:00 Europe/Amsterdam Tags Product Innovation & Technology New Lufthansa Group collaboration with Starlink: High-speed internet on all fleets across all airlines Fastest internet access for guests in all classesNew high-speed internet free of charge for status c... Read more 07 01 2026 | 09:59 Europe/Amsterdam Tags Product Innovation & Technology Airlines Lufthansa Group enters partnership with Amadeus Travel booking processes to be bundled and simplified through introduction of an order IDConsolidati... Read more 2025 23 12 2025 | 12:36 Europe/Amsterdam Tags Airlines Fleet Innovation & Technology Lufthansa's first anniversary aircraft lands in Frankfurt Numerous plane spotters, travelers, and spectators welcome brand-new Boeing 787-9 with XXL crane on Read more 17 12 2025 | 11:14 Europe/Amsterdam Tags Innovation & Technology Responsibility Sustainability",
+      "title": "Articles tagged with 'innovation & technology' | Deutsche Lufthansa AG",
+      "url": "https://newsroom.lufthansagroup.com/en?h=1&t=innovation%20%26%20technology",
+      "score": 0.0857,
+      "date": "2026-06-20",
+      "company": "Lufthansa"
+    },
+    {
+      "rank": 5,
+      "chunk_text": "ividuality, comfort and Lufthansa Signature Moments on long-haul flights - CEO Jens Ritter: We a... Read more 17 09 2025 | 13:00 Europe/Amsterdam Tags Product Innovation & Technology Lufthansa Miles & More Credit Card moves to Deutsche Bank, improving benefits for cardholders Lufthansa Miles & More Credit Card to be issued by Deutsche Bank from October 1, 2025More benefits f... Read more 30 08 2025 | 10:13 Europe/Amsterdam Tags Fleet Product Innovation & Technology First Dreamliner with Lufthansa Allegris lands in Frankfurt Fleet modernization at Frankfurt hub continuesFirst scheduled service for the Boeing 787-9 \"Dreamlin... Read more 14 08 2025 | 11:20 Europe/Amsterdam Tags Fleet Innovation & Technology Legendary Lockheed Super Star finds a new home in Frankfurt Historic aircraft arrives at Lufthansa Group Conference and Visitor Center in FrankfurtLockheed Supe... Read more 08 08 2025 | 14:48 Europe/Amsterdam Tags Innovation & Technology Fleet",
+      "title": "Articles tagged with 'innovation & technology' | Deutsche Lufthansa AG",
+      "url": "https://newsroom.lufthansagroup.com/en?h=1&t=innovation%20%26%20technology",
+      "score": 0.0783,
+      "date": "2026-06-20",
+      "company": "Lufthansa"
+    },
+    {
+      "rank": 6,
+      "chunk_text": "2026 | 11:02 Europe/Amsterdam Tags Innovation & Technology Product Responsibility Sustainability Lufthansa Group expands climate protection portfolio Newly compiled portfolio of 14 climate protection projects certified to the highest standardsCommitm... Read more 11 05 2026 | 19:00 Europe/Amsterdam Tags Fleet Innovation & Technology Finance Lufthansa Group orders ten Airbus and ten Boeing long-haul aircraft Order for ten Airbus A350-900s and ten Boeing 787-9s at a list price of 7.7 billion U.S. dollarsDeli... Read more 23 04 2026 | 11:23 Europe/Amsterdam Tags Product Airlines Innovation & Technology First A380 with new Business Class takes off Modernization of the first of eight Airbus A380s completed Mike-Charly features new Business Class Read more 08 04 2026 | 15:46 Europe/Amsterdam Tags Airlines Innovation & Technology Product ITA Airways delivers more customer value by switching app and website to Lufthansa Group platform",
+      "title": "Articles tagged with 'innovation & technology' | Deutsche Lufthansa AG",
+      "url": "https://newsroom.lufthansagroup.com/en?h=1&t=innovation%20%26%20technology",
+      "score": 0.0721,
+      "date": "2026-06-20",
+      "company": "Lufthansa"
+    },
+    {
+      "rank": 7,
+      "chunk_text": "terdam Tags Airlines Innovation & Technology Product ITA Airways delivers more customer value by switching app and website to Lufthansa Group platform ITA Airways flights can now be flexibly combined with all other Lufthansa Group connectionsNew funct... Read more 30 03 2026 | 14:42 Europe/Amsterdam Tags Product Airlines Innovation & Technology Lufthansa s New Premium On-Board Experience: FOX Launches in First Class Successful launch of FOX on March 29 in First ClassOn long-haul routes, First Class guests now enjoy... Read more 27 03 2026 | 13:18 Europe/Amsterdam Tags Airlines Innovation & Technology Star Alliance Opens Star Connection Centre At Los Angeles International Airport Strengthening seamless multi-airline connections at one of Star Alliance s busiest transfer hubs in Read more 23 03 2026 | 16:19 Europe/Amsterdam Tags Innovation & Technology Airlines The success story continues: Lufthansa Group and Munich Airport strengthen partnership and plan expansion of Terminal 2",
+      "title": "Articles tagged with 'innovation & technology' | Deutsche Lufthansa AG",
+      "url": "https://newsroom.lufthansagroup.com/en?h=1&t=innovation%20%26%20technology",
+      "score": 0.0601,
+      "date": "2026-06-20",
+      "company": "Lufthansa"
+    },
+    {
+      "rank": 8,
+      "chunk_text": "w almost completely builtExhibition in the Lufthansa Group's new... Read more 27 10 2025 | 15:29 Europe/Amsterdam Tags Product Innovation & Technology Culinary Journey: The new personalized premium menu plan from the Lufthansa Group Personalized service available in all travel classes on short-, medium-, and long-haul flights - Dig... Read more 09 10 2025 | 11:31 Europe/Amsterdam Tags Product Fleet Innovation & Technology Toronto, Rio de Janeiro, Bogot , Hyderabad and Austin: Lufthansa to fly from Frankfurt with Allegris for the first time in October The first Allegris flight from Frankfurt takes off for Toronto today - Other destinations in the win... Read more 24 09 2025 | 10:25 Europe/Amsterdam Tags Airlines Innovation & Technology Product For the anniversary year: Lufthansa renews experiences and processes for passengers on board Individuality, comfort and Lufthansa Signature Moments on long-haul flights - CEO Jens Ritter: We a... Read more 17 09 2025 | 13:00 Europe/Amsterdam Tags",
+      "title": "Articles tagged with 'innovation & technology' | Deutsche Lufthansa AG",
+      "url": "https://newsroom.lufthansagroup.com/en?h=1&t=innovation%20%26%20technology",
+      "score": 0.0587,
+      "date": "2026-06-20",
+      "company": "Lufthansa"
+    },
+    {
+      "rank": 9,
+      "chunk_text": "thanks to innovative technologyIn a... Read more 24 02 2026 | 14:38 Europe/Amsterdam Tags Airlines Destinations Fleet Innovation & Technology Product Allegris Business Class seats in the Boeing 787-9 are now available for booking on flights departing from March 29 Until now blocked seats will be released for the summer flight scheduleOpening even earlier and in t... Read more 16 02 2026 | 15:54 Europe/Amsterdam Tags Airlines Destinations Fleet Innovation & Technology Product Allegris Business Class seats in the Boeing 787-9 now available for booking 25 of 28 seats in the new Lufthansa Allegris Business Class in the Dreamliner available for flights Read more 03 02 2026 | 09:13 Europe/Amsterdam Tags Airlines Fleet Innovation & Technology Product Lufthansa flies in historic parabola design Iconic appearance of a legendary super star on Airbus A321Planned arrival of the aircraft today at a... Read more 13 01 2026 | 14:00 Europe/Amsterdam Tags Product Innovation & Technology",
+      "title": "Articles tagged with 'innovation & technology' | Deutsche Lufthansa AG",
+      "url": "https://newsroom.lufthansagroup.com/en?h=1&t=innovation%20%26%20technology",
+      "score": 0.055,
+      "date": "2026-06-20",
+      "company": "Lufthansa"
+    },
+    {
+      "rank": 10,
+      "chunk_text": "/Amsterdam Tags Product Innovation & Technology New Lufthansa Group collaboration with Starlink: High-speed internet on all fleets across all airlines Fastest internet access for guests in all classesNew high-speed internet free of charge for status c... Read more 07 01 2026 | 09:59 Europe/Amsterdam Tags Product Innovation & Technology Airlines Lufthansa Group enters partnership with Amadeus Travel booking processes to be bundled and simplified through introduction of an order IDConsolidati... Read more 2025 15 12 2025 | 10:38 Europe/Amsterdam Tags Airlines Destinations Innovation & Technology Product Reopening of the Lufthansa Lounge at Stuttgart Airport Extensive complete renovation with versatile seating areas for work, relaxation, and privacyExclusiv... Read more 10 12 2025 | 14:34 Europe/Amsterdam Tags Finance Innovation & Technology Product Lufthansa Group launches new brand identity",
+      "title": "Articles tagged with 'product' | Deutsche Lufthansa AG",
+      "url": "https://newsroom.lufthansagroup.com/en?h=1&t=product",
+      "score": 0.0476,
+      "date": "2026-06-20",
+      "company": "Lufthansa"
+    }
+  ],
+  "llm_output": "<think>\nOkay, let's tackle this query. The user wants me to identify emerging technologies and innovations from the provided retrieved documents. Each document has a technology_name, description, business_relevance, opportunity_or_threat, adoption_stage, and supporting_evidence. I need to check each document to see if it mentions any technology.\n\nLooking at the first document, it talks about the Boeing 787-9 with an XXL crane. That's a product innovation, so maybe that's a technology. The business relevance here is about improving efficiency, so that's a positive. The opportunity is expansion, and the adoption stage is early. Supporting evidence includes the crane and the upgrade of the A320 fleet.\n\nNext, the second document mentions the Lufthansa Group and Munich Airport expanding their terminals. That's a partnership, so maybe related to technology. The technology here is flight profile transfer, which is a tech innovation. Business relevance is expansion, opportunity is growth, and adoption stage is early.\n\nThird document talks about a new check-in area and partnerships with Klarna. That's a product innovation. The technology here is check-in area design. Business relevance is expansion, opportunity is growth, and adoption stage is early.\n\nFourth document mentions collaboration with Starlink for internet. That's a product innovation. The technology is internet access. Business relevance is expanding services, opportunity is new, and adoption stage is early.\n\nFifth document discusses the Lufthansa Miles & More credit card. That's a product innovation. The technology is credit card integration. Business relevance is expanding services, opportunity is growth, and adoption stage is early.\n\nSixth document mentions modernization of the first Airbus A380. That's a product innovation. Technology is modernization, business relevance is enhancing fleet, opportunity is growth, and adoption stage is early.\n\nSeventh document talks about the Star Alliance connection center. That's a product innovation. Technology is connection center, business relevance is expanding services, opportunity is growth, and adoption stage is early.\n\nEighth document mentions personalized premium menus. That's a product innovation. Technology is personalized service, business relevance is enhancing customer experience, opportunity is growth, and adoption stage is early.\n\nNinth document discusses the Boeing 787-9's design. That's a product innovation. Technology is design, business relevance is enhancing performance, opportunity is growth, and adoption stage is early.\n\nTenth document is about the Lufthansa Group's brand identity. That's a product innovation. Technology is brand identity, business relevance is strengthening brand, opportunity is growth, and adoption stage is early.\n\nI need to make sure each technology is supported by evidence from the documents. For example, the Boeing 787-9 with the XXL crane is mentioned in document 1. The flight profile transfer in document 2. The check-in area in document 3. The internet collaboration in document 4. The credit card in document 5. The modernization of the A380 in document 6. The connection center in document 7. The personalized menu in document 8. The design in document 9. The brand identity in document 10.\n\nNow, I need to structure this into the required JSON format with each technology, description, business_relevance, opportunity_or_threat, adoption_stage, and supporting_evidence. Make sure each entry is correctly labeled and the confidence scores are between 0 and 100. Since all documents are scored, I can assign confidence as 100 for each. No need to explain reasoning, just list the technologies based on the evidence.\n</think>\n\n[\n  {\n    \"technology_name\": \"XXL Crane\",\n    \"description\": \"Boeing 787-9 with XXL crane\",\n    \"business_relevance\": 0.95,\n    \"opportunity_or_threat\": 0.95,\n    \"adoption_stage\": 0.95,\n    \"supporting_evidence\": [\n      \"Read more 17 12 2025 | 11:14 Europe/Amsterdam\"\n    ]\n  },\n  {\n    \"technology_name\": \"Flight Profile Transfer\",\n    \"description\": \"State-of-the-art automated flight profile transfer tech\",\n    \"business_relevance\": 0.95,\n    \"opportunity_or_threat\": 0.95,\n    \"adoption_stage\": 0.95,\n    \"supporting_evidence\": [\n      \"Read more 15 12 2025 | 10:38 Europe/Amsterdam\"\n    ]\n  },\n  {\n    \"technology_name\": \"New Check-in Area\",\n    \"description\": \"Reopened Premium Check-in Area in Terminal 1\",\n    \"business_relevance\": 0.95,\n    \"opportunity_or_threat\": 0.95,\n    \"adoption_stage\": 0.95,\n    \"supporting_evidence"
+}

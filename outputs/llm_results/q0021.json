@@ -1,0 +1,103 @@
+{
+  "query_id": "q0021",
+  "query": "What are competitors doing recently that could affect the company's market position, strategy, revenue, or customer base?",
+  "prompt": "Analyze competitor-related information. Identify competitor product launches, partnerships, investments, market expansions, pricing changes, and innovations. Return JSON with: competitor_name, action, strategic_implication, threat_level, supporting_evidence.",
+  "collection": "AirIndia_Knowledge",
+  "model": "Qwen/Qwen3-0.6B",
+  "temperature": 0.2,
+  "generated_at": "2026-06-23T02:54:49.945453+00:00",
+  "num_context_docs": 10,
+  "retrieved_context": [
+    {
+      "rank": 1,
+      "chunk_text": "t in response to actions made by you which amount to a request for services, such as setting your privacy preferences, logging in or filling in forms. You can set your browser to block or alert you about these cookies, but some parts of the site will not then work. These cookies do not store any personally identifiable information. Cookies List Targeting Cookies Targeting Cookies These cookies may be set through our site by our advertising partners. They may be used by those companies to build a profile of your interests and show you relevant adverts on other sites. They do not store directly personal information, but are based on uniquely identifying your browser and internet device. If you do not allow these cookies, you will experience less targeted advertising. Cookies List Performance Cookies Performance Cookies These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site.",
+      "title": "Onground | Air India Newsroom",
+      "url": "https://www.airindia.com/in/en/newsroom/customer-experience/onground-services.html",
+      "score": -0.1035,
+      "date": "2026-06-20",
+      "company": "Air India"
+    },
+    {
+      "rank": 2,
+      "chunk_text": "ance. Cookies List Back Button Cookie List Search Icon Filter Icon Clear - checkbox label label Apply Cancel Consent Leg.Interest checkbox label label checkbox label label checkbox label label Save Settings Hi, I'm AI.g How can I help you?",
+      "title": "Air India introduces iCOUPON to enhance customer convenience during unintended disruptions | Air India Newsroom & Press Releases",
+      "url": "https://www.airindia.com/in/en/newsroom/press-release/introduces-icoupon-customer-convenience.html",
+      "score": -0.1057,
+      "date": "2026-06-20",
+      "company": "Air India"
+    },
+    {
+      "rank": 3,
+      "chunk_text": "are the most and least popular and see how visitors move around the site. All information these cookies collect is aggregated and therefore anonymous. If you do not allow these cookies we will not know when you have visited our site, and will not be able to monitor its performance. Cookies List Back Button Cookie List Search Icon Filter Icon Clear - checkbox label label Apply Cancel Consent Leg.Interest checkbox label label checkbox label label checkbox label label Save Settings Hi, I'm AI.g How can I help you?",
+      "title": "Network Updates | Air India Newsroom",
+      "url": "https://www.airindia.com/in/en/newsroom/connections/network-updates.html",
+      "score": -0.1098,
+      "date": "2026-06-20",
+      "company": "Air India"
+    },
+    {
+      "rank": 4,
+      "chunk_text": "ance Cookies Performance Cookies These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site. They help us to know which pages are the most and least popular and see how visitors move around the site. All information these cookies collect is aggregated and therefore anonymous. If you do not allow these cookies we will not know when you have visited our site, and will not be able to monitor its performance. Cookies List Back Button Cookie List Search Icon Filter Icon Clear - checkbox label label Apply Cancel Consent Leg.Interest checkbox label label checkbox label label checkbox label label Save Settings Hi, I'm AI.g How can I help you?",
+      "title": "Onground | Air India Newsroom",
+      "url": "https://www.airindia.com/in/en/newsroom/customer-experience/onground-services.html",
+      "score": -0.1109,
+      "date": "2026-06-20",
+      "company": "Air India"
+    },
+    {
+      "rank": 5,
+      "chunk_text": "ance. Cookies List Back Button Cookie List Search Icon Filter Icon Clear - checkbox label label Apply Cancel Consent Leg.Interest checkbox label label checkbox label label checkbox label label Save Settings Hi, I'm AI.g How can I help you?",
+      "title": "Workplace | Air India Newsroom",
+      "url": "https://www.airindia.com/in/en/newsroom/people/workplace-culture.html",
+      "score": -0.1306,
+      "date": "2026-06-20",
+      "company": "Air India"
+    },
+    {
+      "rank": 6,
+      "chunk_text": "It seems like you're in landscape mode. For the best view, switch to portrait mode where the magic happens! Press Release Air India introduces iCOUPON to enhance customer convenience during unintended disruptions May 28, 2024 AIR INDIA BRAND TECH INNOVATION PARTNERSHIPS Download image \\\n\\\\ Air India, India s leading global airline, has been working towards introducing cutting edge technology and solutions to enhance customer experience. Recently the airline introduced digital refreshment vouchers in collaboration with iCoupon, a digital vouchering solutions provider, to address unintended disruptions. This initiative was launched as part of a pilot phase for passengers travelling to and from three major UK airports: London Heathrow, London Gatwick, and Birmingham. Using iCoupon technology, Air India can issue digital vouchers that are automatically linked to the barcode on the passengers' boarding pass.",
+      "title": "Air India introduces iCOUPON to enhance customer convenience during unintended disruptions | Air India Newsroom & Press Releases",
+      "url": "https://www.airindia.com/in/en/newsroom/press-release/introduces-icoupon-customer-convenience.html",
+      "score": -0.1307,
+      "date": "2026-06-20",
+      "company": "Air India"
+    },
+    {
+      "rank": 7,
+      "chunk_text": "t-of-its-kind move by an Indian airline, our partnership with iCoupon aligns with our commitment to prioritise passenger satisfaction and convenience. We are continuously working towards enhancing customer-facing digital experiences to ensure a comfortable journey for our guests even when faced with unanticipated disruption. Richard Bye, CEO of iCoupon said, Air India s initiative to further enhance their passenger experience at what is usually a stressful period of time, is admirable and we re very happy to welcome them to our fleet of airline partners around the world. Share article Share Copy link Share on Twitter Share on Facebook Share on LinkedIn Download AIR-INDIA-INTRODUCES-iCOUPON-Final Topics Topics INTERNATIONAL AIR INDIA BRAND EXPANDING NETWORK PASSENGER EXPERIENCE CUSTOMER CENTRICITY AIRCRAFT ROUTES PARTNERSHIPS DESTINATION TECH INNOVATION DOMESTIC INFLIGHT SERVICES PARTNER AIRLINES AIRPORTS PILOTS & FLIGHT CREW LOYALTY FARE SALE AI PASSENGER SAFETY EXECUTIVE TEAM CARGO",
+      "title": "Air India introduces iCOUPON to enhance customer convenience during unintended disruptions | Air India Newsroom & Press Releases",
+      "url": "https://www.airindia.com/in/en/newsroom/press-release/introduces-icoupon-customer-convenience.html",
+      "score": -0.1383,
+      "date": "2026-06-20",
+      "company": "Air India"
+    },
+    {
+      "rank": 8,
+      "chunk_text": "w these cookies we will not know when you have visited our site, and will not be able to monitor its performance. Cookies List Back Button Cookie List Search Icon Filter Icon Clear - checkbox label label Apply Cancel Consent Leg.Interest checkbox label label checkbox label label checkbox label label Save Settings Hi, I'm AI.g How can I help you?",
+      "title": "Diversity | Air India Newsroom",
+      "url": "https://www.airindia.com/in/en/newsroom/people/embracing-diversity.html",
+      "score": -0.1453,
+      "date": "2026-06-20",
+      "company": "Air India"
+    },
+    {
+      "rank": 9,
+      "chunk_text": "are the most and least popular and see how visitors move around the site. All information these cookies collect is aggregated and therefore anonymous. If you do not allow these cookies we will not know when you have visited our site, and will not be able to monitor its performance. Cookies List Back Button Cookie List Search Icon Filter Icon Clear - checkbox label label Apply Cancel Consent Leg.Interest checkbox label label checkbox label label checkbox label label Save Settings Hi, I'm AI.g How can I help you?",
+      "title": "Digital | Air India Newsroom",
+      "url": "https://www.airindia.com/in/en/newsroom/customer-experience/digital-initiatives.html",
+      "score": -0.1566,
+      "date": "2026-06-20",
+      "company": "Air India"
+    },
+    {
+      "rank": 10,
+      "chunk_text": "we use cookies, please view our . Manage Cookies Accept All Customise Your This website stores or retrieves information on your browser using cookies. This information might include details about you, your preferences, or your device. Cookies help the website function properly and can help provide a more personalised experience tailored to you. We respect your right to privacy, and you can choose to opt out of cookies at any time, with the exception of Strictly Necessary Cookies. Please be aware that blocking cookies may impact your experience on the site and services we are able to offer you. For more information, please refer to our\n. Accept All Manage Consent Preferences Strictly Necessary Cookies These cookies are necessary for the website to function and cannot be switched off in our systems. They are usually only set in response to actions made by you which amount to a request for services, such as setting your privacy preferences, logging in or filling in forms.",
+      "title": "Onground | Air India Newsroom",
+      "url": "https://www.airindia.com/in/en/newsroom/customer-experience/onground-services.html",
+      "score": -0.1593,
+      "date": "2026-06-20",
+      "company": "Air India"
+    }
+  ],
+  "llm_output": "<think>\nOkay, let's tackle this query. The user wants me to analyze competitor-related information based on the provided retrieved context. They specifically asked for competitor product launches, partnerships, investments, market expansions, pricing changes, and innovations. I need to identify each of these elements and support them with evidence from the context.\n\nFirst, looking at the context, there's a mention of Air India introducing iCOUPON. That's a product launch. The document [6] and [7] both talk about this initiative, so I can note that. The partnership with iCoupon is a key part here.\n\nNext, partnerships. The context mentions Air India's partnership with iCoupon, which aligns with their commitment to passenger satisfaction. So that's a partnership.\n\nInvestments: The context doesn't directly mention any investments, but the introduction of iCOUPON is part of their tech innovation. Maybe there's an implication that they're investing in technology, but I need to check if there's explicit info. The score for this is -0.131, which is a negative score, but maybe the evidence is there.\n\nMarket expansions: The context doesn't specify where Air India is expanding. However, the introduction of iCOUPON is in the UK airports, which might indicate expansion. But I need to confirm if that's a market expansion. The score here is -0.131, which is a negative, but maybe the evidence is there.\n\nPricing changes: The context doesn't mention any pricing changes. The only product mentioned is iCOUPON, which is a digital voucher. So maybe there's no direct info on pricing, but the score is negative, so I can't confirm.\n\nInnovations: The introduction of iCOUPON is a technological innovation. The score is -0.138, which is negative, but again, maybe the evidence is there.\n\nNow, checking each entry for the required elements. For each competitor, I need to map the action, strategic implication, threat level, and supporting evidence. The competitor here is Air India, so the actions would be the product launch, partnership, etc.\n\nThe threat level: The context doesn't provide any threat level info, but the scores are negative, which might indicate that the information is not reliable. However, the user wants the threat level as a separate field. Since the context doesn't mention threat levels, I can't assign a score there.\n\nPutting it all together, the JSON should have entries for each of the required elements. The scores are negative, but the evidence is present. I need to ensure that each entry is correctly identified and supported by the context.\n</think>\n\n```json\n[\n  {\n    \"competitor_name\": \"Air India\",\n    \"action\": \"introduces iCOUPON to enhance customer convenience during unintended disruptions\",\n    \"strategic_implication\": \"Enhances passenger experience through digital vouchers linked to boarding passes\",\n    \"threat_level\": 0,\n    \"supporting_evidence\": [\n      \"Document [6] and [7] mention the launch of iCOUPON in collaboration with iCoupon, aligning with Air India's commitment to passenger satisfaction\",\n      \"Document [6] details the pilot phase in major UK airports, indicating market expansion\"\n    ]\n  }\n]\n```"
+}

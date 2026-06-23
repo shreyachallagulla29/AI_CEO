@@ -1,0 +1,148 @@
+{
+  "query_id": "q0072",
+  "query": "What competitive threats and market risks could negatively affect the company's growth, profitability, or strategic position?",
+  "prompt": "Identify competitive threats and strategic risks. Return JSON with: risk_title, risk_description, threat_source, severity_level, likelihood, supporting_evidence.",
+  "collection": "AirIndia_Knowledge",
+  "model": "Qwen/Qwen3-0.6B",
+  "temperature": 0.2,
+  "generated_at": "2026-06-23T05:27:24.460720+00:00",
+  "num_context_docs": 15,
+  "retrieved_context": [
+    {
+      "rank": 1,
+      "chunk_text": "w these cookies we will not know when you have visited our site, and will not be able to monitor its performance. Cookies List Back Button Cookie List Search Icon Filter Icon Clear - checkbox label label Apply Cancel Consent Leg.Interest checkbox label label checkbox label label checkbox label label Save Settings Hi, I'm AI.g How can I help you?",
+      "title": "Sustainability | Air India Newsroom",
+      "url": "https://www.airindia.com/in/en/newsroom/citizenship/sustainability-efforts.html",
+      "score": -0.1863,
+      "date": "2026-06-20",
+      "company": "Air India"
+    },
+    {
+      "rank": 2,
+      "chunk_text": "ance Cookies Performance Cookies These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site. They help us to know which pages are the most and least popular and see how visitors move around the site. All information these cookies collect is aggregated and therefore anonymous. If you do not allow these cookies we will not know when you have visited our site, and will not be able to monitor its performance. Cookies List Back Button Cookie List Search Icon Filter Icon Clear - checkbox label label Apply Cancel Consent Leg.Interest checkbox label label checkbox label label checkbox label label Save Settings Hi, I'm AI.g How can I help you?",
+      "title": "Cargo | Air India Newsroom",
+      "url": "https://www.airindia.com/in/en/newsroom/connections/cargo.html",
+      "score": -0.2092,
+      "date": "2026-06-20",
+      "company": "Air India"
+    },
+    {
+      "rank": 3,
+      "chunk_text": "ored to you. We respect your right to privacy, and you can choose to opt out of cookies at any time, with the exception of Strictly Necessary Cookies. Please be aware that blocking cookies may impact your experience on the site and services we are able to offer you. For more information, please refer to our\n. Accept All Manage Consent Preferences Strictly Necessary Cookies These cookies are necessary for the website to function and cannot be switched off in our systems. They are usually only set in response to actions made by you which amount to a request for services, such as setting your privacy preferences, logging in or filling in forms. You can set your browser to block or alert you about these cookies, but some parts of the site will not then work. These cookies do not store any personally identifiable information. Cookies List Targeting Cookies Targeting Cookies These cookies may be set through our site by our advertising partners.",
+      "title": "Sustainability | Air India Newsroom",
+      "url": "https://www.airindia.com/in/en/newsroom/citizenship/sustainability-efforts.html",
+      "score": -0.2094,
+      "date": "2026-06-20",
+      "company": "Air India"
+    },
+    {
+      "rank": 4,
+      "chunk_text": "you, your preferences, or your device. Cookies help the website function properly and can help provide a more personalised experience tailored to you. We respect your right to privacy, and you can choose to opt out of cookies at any time, with the exception of Strictly Necessary Cookies. Please be aware that blocking cookies may impact your experience on the site and services we are able to offer you. For more information, please refer to our\n. Accept All Manage Consent Preferences Strictly Necessary Cookies These cookies are necessary for the website to function and cannot be switched off in our systems. They are usually only set in response to actions made by you which amount to a request for services, such as setting your privacy preferences, logging in or filling in forms. You can set your browser to block or alert you about these cookies, but some parts of the site will not then work. These cookies do not store any personally identifiable information. Cookies List",
+      "title": "Planting a greener tomorrow | Air India Newsroom",
+      "url": "https://www.airindia.com/in/en/newsroom/articles/planting-a-greener-tomorrow.html",
+      "score": -0.2101,
+      "date": "2026-06-20",
+      "company": "Air India"
+    },
+    {
+      "rank": 5,
+      "chunk_text": "ance Cookies Performance Cookies These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site. They help us to know which pages are the most and least popular and see how visitors move around the site. All information these cookies collect is aggregated and therefore anonymous. If you do not allow these cookies we will not know when you have visited our site, and will not be able to monitor its performance. Cookies List Back Button Cookie List Search Icon Filter Icon Clear - checkbox label label Apply Cancel Consent Leg.Interest checkbox label label checkbox label label checkbox label label Save Settings Hi, I'm AI.g How can I help you?",
+      "title": "Onground | Air India Newsroom",
+      "url": "https://www.airindia.com/in/en/newsroom/customer-experience/onground-services.html",
+      "score": -0.2143,
+      "date": "2026-06-20",
+      "company": "Air India"
+    },
+    {
+      "rank": 6,
+      "chunk_text": "ance. Cookies List Back Button Cookie List Search Icon Filter Icon Clear - checkbox label label Apply Cancel Consent Leg.Interest checkbox label label checkbox label label checkbox label label Save Settings Hi, I'm AI.g How can I help you?",
+      "title": "Workplace | Air India Newsroom",
+      "url": "https://www.airindia.com/in/en/newsroom/people/workplace-culture.html",
+      "score": -0.2158,
+      "date": "2026-06-20",
+      "company": "Air India"
+    },
+    {
+      "rank": 7,
+      "chunk_text": "ally identifiable information. Cookies List Targeting Cookies Targeting Cookies These cookies may be set through our site by our advertising partners. They may be used by those companies to build a profile of your interests and show you relevant adverts on other sites. They do not store directly personal information, but are based on uniquely identifying your browser and internet device. If you do not allow these cookies, you will experience less targeted advertising. Cookies List Performance Cookies Performance Cookies These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site. They help us to know which pages are the most and least popular and see how visitors move around the site. All information these cookies collect is aggregated and therefore anonymous. If you do not allow these cookies we will not know when you have visited our site, and will not be able to monitor its performance. Cookies List Back Button Cookie List",
+      "title": "Sustainability | Air India Newsroom",
+      "url": "https://www.airindia.com/in/en/newsroom/citizenship/sustainability-efforts.html",
+      "score": -0.2168,
+      "date": "2026-06-20",
+      "company": "Air India"
+    },
+    {
+      "rank": 8,
+      "chunk_text": "t in response to actions made by you which amount to a request for services, such as setting your privacy preferences, logging in or filling in forms. You can set your browser to block or alert you about these cookies, but some parts of the site will not then work. These cookies do not store any personally identifiable information. Cookies List Targeting Cookies Targeting Cookies These cookies may be set through our site by our advertising partners. They may be used by those companies to build a profile of your interests and show you relevant adverts on other sites. They do not store directly personal information, but are based on uniquely identifying your browser and internet device. If you do not allow these cookies, you will experience less targeted advertising. Cookies List Performance Cookies Performance Cookies These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site.",
+      "title": "Onground | Air India Newsroom",
+      "url": "https://www.airindia.com/in/en/newsroom/customer-experience/onground-services.html",
+      "score": -0.2195,
+      "date": "2026-06-20",
+      "company": "Air India"
+    },
+    {
+      "rank": 9,
+      "chunk_text": "nage Consent Preferences Strictly Necessary Cookies These cookies are necessary for the website to function and cannot be switched off in our systems. They are usually only set in response to actions made by you which amount to a request for services, such as setting your privacy preferences, logging in or filling in forms. You can set your browser to block or alert you about these cookies, but some parts of the site will not then work. These cookies do not store any personally identifiable information. Cookies List Targeting Cookies Targeting Cookies These cookies may be set through our site by our advertising partners. They may be used by those companies to build a profile of your interests and show you relevant adverts on other sites. They do not store directly personal information, but are based on uniquely identifying your browser and internet device. If you do not allow these cookies, you will experience less targeted advertising. Cookies List Performance Cookies",
+      "title": "Air India Press Releases | Latest News & Updates Archive",
+      "url": "https://www.airindia.com/in/en/newsroom/press-releases-archive.html",
+      "score": -0.2199,
+      "date": "2026-06-20",
+      "company": "Air India"
+    },
+    {
+      "rank": 10,
+      "chunk_text": "blocking cookies may impact your experience on the site and services we are able to offer you. For more information, please refer to our\n. Accept All Manage Consent Preferences Strictly Necessary Cookies These cookies are necessary for the website to function and cannot be switched off in our systems. They are usually only set in response to actions made by you which amount to a request for services, such as setting your privacy preferences, logging in or filling in forms. You can set your browser to block or alert you about these cookies, but some parts of the site will not then work. These cookies do not store any personally identifiable information. Cookies List Targeting Cookies Targeting Cookies These cookies may be set through our site by our advertising partners. They may be used by those companies to build a profile of your interests and show you relevant adverts on other sites.",
+      "title": "Workplace | Air India Newsroom",
+      "url": "https://www.airindia.com/in/en/newsroom/people/workplace-culture.html",
+      "score": -0.2216,
+      "date": "2026-06-20",
+      "company": "Air India"
+    },
+    {
+      "rank": 11,
+      "chunk_text": "t in response to actions made by you which amount to a request for services, such as setting your privacy preferences, logging in or filling in forms. You can set your browser to block or alert you about these cookies, but some parts of the site will not then work. These cookies do not store any personally identifiable information. Cookies List Targeting Cookies Targeting Cookies These cookies may be set through our site by our advertising partners. They may be used by those companies to build a profile of your interests and show you relevant adverts on other sites. They do not store directly personal information, but are based on uniquely identifying your browser and internet device. If you do not allow these cookies, you will experience less targeted advertising. Cookies List Performance Cookies Performance Cookies These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site.",
+      "title": "Cargo | Air India Newsroom",
+      "url": "https://www.airindia.com/in/en/newsroom/connections/cargo.html",
+      "score": -0.223,
+      "date": "2026-06-20",
+      "company": "Air India"
+    },
+    {
+      "rank": 12,
+      "chunk_text": "nage Consent Preferences Strictly Necessary Cookies These cookies are necessary for the website to function and cannot be switched off in our systems. They are usually only set in response to actions made by you which amount to a request for services, such as setting your privacy preferences, logging in or filling in forms. You can set your browser to block or alert you about these cookies, but some parts of the site will not then work. These cookies do not store any personally identifiable information. Cookies List Targeting Cookies Targeting Cookies These cookies may be set through our site by our advertising partners. They may be used by those companies to build a profile of your interests and show you relevant adverts on other sites. They do not store directly personal information, but are based on uniquely identifying your browser and internet device. If you do not allow these cookies, you will experience less targeted advertising. Cookies List Performance Cookies",
+      "title": "Travelogues | Air India Newsroom",
+      "url": "https://www.airindia.com/in/en/newsroom/connections/travelogues-and-stories.html",
+      "score": -0.2236,
+      "date": "2026-06-20",
+      "company": "Air India"
+    },
+    {
+      "rank": 13,
+      "chunk_text": "are the most and least popular and see how visitors move around the site. All information these cookies collect is aggregated and therefore anonymous. If you do not allow these cookies we will not know when you have visited our site, and will not be able to monitor its performance. Cookies List Back Button Cookie List Search Icon Filter Icon Clear - checkbox label label Apply Cancel Consent Leg.Interest checkbox label label checkbox label label checkbox label label Save Settings Hi, I'm AI.g How can I help you?",
+      "title": "Planting a greener tomorrow | Air India Newsroom",
+      "url": "https://www.airindia.com/in/en/newsroom/articles/planting-a-greener-tomorrow.html",
+      "score": -0.2244,
+      "date": "2026-06-20",
+      "company": "Air India"
+    },
+    {
+      "rank": 14,
+      "chunk_text": "nage Consent Preferences Strictly Necessary Cookies These cookies are necessary for the website to function and cannot be switched off in our systems. They are usually only set in response to actions made by you which amount to a request for services, such as setting your privacy preferences, logging in or filling in forms. You can set your browser to block or alert you about these cookies, but some parts of the site will not then work. These cookies do not store any personally identifiable information. Cookies List Targeting Cookies Targeting Cookies These cookies may be set through our site by our advertising partners. They may be used by those companies to build a profile of your interests and show you relevant adverts on other sites. They do not store directly personal information, but are based on uniquely identifying your browser and internet device. If you do not allow these cookies, you will experience less targeted advertising. Cookies List Performance Cookies",
+      "title": "Onboard | Air India Newsroom",
+      "url": "https://www.airindia.com/in/en/newsroom/customer-experience/onboard-services.html",
+      "score": -0.2283,
+      "date": "2026-06-20",
+      "company": "Air India"
+    },
+    {
+      "rank": 15,
+      "chunk_text": "w these cookies we will not know when you have visited our site, and will not be able to monitor its performance. Cookies List Back Button Cookie List Search Icon Filter Icon Clear - checkbox label label Apply Cancel Consent Leg.Interest checkbox label label checkbox label label checkbox label label Save Settings Hi, I'm AI.g How can I help you?",
+      "title": "Diversity | Air India Newsroom",
+      "url": "https://www.airindia.com/in/en/newsroom/people/embracing-diversity.html",
+      "score": -0.2286,
+      "date": "2026-06-20",
+      "company": "Air India"
+    }
+  ],
+  "llm_output": "<think>\nOkay, let's tackle this query. The user wants me to identify competitive threats and strategic risks based on the provided retrieved context. Each entry in the context seems to be about cookies, but the user's question is about threats and risks in the aviation industry. Wait, the context is about cookies, but the user is asking about aviation. Hmm, maybe there's a mix-up here. Let me check again.\n\nLooking at the context, there are 15 entries, all related to cookies. The user's question is about competitive threats and strategic risks in the aviation industry. But the context doesn't mention anything about aviation, only cookies. That's a problem. The user might have intended to ask about cookies, but the context is about them. Since the task is to analyze the provided context, not the user's question, I need to clarify. But according to the instructions, I should return JSON based on the retrieved context. Since the context is about cookies, but the user is asking about aviation, there's a contradiction. However, maybe the user made a mistake, and the actual question is about cookies. But according to the rules, I should only use the context provided. So, perhaps the answer is that there are no threats or risks in the aviation industry based on the given context. But the user might have intended to ask about cookies. Alternatively, maybe the context is about cookies, and the user is asking about aviation. But since the task is to analyze the provided context, even if it's a mix-up, I should proceed. However, the user's question is about aviation, but the context is about cookies. Therefore, the answer would be that there are no threats or risks in the aviation industry based on the given context. But the user might have intended to ask about cookies. But according to the rules, I have to use the context. So, the correct approach is to state that there are no threats or risks in the aviation industry based on the provided context, as the context is about cookies.\n</think>\n\n[]"
+}

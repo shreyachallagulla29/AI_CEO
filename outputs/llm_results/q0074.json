@@ -1,0 +1,148 @@
+{
+  "query_id": "q0074",
+  "query": "What competitive threats and market risks could negatively affect the company's growth, profitability, or strategic position?",
+  "prompt": "Identify competitive threats and strategic risks. Return JSON with: risk_title, risk_description, threat_source, severity_level, likelihood, supporting_evidence.",
+  "collection": "DeltaAirlines_Knowledge",
+  "model": "Qwen/Qwen3-0.6B",
+  "temperature": 0.2,
+  "generated_at": "2026-06-23T05:55:32.860258+00:00",
+  "num_context_docs": 15,
+  "retrieved_context": [
+    {
+      "rank": 1,
+      "chunk_text": "rs that may interfere with actual service, quality and availability, including the ability to initiate, validate and maintain an in-flight connection. These factors include, but are not limited to: network changes, aircraft and network traffic volume, service outages, technical limitations, signal strength, and other conditions. Did you find the information you were looking for on this page? YESNO - About Us\n- Careers\n- News Hub\n- Investor Relations\n- Business Travel\n- Travel Agents\n- Mobile App\n- Help Center\n- Message Us\n- Comment/Complaint\n- Login Help\n- Site Map\n- Browser Compatibility\n- Accessibility\n- Booking Information\n- Customer Service Plan\n- Tarmac Delay Plan\n- Legal\n- Sustainability\n- Contract of Carriage\n- Cookies, Privacy & Security\n- Combatting Modern Slavery (PDF) In order to provide with the best experience possible we might sometimes track information about you. Sometimes this may involve writing a cookie.",
+      "title": "Onboard Wi-Fi | Delta Air Lines",
+      "url": "https://www.delta.com/eu/en/onboard/inflight-entertainment/onboard-wifi",
+      "score": -0.0884,
+      "date": "2026-06-20",
+      "company": "Delta Air Lines"
+    },
+    {
+      "rank": 2,
+      "chunk_text": "alytics and targeting advertising. We recommend allowing these functions to get the most out of your experience. * a a * a a * a a * a a * Save Cancel Delta and our third party partners access and store data on your device as necessary to provide this website and for analytics, enhanced functionality and advertising. I understand Tracking Preferences If you proceed with using this website, Delta and our third-party partners will access and store data on your device as necessary to provide the service and for enhanced functionality, analytics, and advertising. Select your preferences below and update them anytime through the Tracking Preferences link at the bottom of the website. Necessary Access/storage for the purpose of providing the service. Clearing or disabling these technologies through browser or device settings will impact service availability. Cookies Details Enhanced Functionality",
+      "title": "About Us | Delta Air Lines",
+      "url": "https://www.delta.com/eu/en/about-delta/overview",
+      "score": -0.1709,
+      "date": "2026-06-20",
+      "company": "Delta Air Lines"
+    },
+    {
+      "rank": 3,
+      "chunk_text": "and sharing events with our partners to optimize and measure the effectiveness of advertising campaigns; and creating lookalike or modeled audiences. Clearing or disabling these technologies could result in irrelevant advertising or personalization and possibly seeing advertising or messaging that would normally be suppressed. Cookies Details Back Button Cookie List Search Icon Filter Icon Clear - checkbox label label Apply Cancel Consent Leg.Interest checkbox label label checkbox label label checkbox label label Close In order to provide with the best experience possible we might sometimes track information about you. Sometimes this may involve writing a cookie. We use this information for things like experience enrichment, analytics and targeting advertising. We recommend allowing these functions to get the most out of your experience. * a a * a a * a a * a a * Save Cancel Feedback",
+      "title": "Flight Status : Delta Air Lines",
+      "url": "https://www.delta.com/flightstatus/search",
+      "score": -0.1874,
+      "date": "2026-06-20",
+      "company": "Delta Air Lines"
+    },
+    {
+      "rank": 4,
+      "chunk_text": "ssion replay that further enrich Delta's understanding of how visitors use the service to help us optimize the experience. Cookies Details Advertising Access/storage for purposes of tracking activity and interests to provide relevant, personalized advertising; collecting and sharing events with our partners to optimize and measure the effectiveness of advertising campaigns; and creating lookalike or modeled audiences. Clearing or disabling these technologies could result in irrelevant advertising or personalization and possibly seeing advertising or messaging that would normally be suppressed. Cookies Details Back Button Cookie List Search Icon Filter Icon Clear - checkbox label label Apply Cancel Consent Leg.Interest checkbox label label checkbox label label checkbox label label Close Feedback",
+      "title": "About Us | Delta Air Lines",
+      "url": "https://www.delta.com/eu/en/about-delta/overview",
+      "score": -0.2253,
+      "date": "2026-06-20",
+      "company": "Delta Air Lines"
+    },
+    {
+      "rank": 5,
+      "chunk_text": "DF) In order to provide with the best experience possible we might sometimes track information about you. Sometimes this may involve writing a cookie. We use this information for things like experience enrichment, analytics and targeting advertising. We recommend allowing these functions to get the most out of your experience. * a a * a a * a a * a a * Save Cancel Delta and our third party partners access and store data on your device as necessary to provide this website and for analytics, enhanced functionality and advertising. I understand Tracking Preferences If you proceed with using this website, Delta and our third-party partners will access and store data on your device as necessary to provide the service and for enhanced functionality, analytics, and advertising. Select your preferences below and update them anytime through the Tracking Preferences link at the bottom of the website. Necessary Access/storage for the purpose of providing the service.",
+      "title": "Onboard Wi-Fi | Delta Air Lines",
+      "url": "https://www.delta.com/eu/en/onboard/inflight-entertainment/onboard-wifi",
+      "score": -0.2297,
+      "date": "2026-06-20",
+      "company": "Delta Air Lines"
+    },
+    {
+      "rank": 6,
+      "chunk_text": "and sharing events with our partners to optimize and measure the effectiveness of advertising campaigns; and creating lookalike or modeled audiences. Clearing or disabling these technologies could result in irrelevant advertising or personalization and possibly seeing advertising or messaging that would normally be suppressed. Cookies Details Back Button Cookie List Search Icon Filter Icon Clear - checkbox label label Apply Cancel Consent Leg.Interest checkbox label label checkbox label label checkbox label label Close Join SkyMiles for free",
+      "title": "Delta Air Lines | Flights & Plane Tickets + Hotels & Cars",
+      "url": "https://www.delta.com",
+      "score": -0.2309,
+      "date": "2026-06-20",
+      "company": "Delta Air Lines"
+    },
+    {
+      "rank": 7,
+      "chunk_text": "messaging that would normally be suppressed. Cookies Details Back Button Cookie List Search Icon Filter Icon Clear - checkbox label label Apply Cancel Consent Leg.Interest checkbox label label checkbox label label checkbox label label Close Feedback",
+      "title": "Join SkyMiles®",
+      "url": "https://www.delta.com/joinskymiles",
+      "score": -0.2348,
+      "date": "2026-06-20",
+      "company": "Delta Air Lines"
+    },
+    {
+      "rank": 8,
+      "chunk_text": "sions with customers the world over. We invite you to learn what it means to keep climbing at Climbing Together: A Century Of Stories.]( Our Purpose * As a purpose-driven brand, we connect people to opportunities while expanding the understanding of our planet and the people within it. Both in the air and on the ground, we are focused on lowering our carbon footprint, furthering an equitable work environment that values diversity and inclusion and living these values in the communities where we live, work and serve. Sustainability Become Net Zero. Reduce Waste. Create Circular Solutions. There is no substitute for the power of travel to connect people. We are committed to Net-Zero carbon emissions by 2050 and continue to establish new, innovative projects to create a more sustainable travel experience. Diversity, Equity & Inclusion Connect the world. Reflect the world. Respect the world.",
+      "title": "About Us | Delta Air Lines",
+      "url": "https://www.delta.com/eu/en/about-delta/overview",
+      "score": -0.2437,
+      "date": "2026-06-20",
+      "company": "Delta Air Lines"
+    },
+    {
+      "rank": 9,
+      "chunk_text": ". Clearing or disabling these technologies through browser or device settings will impact service availability. Cookies Details Enhanced Functionality Access/storage by Delta's third party partners for the purpose of enabling advanced features like surveys and session replay that further enrich Delta's understanding of how visitors use the service to help us optimize the experience. Cookies Details First Party Analytics Access/storage by Delta for the purpose of understanding how the service is performing, as is necessary to monitor and resolve issues and gain insight into how visitors use the service to help optimize the experience. Cookies Details Third Party Analytics Access/storage by Delta's third party partners for the purpose of enabling advanced features like surveys and session replay that further enrich Delta's understanding of how visitors use the service to help us optimize the experience. Cookies Details Advertising",
+      "title": "About Us | Delta Air Lines",
+      "url": "https://www.delta.com/eu/en/about-delta/overview",
+      "score": -0.2439,
+      "date": "2026-06-20",
+      "company": "Delta Air Lines"
+    },
+    {
+      "rank": 10,
+      "chunk_text": "o monitor and resolve issues and gain insight into how visitors use the service to help optimize the experience. Cookies Details Third Party Analytics Access/storage by Delta's third party partners for the purpose of enabling advanced features like surveys and session replay that further enrich Delta's understanding of how visitors use the service to help us optimize the experience. Cookies Details Advertising Access/storage for purposes of tracking activity and interests to provide relevant, personalized advertising; collecting and sharing events with our partners to optimize and measure the effectiveness of advertising campaigns; and creating lookalike or modeled audiences. Clearing or disabling these technologies could result in irrelevant advertising or personalization and possibly seeing advertising or messaging that would normally be suppressed. Cookies Details Back Button Cookie List Search Icon Filter Icon Clear - checkbox label label Apply Cancel Consent Leg.Interest",
+      "title": "Onboard Wi-Fi | Delta Air Lines",
+      "url": "https://www.delta.com/eu/en/onboard/inflight-entertainment/onboard-wifi",
+      "score": -0.2446,
+      "date": "2026-06-20",
+      "company": "Delta Air Lines"
+    },
+    {
+      "rank": 11,
+      "chunk_text": "data on your device as necessary to provide this website and for analytics, enhanced functionality and advertising. I understand Tracking Preferences If you proceed with using this website, Delta and our third-party partners will access and store data on your device as necessary to provide the service and for enhanced functionality, analytics, and advertising. Select your preferences below and update them anytime through the Tracking Preferences link at the bottom of the website. Necessary Access/storage for the purpose of providing the service. Clearing or disabling these technologies through browser or device settings will impact service availability. Cookies Details Enhanced Functionality Access/storage by Delta's third party partners for the purpose of enabling advanced features like surveys and session replay that further enrich Delta's understanding of how visitors use the service to help us optimize the experience. Cookies Details First Party Analytics",
+      "title": "Flight Status : Delta Air Lines",
+      "url": "https://www.delta.com/flightstatus/search",
+      "score": -0.2477,
+      "date": "2026-06-20",
+      "company": "Delta Air Lines"
+    },
+    {
+      "rank": 12,
+      "chunk_text": "- eCredits * About Delta About Delta - About Us\n- Careers\n- News Hub\n- Investor Relations\n- Business Travel\n- Travel Agents\n- Mobile App\n- Delta Shop - About Us\n- Careers\n- News Hub\n- Investor Relations\n- Business Travel\n- Travel Agents\n- Mobile App\n- Delta Shop Customer Service Customer Service - Help Center\n- Message Us\n- Comment/Complaint - Help Center\n- Message Us\n- Comment/Complaint Site Support Site Support - Login Help\n- Site Map\n- Browser Compatibility\n- Accessibility\n- Booking Information - Login Help\n- Site Map\n- Browser Compatibility\n- Accessibility\n- Booking Information Policies Policies - Customer Service Plan\n- Tarmac Delay Plan\n- Legal\n- Sustainability\n- Contract of Carriage\n- Cookies, Privacy & Security\n- Combatting Modern Slavery (PDF) - Customer Service Plan\n- Tarmac Delay Plan\n- Legal\n- Sustainability\n- Contract of Carriage\n- Cookies, Privacy & Security\n- Combatting Modern Slavery (PDF)",
+      "title": "About Us | Delta Air Lines",
+      "url": "https://www.delta.com/eu/en/about-delta/overview",
+      "score": -0.2496,
+      "date": "2026-06-20",
+      "company": "Delta Air Lines"
+    },
+    {
+      "rank": 13,
+      "chunk_text": "vative projects to create a more sustainable travel experience. Diversity, Equity & Inclusion Connect the world. Reflect the world. Respect the world. As champions of connection, we bring people together, break down barriers, bridge divides and move the world forward. Delta actively values diversity, boldly pursues equity and consciously promotes inclusion. We re committed to creating a world where everyone, everywhere can thrive. Community Engagement Invest in Progress. Cultivate Caring Relationships. Be a Strong Partner. As a global airline, we have a responsibility to connect with the communities where our employees live, work and serve. Through strategic partnerships with nonprofits in these communities, we foster meaningful relationships to help drive change by focusing our resources on the Environment, Equity, Education and Entire Wellness. Expand All Collapse All Advertising Opportunities About Delta Customers Your audience is our audience.",
+      "title": "About Us | Delta Air Lines",
+      "url": "https://www.delta.com/eu/en/about-delta/overview",
+      "score": -0.2566,
+      "date": "2026-06-20",
+      "company": "Delta Air Lines"
+    },
+    {
+      "rank": 14,
+      "chunk_text": "te them anytime through the Tracking Preferences link at the bottom of the website. Necessary Access/storage for the purpose of providing the service. Clearing or disabling these technologies through browser or device settings will impact service availability. Cookies Details Enhanced Functionality Access/storage by Delta's third party partners for the purpose of enabling advanced features like surveys and session replay that further enrich Delta's understanding of how visitors use the service to help us optimize the experience. Cookies Details First Party Analytics Access/storage by Delta for the purpose of understanding how the service is performing, as is necessary to monitor and resolve issues and gain insight into how visitors use the service to help optimize the experience. Cookies Details Third Party Analytics",
+      "title": "Onboard Wi-Fi | Delta Air Lines",
+      "url": "https://www.delta.com/eu/en/onboard/inflight-entertainment/onboard-wifi",
+      "score": -0.2589,
+      "date": "2026-06-20",
+      "company": "Delta Air Lines"
+    },
+    {
+      "rank": 15,
+      "chunk_text": "normally be suppressed. Cookies Details Back Button Cookie List Search Icon Filter Icon Clear - checkbox label label Apply Cancel Consent Leg.Interest checkbox label label checkbox label label checkbox label label Close Feedback",
+      "title": "Onboard Wi-Fi | Delta Air Lines",
+      "url": "https://www.delta.com/eu/en/onboard/inflight-entertainment/onboard-wifi",
+      "score": -0.2593,
+      "date": "2026-06-20",
+      "company": "Delta Air Lines"
+    }
+  ],
+  "llm_output": "<think>\nOkay, let's tackle this query. The user wants me to identify competitive threats and strategic risks from the provided context. The context has 15 entries, each with a score between -0.25 and -0.259. \n\nFirst, I need to parse each entry to see what's mentioned. The main points seem to be about tracking technologies, cookies, and data collection. The scores are negative, which might indicate that these are risks.\n\nLooking at the first entry, \"Onboard Wi-Fi\" mentions factors like network changes, service outages, technical limitations, signal strength, etc. These could be threats because they affect service quality. The threat source here is Delta Air Lines, and the severity is low since the score is -0.088. The supporting evidence is the factors mentioned.\n\nNext, entries 2-15 talk about cookies, tracking preferences, and data usage. The threats here are related to data collection and tracking, which could be competitive because competitors might use similar technologies. The severity is lower, but the likelihood is higher due to the negative scores.\n\nI need to check if each threat has a risk_title, description, source, severity, likelihood, and supporting evidence. For each entry, I'll extract those details. The user wants the JSON structure with the specified fields. If any information is missing, I should note that. Since all entries seem to provide relevant info, I can compile the threats and risks accordingly.\n</think>\n\n[\n  {\n    \"risk_title\": \"Competitive Threat to In-Flight Connectivity\",\n    \"risk_description\": \"Delta Air Lines may face competitive threats from other airlines or providers who could offer similar in-flight Wi-Fi services, potentially affecting service quality, availability, or reliability.\",\n    \"threat_source\": \"Delta Air Lines\",\n    \"severity_level\": 0.0,\n    \"likelihood\": 0.8,\n    \"supporting_evidence\": [\n      \"Onboard Wi-Fi mentions factors like network changes, service outages, and technical limitations affecting in-flight connectivity.\"\n    ]\n  },\n  {\n    \"risk_title\": \"Data Collection and Tracking Risks\",\n    \"risk_description\": \"Competitive threats from third-party partners may arise from Delta's use of cookies, tracking technologies, and data collection practices, which could lead to privacy concerns or reduced user experience.\",\n    \"threat_source\": \"Delta Air Lines\",\n    \"severity_level\": 0.0,\n    \"likelihood\": 0.8,\n    \"supporting_evidence\": [\n      \"Entries 2-15 discuss data collection and tracking technologies, highlighting potential risks to service availability.\"\n    ]\n  }\n]"
+}
