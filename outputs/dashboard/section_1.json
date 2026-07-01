@@ -1,0 +1,28 @@
+{
+  "section_id": "section_1",
+  "title": "Company Overview",
+  "generated_at": "2026-06-29T12:08:01.647026+00:00",
+  "data": {
+    "company_name": "Lufthansa Group",
+    "industry": "Aviation / Commercial Airline",
+    "headquarters": "Cologne, Germany",
+    "founded": 1953,
+    "stock_ticker": "LHA.XE",
+    "competitors_monitored": [
+      "Air India",
+      "United Airlines",
+      "Delta Air Lines",
+      "American Airlines"
+    ],
+    "num_collected_documents": 24,
+    "num_data_sources": 5,
+    "data_sources": [
+      "Lufthansa Newsroom (newsroom.lufthansagroup.com)",
+      "Investor Relations (investor-relations.lufthansagroup.com)",
+      "Skytrax Customer Reviews (airlinequality.com)",
+      "Competitor Websites",
+      "Industry & Finance News"
+    ],
+    "last_updated": "2026-06-29T12:08:01.647026+00:00"
+  }
+}

@@ -24,7 +24,9 @@ import sys
 import time
 from datetime import datetime, timezone
 from pathlib import Path
-
+import sys
+sys.modules["torchvision"] = None
+sys.modules["torchaudio"] = None
 # =============================================================================
 # ── CONFIGURATION  (all settings live here) ──────────────────────────────────
 # =============================================================================

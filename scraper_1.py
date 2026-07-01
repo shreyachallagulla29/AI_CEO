@@ -370,31 +370,36 @@ def run_hyperbrowser_scrapers(
 # ===========================================================================
 
 if __name__ == "__main__":
-    logging.basicConfig(
-        level=logging.INFO,
-        format="%(asctime)s  %(name)-15s  %(levelname)s  %(message)s",
-    )
+    import time
 
-    raw_data = run_hyperbrowser_scrapers()
-    total    = len(raw_data.get("hyperbrowser", []))
-    print(f"\nTotal pages scraped: {total}")
+    while(True):
+        logging.basicConfig(
+            level=logging.INFO,
+            format="%(asctime)s  %(name)-15s  %(levelname)s  %(message)s",
+        )
 
-    for item in raw_data.get("hyperbrowser", [])[:3]:
-        print(f"\n{'─' * 60}")
-        print(f"URL:       {item['url']}")
-        print(f"Title:     {item['title']}")
-        print(f"Date:      {item['date']}")
-        print(f"Publisher: {item['publisher']}")
-        preview = item["content"][:300].replace("\n", " ")
-        print(f"Content:   {preview}...")
+        raw_data = run_hyperbrowser_scrapers()
+        total    = len(raw_data.get("hyperbrowser", []))
+        print(f"\nTotal pages scraped: {total}")
 
-    from clean_storage import build_documents, merge_and_save
-    docs  = build_documents(raw_data)
-    final = merge_and_save(docs)
+        for item in raw_data.get("hyperbrowser", [])[:3]:
+            print(f"\n{'─' * 60}")
+            print(f"URL:       {item['url']}")
+            print(f"Title:     {item['title']}")
+            print(f"Date:      {item['date']}")
+            print(f"Publisher: {item['publisher']}")
+            preview = item["content"][:300].replace("\n", " ")
+            print(f"Content:   {preview}...")
 
-    # Optionally pipe directly into the pipeline
-    if total > 0:
-        print("\nTo push into the pipeline:")
-        print("  from clean_storage import build_documents, merge_and_save")
-        print("  docs  = build_documents(raw_data)")
-        print("  final = merge_and_save(docs)")
+        from clean_storage import build_documents, merge_and_save
+        docs  = build_documents(raw_data)
+        final = merge_and_save(docs)
+
+        # Optionally pipe directly into the pipeline
+        if total > 0:
+            print("\nTo push into the pipeline:")
+            print("  from clean_storage import build_documents, merge_and_save")
+            print("  docs  = build_documents(raw_data)")
+            print("  final = merge_and_save(docs)")
+
+        time.sleep(7*24*60*60)

@@ -1,0 +1,51 @@
+{
+  "agent_run_id": "agent_20260629_123943",
+  "ceo_goal": "Should Lufthansa invest in expanding transatlantic routes given current competitor positioning?",
+  "generated_at": "2026-06-29T12:39:43.387601+00:00",
+  "plan": {
+    "focus_companies": [
+      "Lufthansa"
+    ],
+    "investigation_topics": [
+      "Should Lufthansa invest in expanding transatlantic routes given current competitor positioning?"
+    ],
+    "primary_concern": "competitive",
+    "rationale": "Fallback plan — LLM did not return structured output"
+  },
+  "analysis": {
+    "key_findings": [
+      "Lufthansa plans to add 230 new aircraft by 2030, including long-haul models",
+      "Eurowings is expanding leisure travel with a young fleet",
+      "Strategic risk of Gulf hub dominance in global traffic flows"
+    ],
+    "risks": [
+      "Supply chain delays impacting aircraft delivery",
+      "Competition from Eurowings' low-cost model"
+    ],
+    "opportunities": [
+      "Enhanced collaboration through airline integration",
+      "Sustainability initiatives aligning with market trends"
+    ],
+    "decision": "invest",
+    "confidence_score": 70
+  },
+  "recommendation": {
+    "recommendation": "Lufthansa should proceed with expanding transatlantic routes to capitalize on its long-haul aircraft investment and mitigate Gulf carrier dominance.",
+    "priority": "High",
+    "expected_impact": "Enhanced transatlantic capacity will strengthen Lufthansa's premium market position and drive revenue growth. Sustainability initiatives will align with regulatory trends and customer demand for eco-friendly travel.",
+    "supporting_evidence": [
+      "Lufthansa's 230-aircraft expansion includes long-haul models critical for transatlantic growth",
+      "Strategic collaboration opportunities through airline integration",
+      "Sustainability alignment with global market trends"
+    ],
+    "risk_if_ignored": "Failure to act may result in ceding transatlantic market share to Gulf carriers and losing competitive differentiation.",
+    "confidence_score": 70
+  },
+  "validation": {
+    "passed": true,
+    "confidence_score": 70,
+    "evidence_count": 3,
+    "issues": [],
+    "validated_at": "2026-06-29T12:39:43.385597+00:00"
+  }
+}

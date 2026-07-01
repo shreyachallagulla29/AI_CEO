@@ -1,0 +1,224 @@
+{
+  "dashboard_version": "1.0",
+  "built_at": "2026-06-23T07:56:30.363141+00:00",
+  "sections": {
+    "section_1": {
+      "section_id": "section_1",
+      "title": "Company Overview",
+      "generated_at": "2026-06-23T07:47:50.654222+00:00",
+      "data": {
+        "company_name": "Lufthansa Group",
+        "industry": "Aviation / Commercial Airline",
+        "headquarters": "Cologne, Germany",
+        "founded": 1953,
+        "stock_ticker": "LHA.XE",
+        "competitors_monitored": [
+          "Air India",
+          "United Airlines",
+          "Delta Air Lines",
+          "American Airlines"
+        ],
+        "num_collected_documents": 23,
+        "num_data_sources": 5,
+        "data_sources": [
+          "Lufthansa Newsroom (newsroom.lufthansagroup.com)",
+          "Investor Relations (investor-relations.lufthansagroup.com)",
+          "Skytrax Customer Reviews (airlinequality.com)",
+          "Competitor Websites",
+          "Industry & Finance News"
+        ],
+        "last_updated": "2026-06-23T07:47:50.654222+00:00"
+      }
+    },
+    "section_2": {
+      "section_id": "section_2",
+      "generated_at": "2026-06-23T07:52:56.571842+00:00",
+      "status": "complete",
+      "num_entries": 11,
+      "skipped_ids": [],
+      "entries": [
+        {
+          "query_id": "q001",
+          "company": "Lufthansa",
+          "status": "structuring_failed",
+          "error": "ERROR on attempt 3: Could not load model Qwen/Qwen3.6-35B-A3B with any of the following classes: (<class 'transformers.models.auto.modeling_auto.AutoModelForCausalLM'>, <class 'transformers.models.qwen3_5_moe.modeling_qwen3_5_moe.Qwen3_5MoeForConditionalGeneration'>). See the original errors:\n\nwhile loading with AutoModelForCausalLM, an error is thrown:\nTraceback (most recent call last):\n  File \"C:\\Users\\Dell\\Documents\\SRH_2027\\NLP_Final_Project\\.venv\\lib\\site-packages\\transformers\\pipelines\\bas"
+        },
+        {
+          "query_id": "q0021",
+          "company": "Air India",
+          "status": "structuring_failed",
+          "error": "ERROR on attempt 3: Could not load model Qwen/Qwen3.6-35B-A3B with any of the following classes: (<class 'transformers.models.auto.modeling_auto.AutoModelForCausalLM'>, <class 'transformers.models.qwen3_5_moe.modeling_qwen3_5_moe.Qwen3_5MoeForConditionalGeneration'>). See the original errors:\n\nwhile loading with AutoModelForCausalLM, an error is thrown:\nTraceback (most recent call last):\n  File \"C:\\Users\\Dell\\Documents\\SRH_2027\\NLP_Final_Project\\.venv\\lib\\site-packages\\transformers\\pipelines\\bas"
+        },
+        {
+          "query_id": "q0022",
+          "company": "United Airlines",
+          "status": "structuring_failed",
+          "error": "ERROR on attempt 3: Could not load model Qwen/Qwen3.6-35B-A3B with any of the following classes: (<class 'transformers.models.auto.modeling_auto.AutoModelForCausalLM'>, <class 'transformers.models.qwen3_5_moe.modeling_qwen3_5_moe.Qwen3_5MoeForConditionalGeneration'>). See the original errors:\n\nwhile loading with AutoModelForCausalLM, an error is thrown:\nTraceback (most recent call last):\n  File \"C:\\Users\\Dell\\Documents\\SRH_2027\\NLP_Final_Project\\.venv\\lib\\site-packages\\transformers\\pipelines\\bas"
+        },
+        {
+          "query_id": "q0023",
+          "company": "Delta Air Lines",
+          "status": "structuring_failed",
+          "error": "ERROR on attempt 3: Could not load model Qwen/Qwen3.6-35B-A3B with any of the following classes: (<class 'transformers.models.auto.modeling_auto.AutoModelForCausalLM'>, <class 'transformers.models.qwen3_5_moe.modeling_qwen3_5_moe.Qwen3_5MoeForConditionalGeneration'>). See the original errors:\n\nwhile loading with AutoModelForCausalLM, an error is thrown:\nTraceback (most recent call last):\n  File \"C:\\Users\\Dell\\Documents\\SRH_2027\\NLP_Final_Project\\.venv\\lib\\site-packages\\transformers\\pipelines\\bas"
+        },
+        {
+          "query_id": "q0024",
+          "company": "American Airlines",
+          "status": "structuring_failed",
+          "error": "ERROR on attempt 3: Could not load model Qwen/Qwen3.6-35B-A3B with any of the following classes: (<class 'transformers.models.auto.modeling_auto.AutoModelForCausalLM'>, <class 'transformers.models.qwen3_5_moe.modeling_qwen3_5_moe.Qwen3_5MoeForConditionalGeneration'>). See the original errors:\n\nwhile loading with AutoModelForCausalLM, an error is thrown:\nTraceback (most recent call last):\n  File \"C:\\Users\\Dell\\Documents\\SRH_2027\\NLP_Final_Project\\.venv\\lib\\site-packages\\transformers\\pipelines\\bas"
+        },
+        {
+          "query_id": "q0031",
+          "company": "United Airlines",
+          "status": "structuring_failed",
+          "error": "ERROR on attempt 3: Could not load model Qwen/Qwen3.6-35B-A3B with any of the following classes: (<class 'transformers.models.auto.modeling_auto.AutoModelForCausalLM'>, <class 'transformers.models.qwen3_5_moe.modeling_qwen3_5_moe.Qwen3_5MoeForConditionalGeneration'>). See the original errors:\n\nwhile loading with AutoModelForCausalLM, an error is thrown:\nTraceback (most recent call last):\n  File \"C:\\Users\\Dell\\Documents\\SRH_2027\\NLP_Final_Project\\.venv\\lib\\site-packages\\transformers\\pipelines\\bas"
+        },
+        {
+          "query_id": "q0032",
+          "company": "Air India",
+          "status": "structuring_failed",
+          "error": "ERROR on attempt 3: Could not load model Qwen/Qwen3.6-35B-A3B with any of the following classes: (<class 'transformers.models.auto.modeling_auto.AutoModelForCausalLM'>, <class 'transformers.models.qwen3_5_moe.modeling_qwen3_5_moe.Qwen3_5MoeForConditionalGeneration'>). See the original errors:\n\nwhile loading with AutoModelForCausalLM, an error is thrown:\nTraceback (most recent call last):\n  File \"C:\\Users\\Dell\\Documents\\SRH_2027\\NLP_Final_Project\\.venv\\lib\\site-packages\\transformers\\pipelines\\bas"
+        },
+        {
+          "query_id": "q0033",
+          "company": "Lufthansa",
+          "status": "structuring_failed",
+          "error": "ERROR on attempt 3: Could not load model Qwen/Qwen3.6-35B-A3B with any of the following classes: (<class 'transformers.models.auto.modeling_auto.AutoModelForCausalLM'>, <class 'transformers.models.qwen3_5_moe.modeling_qwen3_5_moe.Qwen3_5MoeForConditionalGeneration'>). See the original errors:\n\nwhile loading with AutoModelForCausalLM, an error is thrown:\nTraceback (most recent call last):\n  File \"C:\\Users\\Dell\\Documents\\SRH_2027\\NLP_Final_Project\\.venv\\lib\\site-packages\\transformers\\pipelines\\bas"
+        },
+        {
+          "query_id": "q0034",
+          "company": "Delta Air Lines",
+          "status": "structuring_failed",
+          "error": "ERROR on attempt 3: Could not load model Qwen/Qwen3.6-35B-A3B with any of the following classes: (<class 'transformers.models.auto.modeling_auto.AutoModelForCausalLM'>, <class 'transformers.models.qwen3_5_moe.modeling_qwen3_5_moe.Qwen3_5MoeForConditionalGeneration'>). See the original errors:\n\nwhile loading with AutoModelForCausalLM, an error is thrown:\nTraceback (most recent call last):\n  File \"C:\\Users\\Dell\\Documents\\SRH_2027\\NLP_Final_Project\\.venv\\lib\\site-packages\\transformers\\pipelines\\bas"
+        },
+        {
+          "query_id": "q0035",
+          "company": "American Airlines",
+          "status": "structuring_failed",
+          "error": "ERROR on attempt 3: Could not load model Qwen/Qwen3.6-35B-A3B with any of the following classes: (<class 'transformers.models.auto.modeling_auto.AutoModelForCausalLM'>, <class 'transformers.models.qwen3_5_moe.modeling_qwen3_5_moe.Qwen3_5MoeForConditionalGeneration'>). See the original errors:\n\nwhile loading with AutoModelForCausalLM, an error is thrown:\nTraceback (most recent call last):\n  File \"C:\\Users\\Dell\\Documents\\SRH_2027\\NLP_Final_Project\\.venv\\lib\\site-packages\\transformers\\pipelines\\bas"
+        },
+        {
+          "query_id": "q004",
+          "company": "Lufthansa",
+          "status": "structuring_failed",
+          "error": "ERROR on attempt 3: Could not load model Qwen/Qwen3.6-35B-A3B with any of the following classes: (<class 'transformers.models.auto.modeling_auto.AutoModelForCausalLM'>, <class 'transformers.models.qwen3_5_moe.modeling_qwen3_5_moe.Qwen3_5MoeForConditionalGeneration'>). See the original errors:\n\nwhile loading with AutoModelForCausalLM, an error is thrown:\nTraceback (most recent call last):\n  File \"C:\\Users\\Dell\\Documents\\SRH_2027\\NLP_Final_Project\\.venv\\lib\\site-packages\\transformers\\pipelines\\bas"
+        }
+      ]
+    },
+    "section_3": {
+      "section_id": "section_3",
+      "generated_at": "2026-06-23T07:53:28.253798+00:00",
+      "status": "complete",
+      "num_entries": 2,
+      "skipped_ids": [],
+      "entries": [
+        {
+          "query_id": "q005",
+          "company": "Lufthansa",
+          "status": "structuring_failed",
+          "error": "ERROR on attempt 3: Could not load model Qwen/Qwen3.6-35B-A3B with any of the following classes: (<class 'transformers.models.auto.modeling_auto.AutoModelForCausalLM'>, <class 'transformers.models.qwen3_5_moe.modeling_qwen3_5_moe.Qwen3_5MoeForConditionalGeneration'>). See the original errors:\n\nwhile loading with AutoModelForCausalLM, an error is thrown:\nTraceback (most recent call last):\n  File \"C:\\Users\\Dell\\Documents\\SRH_2027\\NLP_Final_Project\\.venv\\lib\\site-packages\\transformers\\pipelines\\bas"
+        },
+        {
+          "query_id": "q006",
+          "company": "Lufthansa",
+          "status": "structuring_failed",
+          "error": "ERROR on attempt 3: Could not load model Qwen/Qwen3.6-35B-A3B with any of the following classes: (<class 'transformers.models.auto.modeling_auto.AutoModelForCausalLM'>, <class 'transformers.models.qwen3_5_moe.modeling_qwen3_5_moe.Qwen3_5MoeForConditionalGeneration'>). See the original errors:\n\nwhile loading with AutoModelForCausalLM, an error is thrown:\nTraceback (most recent call last):\n  File \"C:\\Users\\Dell\\Documents\\SRH_2027\\NLP_Final_Project\\.venv\\lib\\site-packages\\transformers\\pipelines\\bas"
+        }
+      ]
+    },
+    "section_4": {
+      "section_id": "section_4",
+      "generated_at": "2026-06-23T07:55:36.999271+00:00",
+      "status": "complete",
+      "num_entries": 8,
+      "skipped_ids": [],
+      "entries": [
+        {
+          "query_id": "q0071",
+          "company": "Lufthansa",
+          "status": "structuring_failed",
+          "error": "ERROR on attempt 3: Could not load model Qwen/Qwen3.6-35B-A3B with any of the following classes: (<class 'transformers.models.auto.modeling_auto.AutoModelForCausalLM'>, <class 'transformers.models.qwen3_5_moe.modeling_qwen3_5_moe.Qwen3_5MoeForConditionalGeneration'>). See the original errors:\n\nwhile loading with AutoModelForCausalLM, an error is thrown:\nTraceback (most recent call last):\n  File \"C:\\Users\\Dell\\Documents\\SRH_2027\\NLP_Final_Project\\.venv\\lib\\site-packages\\transformers\\pipelines\\bas"
+        },
+        {
+          "query_id": "q0072",
+          "company": "Air India",
+          "status": "structuring_failed",
+          "error": "ERROR on attempt 3: Could not load model Qwen/Qwen3.6-35B-A3B with any of the following classes: (<class 'transformers.models.auto.modeling_auto.AutoModelForCausalLM'>, <class 'transformers.models.qwen3_5_moe.modeling_qwen3_5_moe.Qwen3_5MoeForConditionalGeneration'>). See the original errors:\n\nwhile loading with AutoModelForCausalLM, an error is thrown:\nTraceback (most recent call last):\n  File \"C:\\Users\\Dell\\Documents\\SRH_2027\\NLP_Final_Project\\.venv\\lib\\site-packages\\transformers\\pipelines\\bas"
+        },
+        {
+          "query_id": "q0073",
+          "company": "United Airlines",
+          "status": "structuring_failed",
+          "error": "ERROR on attempt 3: Could not load model Qwen/Qwen3.6-35B-A3B with any of the following classes: (<class 'transformers.models.auto.modeling_auto.AutoModelForCausalLM'>, <class 'transformers.models.qwen3_5_moe.modeling_qwen3_5_moe.Qwen3_5MoeForConditionalGeneration'>). See the original errors:\n\nwhile loading with AutoModelForCausalLM, an error is thrown:\nTraceback (most recent call last):\n  File \"C:\\Users\\Dell\\Documents\\SRH_2027\\NLP_Final_Project\\.venv\\lib\\site-packages\\transformers\\pipelines\\bas"
+        },
+        {
+          "query_id": "q0074",
+          "company": "Delta Air Lines",
+          "status": "structuring_failed",
+          "error": "ERROR on attempt 3: Could not load model Qwen/Qwen3.6-35B-A3B with any of the following classes: (<class 'transformers.models.auto.modeling_auto.AutoModelForCausalLM'>, <class 'transformers.models.qwen3_5_moe.modeling_qwen3_5_moe.Qwen3_5MoeForConditionalGeneration'>). See the original errors:\n\nwhile loading with AutoModelForCausalLM, an error is thrown:\nTraceback (most recent call last):\n  File \"C:\\Users\\Dell\\Documents\\SRH_2027\\NLP_Final_Project\\.venv\\lib\\site-packages\\transformers\\pipelines\\bas"
+        },
+        {
+          "query_id": "q0075",
+          "company": "American Airlines",
+          "status": "structuring_failed",
+          "error": "ERROR on attempt 3: Could not load model Qwen/Qwen3.6-35B-A3B with any of the following classes: (<class 'transformers.models.auto.modeling_auto.AutoModelForCausalLM'>, <class 'transformers.models.qwen3_5_moe.modeling_qwen3_5_moe.Qwen3_5MoeForConditionalGeneration'>). See the original errors:\n\nwhile loading with AutoModelForCausalLM, an error is thrown:\nTraceback (most recent call last):\n  File \"C:\\Users\\Dell\\Documents\\SRH_2027\\NLP_Final_Project\\.venv\\lib\\site-packages\\transformers\\pipelines\\bas"
+        },
+        {
+          "query_id": "q0076",
+          "company": "Unknown",
+          "status": "structuring_failed",
+          "error": "ERROR on attempt 3: Could not load model Qwen/Qwen3.6-35B-A3B with any of the following classes: (<class 'transformers.models.auto.modeling_auto.AutoModelForCausalLM'>, <class 'transformers.models.qwen3_5_moe.modeling_qwen3_5_moe.Qwen3_5MoeForConditionalGeneration'>). See the original errors:\n\nwhile loading with AutoModelForCausalLM, an error is thrown:\nTraceback (most recent call last):\n  File \"C:\\Users\\Dell\\Documents\\SRH_2027\\NLP_Final_Project\\.venv\\lib\\site-packages\\transformers\\pipelines\\bas"
+        },
+        {
+          "query_id": "q008",
+          "company": "Unknown",
+          "status": "structuring_failed",
+          "error": "ERROR on attempt 3: Could not load model Qwen/Qwen3.6-35B-A3B with any of the following classes: (<class 'transformers.models.auto.modeling_auto.AutoModelForCausalLM'>, <class 'transformers.models.qwen3_5_moe.modeling_qwen3_5_moe.Qwen3_5MoeForConditionalGeneration'>). See the original errors:\n\nwhile loading with AutoModelForCausalLM, an error is thrown:\nTraceback (most recent call last):\n  File \"C:\\Users\\Dell\\Documents\\SRH_2027\\NLP_Final_Project\\.venv\\lib\\site-packages\\transformers\\pipelines\\bas"
+        },
+        {
+          "query_id": "q009",
+          "company": "Lufthansa",
+          "status": "structuring_failed",
+          "error": "ERROR on attempt 3: Could not load model Qwen/Qwen3.6-35B-A3B with any of the following classes: (<class 'transformers.models.auto.modeling_auto.AutoModelForCausalLM'>, <class 'transformers.models.qwen3_5_moe.modeling_qwen3_5_moe.Qwen3_5MoeForConditionalGeneration'>). See the original errors:\n\nwhile loading with AutoModelForCausalLM, an error is thrown:\nTraceback (most recent call last):\n  File \"C:\\Users\\Dell\\Documents\\SRH_2027\\NLP_Final_Project\\.venv\\lib\\site-packages\\transformers\\pipelines\\bas"
+        }
+      ]
+    },
+    "section_5": {
+      "section_id": "section_5",
+      "generated_at": "2026-06-23T07:56:14.328465+00:00",
+      "status": "complete",
+      "num_entries": 2,
+      "skipped_ids": [],
+      "entries": [
+        {
+          "query_id": "q010",
+          "company": "Unknown",
+          "status": "structuring_failed",
+          "error": "ERROR on attempt 3: Could not load model Qwen/Qwen3.6-35B-A3B with any of the following classes: (<class 'transformers.models.auto.modeling_auto.AutoModelForCausalLM'>, <class 'transformers.models.qwen3_5_moe.modeling_qwen3_5_moe.Qwen3_5MoeForConditionalGeneration'>). See the original errors:\n\nwhile loading with AutoModelForCausalLM, an error is thrown:\nTraceback (most recent call last):\n  File \"C:\\Users\\Dell\\Documents\\SRH_2027\\NLP_Final_Project\\.venv\\lib\\site-packages\\transformers\\pipelines\\bas"
+        },
+        {
+          "query_id": "q011",
+          "company": "Unknown",
+          "status": "structuring_failed",
+          "error": "ERROR on attempt 3: Could not load model Qwen/Qwen3.6-35B-A3B with any of the following classes: (<class 'transformers.models.auto.modeling_auto.AutoModelForCausalLM'>, <class 'transformers.models.qwen3_5_moe.modeling_qwen3_5_moe.Qwen3_5MoeForConditionalGeneration'>). See the original errors:\n\nwhile loading with AutoModelForCausalLM, an error is thrown:\nTraceback (most recent call last):\n  File \"C:\\Users\\Dell\\Documents\\SRH_2027\\NLP_Final_Project\\.venv\\lib\\site-packages\\transformers\\pipelines\\bas"
+        }
+      ]
+    },
+    "section_6": {
+      "section_id": "section_6",
+      "generated_at": "2026-06-23T07:56:14.333008+00:00",
+      "status": "partial",
+      "num_entries": 0,
+      "skipped_ids": [
+        "q012"
+      ],
+      "entries": []
+    },
+    "section_7": {
+      "status": "synthesis_failed",
+      "error": "ERROR on attempt 3: Could not load model Qwen/Qwen3.6-35B-A3B with any of the following classes: (<class 'transformers.models.auto.modeling_auto.AutoModelForCausalLM'>, <class 'transformers.models.qwen3_5_moe.modeling_qwen3_5_moe.Qwen3_5MoeForConditionalGeneration'>). See the original errors:\n\nwhile loading with AutoModelForCausalLM, an error is thrown:\nTraceback (most recent call last):\n  File \"C:\\Users\\Dell\\Documents\\SRH_2027\\NLP_Final_Project\\.venv\\lib\\site-packages\\transformers\\pipelines\\bas",
+      "section_id": "section_7",
+      "generated_at": "2026-06-23T07:56:30.351755+00:00"
+    }
+  }
+}

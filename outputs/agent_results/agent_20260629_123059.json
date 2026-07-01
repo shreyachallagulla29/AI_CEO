@@ -1,0 +1,40 @@
+{
+  "agent_run_id": "agent_20260629_123059",
+  "ceo_goal": "Should Lufthansa invest in expanding transatlantic routes given current competitor positioning?",
+  "generated_at": "2026-06-29T12:30:59.782448+00:00",
+  "plan": {
+    "focus_companies": [
+      "Lufthansa"
+    ],
+    "investigation_topics": [
+      "Should Lufthansa invest in expanding transatlantic routes given current competitor positioning?"
+    ],
+    "primary_concern": "competitive",
+    "rationale": "Fallback plan — LLM did not return structured output"
+  },
+  "analysis": {
+    "key_findings": [],
+    "risks": [],
+    "opportunities": [],
+    "decision": "monitor",
+    "confidence_score": 0
+  },
+  "recommendation": {
+    "validation_warning": [
+      "Low confidence (0/100) — insufficient evidence",
+      "Too few evidence points — retrieval may have failed",
+      "Recommendation too vague"
+    ]
+  },
+  "validation": {
+    "passed": false,
+    "confidence_score": 0,
+    "evidence_count": 0,
+    "issues": [
+      "Low confidence (0/100) — insufficient evidence",
+      "Too few evidence points — retrieval may have failed",
+      "Recommendation too vague"
+    ],
+    "validated_at": "2026-06-29T12:30:59.782448+00:00"
+  }
+}

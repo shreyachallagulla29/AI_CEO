@@ -1,0 +1,21 @@
+{
+  "section_id": "section_5",
+  "generated_at": "2026-06-23T07:56:14.328465+00:00",
+  "status": "complete",
+  "num_entries": 2,
+  "skipped_ids": [],
+  "entries": [
+    {
+      "query_id": "q010",
+      "company": "Unknown",
+      "status": "structuring_failed",
+      "error": "ERROR on attempt 3: Could not load model Qwen/Qwen3.6-35B-A3B with any of the following classes: (<class 'transformers.models.auto.modeling_auto.AutoModelForCausalLM'>, <class 'transformers.models.qwen3_5_moe.modeling_qwen3_5_moe.Qwen3_5MoeForConditionalGeneration'>). See the original errors:\n\nwhile loading with AutoModelForCausalLM, an error is thrown:\nTraceback (most recent call last):\n  File \"C:\\Users\\Dell\\Documents\\SRH_2027\\NLP_Final_Project\\.venv\\lib\\site-packages\\transformers\\pipelines\\bas"
+    },
+    {
+      "query_id": "q011",
+      "company": "Unknown",
+      "status": "structuring_failed",
+      "error": "ERROR on attempt 3: Could not load model Qwen/Qwen3.6-35B-A3B with any of the following classes: (<class 'transformers.models.auto.modeling_auto.AutoModelForCausalLM'>, <class 'transformers.models.qwen3_5_moe.modeling_qwen3_5_moe.Qwen3_5MoeForConditionalGeneration'>). See the original errors:\n\nwhile loading with AutoModelForCausalLM, an error is thrown:\nTraceback (most recent call last):\n  File \"C:\\Users\\Dell\\Documents\\SRH_2027\\NLP_Final_Project\\.venv\\lib\\site-packages\\transformers\\pipelines\\bas"
+    }
+  ]
+}

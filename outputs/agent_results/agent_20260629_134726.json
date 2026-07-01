@@ -1,0 +1,64 @@
+{
+  "agent_run_id": "agent_20260629_134726",
+  "ceo_goal": "Should Lufthansa invest in expanding transatlantic routes given current competitor positioning?",
+  "generated_at": "2026-06-29T13:47:26.279330+00:00",
+  "plan": {
+    "focus_companies": [
+      "Lufthansa"
+    ],
+    "investigation_topics": [
+      "Should Lufthansa invest in expanding transatlantic routes given current competitor positioning?"
+    ],
+    "primary_concern": "competitive",
+    "rationale": "Fallback plan — LLM did not return structured output"
+  },
+  "analysis": {
+    "key_findings": [
+      "Lufthansa plans to add 230 new aircraft by 2030, including 100 long-haul aircraft",
+      "Eurowings' expansion of leisure travel and young fleet modernization",
+      "Strategic integration of ITA Airways and other airlines under unified operational structure"
+    ],
+    "risks": [
+      "Growing concentration of global traffic via Gulf hubs threatens European sovereignty",
+      "Supply chain delays impacting aircraft delivery timelines"
+    ],
+    "opportunities": [
+      "Transatlantic route expansion aligns with European sovereignty goals",
+      "Potential to leverage integrated network for sustainable value creation"
+    ],
+    "decision": "invest",
+    "confidence_score": 85
+  },
+  "recommendation": {
+    "recommendation": "Lufthansa should proceed with expanding transatlantic routes to strengthen its strategic position in global aviation and reinforce European sovereignty in air traffic.",
+    "priority": "High",
+    "expected_impact": "The expansion will enhance Lufthansa's competitiveness in transatlantic markets and solidify its role as a key European carrier. Leveraging integrated network synergies can drive long-term profitability and sustainability.",
+    "supporting_evidence": [
+      "Lufthansa's plan to add 100 long-haul aircraft by 2030 directly supports transatlantic capacity growth",
+      "Strategic integration of ITA Airways and other airlines creates operational efficiencies for route expansion",
+      "Transatlantic expansion aligns with EU goals to reduce dependency on Gulf carrier hubs"
+    ],
+    "risk_if_ignored": "Continued reliance on Gulf carrier hubs could erode European influence in global air traffic and cede market share to non-European carriers.",
+    "confidence_score": 85
+  },
+  "validation": {
+    "passed": true,
+    "confidence_score": 85,
+    "evidence_count": 3,
+    "issues": [],
+    "validated_at": "2026-06-29T13:47:26.279330+00:00"
+  },
+  "sentiment": {
+    "average_score": 0.125,
+    "label": "Positive",
+    "news_sentiment": "Positive",
+    "public_sentiment": "Positive",
+    "chunk_scores": [
+      0.3097537878787878,
+      0.01948051948051948,
+      0.07307692307692307,
+      0.0,
+      0.22413419913419913
+    ]
+  }
+}

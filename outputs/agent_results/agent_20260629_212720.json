@@ -1,0 +1,64 @@
+{
+  "agent_run_id": "agent_20260629_212720",
+  "ceo_goal": "Which emerging technologies should Lufthansa prioritize to improve customer experience and reduce operational costs?",
+  "generated_at": "2026-06-29T21:27:20.400073+00:00",
+  "plan": {
+    "focus_companies": [
+      "Lufthansa"
+    ],
+    "investigation_topics": [
+      "Which emerging technologies should Lufthansa prioritize to improve customer experience and reduce operational costs?"
+    ],
+    "primary_concern": "competitive",
+    "rationale": "Fallback plan — LLM did not return structured output"
+  },
+  "analysis": {
+    "key_findings": [
+      "Lufthansa Group is prioritizing fleet modernization with new Boeing 787-9 aircraft and Airbus A320 upgrades",
+      "Strategic partnerships with Starlink for high-speed internet across all fleets",
+      "Collaboration with Amadeus to streamline travel booking processes via order ID system"
+    ],
+    "risks": [
+      "High capital expenditure for fleet renewal and technology integration",
+      "Potential delays in implementing automated flight profile transfer technology"
+    ],
+    "opportunities": [
+      "Enhanced customer experience through free high-speed internet for premium passengers",
+      "Operational efficiency gains from real-time flight path data and streamlined booking processes"
+    ],
+    "decision": "invest",
+    "confidence_score": 85
+  },
+  "recommendation": {
+    "recommendation": "Lufthansa should prioritize investing in fleet modernization with Boeing 787-9 aircraft and Airbus A320 upgrades, alongside Starlink's high-speed internet and Amadeus's order ID system to streamline bookings.",
+    "priority": "High",
+    "expected_impact": "Enhanced customer experience through free high-speed internet for premium passengers and operational efficiency gains from real-time flight data and streamlined booking processes. Reduced long-term costs via fuel-efficient aircraft and automated systems.",
+    "supporting_evidence": [
+      "Strategic partnerships with Starlink for high-speed internet across all fleets",
+      "Collaboration with Amadeus to streamline travel booking processes via order ID system",
+      "Fleet modernization with new Boeing 787-9 aircraft and Airbus A320 upgrades"
+    ],
+    "risk_if_ignored": "Lufthansa risks falling behind competitors in customer satisfaction and operational efficiency, leading to higher costs and reduced market share.",
+    "confidence_score": 85
+  },
+  "validation": {
+    "passed": true,
+    "confidence_score": 85,
+    "evidence_count": 3,
+    "issues": [],
+    "validated_at": "2026-06-29T21:27:20.400073+00:00"
+  },
+  "sentiment": {
+    "average_score": 0.32,
+    "label": "Positive",
+    "news_sentiment": "Positive",
+    "public_sentiment": "Positive",
+    "chunk_scores": [
+      0.1339225589225589,
+      0.34545454545454546,
+      0.5,
+      0.3840909090909091,
+      0.2340909090909091
+    ]
+  }
+}

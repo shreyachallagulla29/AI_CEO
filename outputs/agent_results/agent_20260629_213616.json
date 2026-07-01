@@ -1,0 +1,64 @@
+{
+  "agent_run_id": "agent_20260629_213616",
+  "ceo_goal": "Should Lufthansa invest in expanding transatlantic routes given current competitor positioning and market trends?",
+  "generated_at": "2026-06-29T21:36:16.004411+00:00",
+  "plan": {
+    "focus_companies": [
+      "Lufthansa"
+    ],
+    "investigation_topics": [
+      "Should Lufthansa invest in expanding transatlantic routes given current competitor positioning and market trends?"
+    ],
+    "primary_concern": "competitive",
+    "rationale": "Fallback plan — LLM did not return structured output"
+  },
+  "analysis": {
+    "key_findings": [
+      "Lufthansa plans to add 100 long-haul aircraft by 2030",
+      "Strategic integration of airlines (Lufthansa, SWISS, Austrian, etc.) under unified operational structure",
+      "Eurowings' expansion in leisure travel and successful restructuring"
+    ],
+    "risks": [
+      "Supply chain delays impacting aircraft/engine procurement",
+      "Over-reliance on Gulf hubs for global traffic flows"
+    ],
+    "opportunities": [
+      "Synergies from airline consolidation and process integration",
+      "Growth potential in leisure travel markets via Eurowings"
+    ],
+    "decision": "invest",
+    "confidence_score": 70
+  },
+  "recommendation": {
+    "recommendation": "Lufthansa should proceed with expanding transatlantic routes to capitalize on synergies from airline consolidation and Eurowings' leisure travel growth.",
+    "priority": "Medium",
+    "expected_impact": "Enhanced market share in transatlantic routes through increased capacity and operational efficiencies from integrated networks. Synergies from consolidated operations could reduce costs and improve service reliability.",
+    "supporting_evidence": [
+      "Lufthansa plans to add 100 long-haul aircraft by 2030",
+      "Strategic integration of airlines under unified operational structure",
+      "Eurowings' successful restructuring and growth in leisure travel markets"
+    ],
+    "risk_if_ignored": "Competitors may capture market share in transatlantic routes, reducing Lufthansa's profitability and strategic influence.",
+    "confidence_score": 70
+  },
+  "validation": {
+    "passed": true,
+    "confidence_score": 70,
+    "evidence_count": 3,
+    "issues": [],
+    "validated_at": "2026-06-29T21:36:16.004411+00:00"
+  },
+  "sentiment": {
+    "average_score": 0.125,
+    "label": "Positive",
+    "news_sentiment": "Positive",
+    "public_sentiment": "Positive",
+    "chunk_scores": [
+      0.01948051948051948,
+      0.3097537878787878,
+      0.22413419913419913,
+      0.0,
+      0.07307692307692307
+    ]
+  }
+}

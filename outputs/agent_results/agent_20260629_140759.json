@@ -1,0 +1,64 @@
+{
+  "agent_run_id": "agent_20260629_140759",
+  "ceo_goal": "What should Lufthansa do about low-cost carrier competition?",
+  "generated_at": "2026-06-29T14:07:59.970616+00:00",
+  "plan": {
+    "focus_companies": [
+      "Lufthansa"
+    ],
+    "investigation_topics": [
+      "What should Lufthansa do about low-cost carrier competition?"
+    ],
+    "primary_concern": "competitive",
+    "rationale": "Fallback plan — LLM did not return structured output"
+  },
+  "analysis": {
+    "key_findings": [
+      "Lufthansa is reducing flights and consolidating its European network due to low-cost carrier competition and declining profitability.",
+      "Increased operational costs (taxes, labor disputes) are straining connectivity to key economic regions.",
+      "Expansion of low-cost fare options and network adjustments aim to maintain regional connectivity while improving efficiency."
+    ],
+    "risks": [
+      "Loss of market share to low-cost carriers like Ryanair exiting Germany.",
+      "Financial strain from rising costs could hinder long-term competitiveness."
+    ],
+    "opportunities": [
+      "Strategic acquisition of ITA Airways stake to strengthen presence in low-cost market.",
+      "New economy fare offerings may attract price-sensitive customers and boost market share."
+    ],
+    "decision": "invest",
+    "confidence_score": 85
+  },
+  "recommendation": {
+    "recommendation": "Lufthansa should strategically invest in acquiring ITA Airways stake and launch new economy fare products to directly compete with low-cost carriers while leveraging its network efficiency.",
+    "priority": "High",
+    "expected_impact": "This dual approach will strengthen Lufthansa's presence in price-sensitive markets and enhance profitability through cost-effective fare structures. The acquisition could provide operational synergies and expanded route networks.",
+    "supporting_evidence": [
+      "Strategic acquisition of ITA Airways stake to strengthen presence in low-cost market",
+      "New economy fare offerings may attract price-sensitive customers and boost market share",
+      "Network adjustments aim to improve efficiency while maintaining regional connectivity"
+    ],
+    "risk_if_ignored": "Continued market share erosion to low-cost carriers and financial strain from rising operational costs could jeopardize Lufthansa's long-term competitiveness.",
+    "confidence_score": 85
+  },
+  "validation": {
+    "passed": true,
+    "confidence_score": 85,
+    "evidence_count": 3,
+    "issues": [],
+    "validated_at": "2026-06-29T14:07:59.970616+00:00"
+  },
+  "sentiment": {
+    "average_score": 0.073,
+    "label": "Neutral",
+    "news_sentiment": "Neutral",
+    "public_sentiment": "Neutral",
+    "chunk_scores": [
+      0.05714285714285714,
+      0.07777777777777779,
+      0.22828282828282828,
+      0.0,
+      0.0
+    ]
+  }
+}

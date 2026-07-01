@@ -1,0 +1,64 @@
+{
+  "agent_run_id": "agent_20260629_213928",
+  "ceo_goal": "What are the biggest operational risks Lufthansa faces compared to Delta Air Lines ,United Airlines, American Airlines, Air India? ",
+  "generated_at": "2026-06-29T21:39:28.882858+00:00",
+  "plan": {
+    "focus_companies": [
+      "Lufthansa"
+    ],
+    "investigation_topics": [
+      "What are the biggest operational risks Lufthansa faces compared to Delta Air Lines ,United Airlines, American Airlines, Air India? "
+    ],
+    "primary_concern": "competitive",
+    "rationale": "Fallback plan — LLM did not return structured output"
+  },
+  "analysis": {
+    "key_findings": [
+      "Labor strikes announced by Vereinigung Cockpit union",
+      "4.6% pay increase for 20,000+ employees over 24 months",
+      "India as largest intercontinental market in Asia-Pacific region"
+    ],
+    "risks": [
+      "Operational disruptions from labor strikes",
+      "Rising labor costs impacting profitability"
+    ],
+    "opportunities": [
+      "Enhanced connectivity via visa-free transit for Indian travelers",
+      "High demand driving extra flight operations"
+    ],
+    "decision": "monitor",
+    "confidence_score": 85
+  },
+  "recommendation": {
+    "recommendation": "Proactively engage in labor negotiations to mitigate strike risks and optimize cost structures amid rising wage demands.",
+    "priority": "High",
+    "expected_impact": "Persistent labor strikes could lead to flight cancellations and revenue loss, while escalating labor costs may erode profit margins. Enhanced connectivity in India presents growth opportunities but requires operational scalability.",
+    "supporting_evidence": [
+      "Labor strikes announced by Vereinigung Cockpit union",
+      "4.6% pay increase for 20,000+ employees over 24 months",
+      "India as largest intercontinental market in Asia-Pacific region"
+    ],
+    "risk_if_ignored": "Unaddressed labor tensions could result in prolonged operational disruptions and competitive disadvantage in high-demand markets like India.",
+    "confidence_score": 85
+  },
+  "validation": {
+    "passed": true,
+    "confidence_score": 85,
+    "evidence_count": 3,
+    "issues": [],
+    "validated_at": "2026-06-29T21:39:28.868698+00:00"
+  },
+  "sentiment": {
+    "average_score": 0.161,
+    "label": "Positive",
+    "news_sentiment": "Positive",
+    "public_sentiment": "Positive",
+    "chunk_scores": [
+      0.3,
+      0.16666666666666666,
+      0.08863636363636364,
+      0.17166666666666663,
+      0.07777777777777778
+    ]
+  }
+}

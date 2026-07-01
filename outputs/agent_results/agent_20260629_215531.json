@@ -1,0 +1,64 @@
+{
+  "agent_run_id": "agent_20260629_215531",
+  "ceo_goal": "Should Lufthansa invest in expanding transatlantic routes given current competitor positioning and market trends?",
+  "generated_at": "2026-06-29T21:55:31.178320+00:00",
+  "plan": {
+    "focus_companies": [
+      "Lufthansa"
+    ],
+    "investigation_topics": [
+      "Should Lufthansa invest in expanding transatlantic routes given current competitor positioning and market trends?"
+    ],
+    "primary_concern": "competitive",
+    "rationale": "Fallback plan — LLM did not return structured output"
+  },
+  "analysis": {
+    "key_findings": [
+      "Lufthansa is investing heavily in long-haul aircraft (100 by 2030) and fleet modernization",
+      "Strategic integration of airlines under unified network operations",
+      "Eurowings' expansion in leisure travel and successful restructuring"
+    ],
+    "risks": [
+      "Supply chain delays impacting aircraft delivery timelines",
+      "Growing dependency on Gulf hubs for global traffic flows"
+    ],
+    "opportunities": [
+      "Expansion into new international markets (Canada, Portugal)",
+      "Sustainability and digitalization initiatives aligning with industry trends"
+    ],
+    "decision": "invest",
+    "confidence_score": 85
+  },
+  "recommendation": {
+    "recommendation": "Lufthansa should proceed with expanding transatlantic routes to capitalize on fleet modernization and new market opportunities.",
+    "priority": "High",
+    "expected_impact": "Enhanced market share in North America and Europe through direct connectivity, while sustainability initiatives will position Lufthansa as a leader in eco-friendly long-haul travel.",
+    "supporting_evidence": [
+      "Lufthansa's investment in 100 long-haul aircraft by 2030 aligns with transatlantic growth ambitions",
+      "Unified network operations enable efficient route integration and cost optimization",
+      "Expansion into Canada and Portugal creates untapped demand for direct transatlantic services"
+    ],
+    "risk_if_ignored": "Competitors like Air France-KLM and Iberia may capture growing transatlantic demand through superior route networks.",
+    "confidence_score": 85
+  },
+  "validation": {
+    "passed": true,
+    "confidence_score": 85,
+    "evidence_count": 3,
+    "issues": [],
+    "validated_at": "2026-06-29T21:55:31.178320+00:00"
+  },
+  "sentiment": {
+    "average_score": 0.125,
+    "label": "Positive",
+    "news_sentiment": "Positive",
+    "public_sentiment": "Positive",
+    "chunk_scores": [
+      0.01948051948051948,
+      0.3097537878787878,
+      0.22413419913419913,
+      0.0,
+      0.07307692307692307
+    ]
+  }
+}

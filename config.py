@@ -118,6 +118,7 @@ HYPERBROWSER_REQUEST_DELAY      = 1.5   # seconds between requests (be polite)
 # ---------------------------------------------------------------------------
 HF_API_KEY     = os.getenv("HF_API_KEY",     "YOUR_HUGGINGFACE_API_KEY")
 HF_MODEL_NAME  = os.getenv("HF_MODEL_NAME",  "Qwen/Qwen3.6-35B-A3B")
+HF_MODEL_NAME  = os.getenv("HF_MODEL_NAME",  "Qwen/Qwen3-0.6B")
 
 LLM_TEMPERATURE    = 0.2    # deterministic outputs for strategic analysis
 LLM_MAX_NEW_TOKENS = 1024   # max tokens in LLM response

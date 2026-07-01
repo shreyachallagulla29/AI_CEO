@@ -1,0 +1,72 @@
+{
+  "agent_run_id": "agent_20260630_041528",
+  "ceo_goal": "Which emerging technologies should Lufthansa prioritize to improve customer experience and reduce operational costs?\nShould Lufthansa invest in expanding transatlantic routes given current competitor positioning and market trends?",
+  "generated_at": "2026-06-30T04:15:28.456531+00:00",
+  "retrieval_summary": {
+    "focus_companies": [
+      "reviews",
+      "Lufthansa",
+      "United Airlines",
+      "Delta Air Lines",
+      "Air India",
+      "American Airlines"
+    ],
+    "retrieval_method": "embedding_similarity",
+    "total_chunks": 30,
+    "rationale": "Companies ranked by cosine similarity between CEO goal embedding and stored chunk vectors"
+  },
+  "analysis": {
+    "key_findings": [
+      "Lufthansa is investing heavily in fleet renewal and digital transformation with initiatives like Ambition 2030",
+      "Air India is enhancing customer experience through tech innovations and expanding partnerships",
+      "United Airlines is prioritizing tech investments and premium service offerings"
+    ],
+    "risks": [
+      "Supply chain delays impacting Lufthansa's operational timelines",
+      "Incomplete data and fragmented evidence for Air India's strategic execution"
+    ],
+    "opportunities": [
+      "Lufthansa's global expansion and MRO capabilities create long-term growth potential",
+      "Air India's digital initiatives could improve customer retention and satisfaction"
+    ],
+    "decision": "monitor",
+    "confidence_score": 75
+  },
+  "recommendation": {
+    "recommendation": "Lufthansa should prioritize investing in AI-driven personalization tools and IoT-enabled predictive maintenance systems to enhance customer experience and reduce operational costs.",
+    "priority": "High",
+    "expected_impact": "AI personalization will improve customer satisfaction and loyalty, while IoT maintenance will lower unplanned downtime and fuel costs. These technologies align with Ambition 2030 goals and strengthen competitive differentiation.",
+    "supporting_evidence": [
+      "Lufthansa's Ambition 2030 initiative emphasizes digital transformation and fleet modernization",
+      "Air India's digital initiatives demonstrate the value of tech-driven customer retention",
+      "MRO capabilities provide a strategic foundation for cost-efficient operations"
+    ],
+    "risk_if_ignored": "Delaying tech investments risks falling behind competitors in service innovation and operational efficiency, undermining long-term profitability.",
+    "confidence_score": 75
+  },
+  "validation": {
+    "passed": true,
+    "confidence_score": 75,
+    "evidence_count": 3,
+    "issues": [],
+    "validated_at": "2026-06-30T04:15:28.456531+00:00"
+  },
+  "sentiment": {
+    "average_score": 0.173,
+    "label": "Positive",
+    "news_sentiment": "Positive",
+    "public_sentiment": "Positive",
+    "chunk_scores": [
+      0.01948051948051948,
+      0.1339225589225589,
+      0.5,
+      0.22413419913419913,
+      0.28585858585858587,
+      0.1708333333333333,
+      0.037500000000000006,
+      0.0,
+      0.0,
+      0.3607142857142857
+    ]
+  }
+}
